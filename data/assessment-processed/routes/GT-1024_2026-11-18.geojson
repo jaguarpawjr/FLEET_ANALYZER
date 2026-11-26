@@ -1,0 +1,205 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1024",
+        "date": "2026-11-18",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.092101,
+            5.644401
+          ],
+          [
+            -0.123699,
+            5.620496
+          ],
+          [
+            -0.151364,
+            5.600058
+          ],
+          [
+            -0.179384,
+            5.579975
+          ],
+          [
+            -0.214307,
+            5.555596
+          ],
+          [
+            -0.20159,
+            5.570807
+          ],
+          [
+            -0.19136,
+            5.583769
+          ],
+          [
+            -0.182554,
+            5.595836
+          ],
+          [
+            -0.175122,
+            5.606958
+          ],
+          [
+            -0.168088,
+            5.618477
+          ],
+          [
+            -0.160626,
+            5.631887
+          ],
+          [
+            -0.153561,
+            5.645695
+          ],
+          [
+            -0.142934,
+            5.667648
+          ],
+          [
+            -0.158875,
+            5.640505
+          ],
+          [
+            -0.170459,
+            5.622008
+          ],
+          [
+            -0.182595,
+            5.604064
+          ],
+          [
+            -0.19873,
+            5.581518
+          ],
+          [
+            -0.223181,
+            5.616787
+          ],
+          [
+            -0.186693,
+            5.627064
+          ],
+          [
+            -0.158966,
+            5.63378
+          ],
+          [
+            -0.130212,
+            5.639469
+          ],
+          [
+            -0.09,
+            5.646
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1024",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T07:09:45Z",
+        "end_time": "2026-11-18T07:39:15Z",
+        "duration_minutes": 29.5,
+        "lat": 5.5556141499999985,
+        "lon": -0.21422303333333337,
+        "zones": [
+          "Kaneshie service area",
+          "Makola Market (no stopping)"
+        ],
+        "in_own_depot_area": false,
+        "restricted": true,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.21422303333333337,
+          5.5556141499999985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1024",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T08:19:15Z",
+        "end_time": "2026-11-18T08:46:45Z",
+        "duration_minutes": 27.5,
+        "lat": 5.667638981818182,
+        "lon": -0.14303952727272723,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.14303952727272723,
+          5.667638981818182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1024",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T09:03:45Z",
+        "end_time": "2026-11-18T09:25:15Z",
+        "duration_minutes": 21.5,
+        "lat": 5.581567090909091,
+        "lon": -0.19876509090909103,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.19876509090909103,
+          5.581567090909091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1024",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T09:32:45Z",
+        "end_time": "2026-11-18T09:44:15Z",
+        "duration_minutes": 11.5,
+        "lat": 5.616756249999999,
+        "lon": -0.22314045833333332,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.22314045833333332,
+          5.616756249999999
+        ]
+      }
+    }
+  ]
+}

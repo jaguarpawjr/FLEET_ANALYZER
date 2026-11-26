@@ -1,0 +1,302 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1011",
+        "date": "2026-11-17",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.22685,
+            5.615723
+          ],
+          [
+            -0.179569,
+            5.645261
+          ],
+          [
+            -0.260818,
+            5.549242
+          ],
+          [
+            -0.177251,
+            5.64669
+          ],
+          [
+            -0.138775,
+            5.670044
+          ],
+          [
+            -0.227561,
+            5.620304
+          ],
+          [
+            -0.13643,
+            5.671445
+          ],
+          [
+            -0.089344,
+            5.699336
+          ],
+          [
+            -0.076276,
+            5.666141
+          ],
+          [
+            -0.062078,
+            5.62879
+          ],
+          [
+            -0.115439,
+            5.638789
+          ],
+          [
+            -0.16337,
+            5.648541
+          ],
+          [
+            -0.110459,
+            5.60266
+          ],
+          [
+            -0.214339,
+            5.517378
+          ],
+          [
+            -0.105463,
+            5.59828
+          ],
+          [
+            -0.095331,
+            5.589434
+          ],
+          [
+            -0.142547,
+            5.605389
+          ],
+          [
+            -0.177222,
+            5.616659
+          ],
+          [
+            -0.211064,
+            5.627097
+          ],
+          [
+            -0.257948,
+            5.640901
+          ],
+          [
+            -0.355907,
+            5.523204
+          ],
+          [
+            -0.257943,
+            5.640897
+          ],
+          [
+            -0.215565,
+            5.641461
+          ],
+          [
+            -0.117595,
+            5.557036
+          ],
+          [
+            -0.210576,
+            5.641532
+          ],
+          [
+            -0.103099,
+            5.642868
+          ],
+          [
+            -0.048452,
+            5.701944
+          ],
+          [
+            -0.09809,
+            5.642921
+          ],
+          [
+            -0.052929,
+            5.643438
+          ],
+          [
+            -0.052991,
+            5.643255
+          ],
+          [
+            -0.053017,
+            5.64348
+          ],
+          [
+            -0.101131,
+            5.633403
+          ],
+          [
+            -0.138112,
+            5.626803
+          ],
+          [
+            -0.176134,
+            5.621243
+          ],
+          [
+            -0.228,
+            5.615
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1011",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T07:34:48Z",
+        "end_time": "2026-11-17T07:55:18Z",
+        "duration_minutes": 20.5,
+        "lat": 5.699264975609757,
+        "lon": -0.08929939024390246,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.08929939024390246,
+          5.699264975609757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1011",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T08:09:48Z",
+        "end_time": "2026-11-17T08:28:18Z",
+        "duration_minutes": 18.5,
+        "lat": 5.628802736842106,
+        "lon": -0.0621285789473684,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0621285789473684,
+          5.628802736842106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1011",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T08:44:48Z",
+        "end_time": "2026-11-17T09:19:18Z",
+        "duration_minutes": 34.5,
+        "lat": 5.648486014285716,
+        "lon": -0.1633632,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1633632,
+          5.648486014285716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1011",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T09:34:18Z",
+        "end_time": "2026-11-17T09:55:48Z",
+        "duration_minutes": 21.5,
+        "lat": 5.589444302325581,
+        "lon": -0.0953943023255814,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0953943023255814,
+          5.589444302325581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1011",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T10:24:48Z",
+        "end_time": "2026-11-17T10:59:18Z",
+        "duration_minutes": 34.5,
+        "lat": 5.639154314285714,
+        "lon": -0.2593543571428571,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2593543571428571,
+          5.639154314285714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1011",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T11:40:48Z",
+        "end_time": "2026-11-17T12:00:18Z",
+        "duration_minutes": 19.5,
+        "lat": 5.643378499999999,
+        "lon": -0.052988450000000006,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.052988450000000006,
+          5.643378499999999
+        ]
+      }
+    }
+  ]
+}

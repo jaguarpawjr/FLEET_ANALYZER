@@ -1,0 +1,219 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1019",
+        "date": "2026-11-18",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.226282,
+            5.615385
+          ],
+          [
+            -0.188332,
+            5.6237
+          ],
+          [
+            -0.156736,
+            5.629957
+          ],
+          [
+            -0.124475,
+            5.63555
+          ],
+          [
+            -0.084326,
+            5.641741
+          ],
+          [
+            -0.11785,
+            5.6463
+          ],
+          [
+            -0.145708,
+            5.650685
+          ],
+          [
+            -0.174416,
+            5.65592
+          ],
+          [
+            -0.210657,
+            5.663248
+          ],
+          [
+            -0.155459,
+            5.611495
+          ],
+          [
+            -0.140213,
+            5.601248
+          ],
+          [
+            -0.130522,
+            5.595097
+          ],
+          [
+            -0.122165,
+            5.590281
+          ],
+          [
+            -0.113335,
+            5.585668
+          ],
+          [
+            -0.144363,
+            5.587711
+          ],
+          [
+            -0.167739,
+            5.589809
+          ],
+          [
+            -0.191864,
+            5.592655
+          ],
+          [
+            -0.225645,
+            5.597335
+          ],
+          [
+            -0.226292,
+            5.605679
+          ],
+          [
+            -0.228,
+            5.615
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1019",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T07:24:17Z",
+        "end_time": "2026-11-18T07:40:47Z",
+        "duration_minutes": 16.5,
+        "lat": 5.641744000000001,
+        "lon": -0.08439939393939394,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.08439939393939394,
+          5.641744000000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1019",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T08:10:17Z",
+        "end_time": "2026-11-18T08:19:47Z",
+        "duration_minutes": 9.5,
+        "lat": 5.663214052631577,
+        "lon": -0.2105878947368421,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2105878947368421,
+          5.663214052631577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1019",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T08:32:17Z",
+        "end_time": "2026-11-18T08:40:47Z",
+        "duration_minutes": 8.5,
+        "lat": 5.611543444444444,
+        "lon": -0.15545844444444443,
+        "zones": [
+          "Kotoka Airport perimeter"
+        ],
+        "in_own_depot_area": false,
+        "restricted": true,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.15545844444444443,
+          5.611543444444444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1019",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T08:52:47Z",
+        "end_time": "2026-11-18T09:16:17Z",
+        "duration_minutes": 23.5,
+        "lat": 5.585720893617021,
+        "lon": -0.11336376595744684,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.11336376595744684,
+          5.585720893617021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1019",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T09:42:47Z",
+        "end_time": "2026-11-18T09:50:17Z",
+        "duration_minutes": 7.5,
+        "lat": 5.597403733333333,
+        "lon": -0.225647,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.225647,
+          5.597403733333333
+        ]
+      }
+    }
+  ]
+}

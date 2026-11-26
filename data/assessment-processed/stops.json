@@ -1,0 +1,3899 @@
+[
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T06:49:28Z",
+    "end_time": "2026-11-17T07:14:28Z",
+    "duration_minutes": 25,
+    "lat": 5.697420285714285,
+    "lon": -0.15831079591836736,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:07:58Z",
+    "end_time": "2026-11-17T08:41:28Z",
+    "duration_minutes": 33.5,
+    "lat": 5.548970893939393,
+    "lon": -0.17743839393939395,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:46:28Z",
+    "end_time": "2026-11-17T08:51:58Z",
+    "duration_minutes": 5.5,
+    "lat": 5.541742999999999,
+    "lon": -0.21014600000000003,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:51:05Z",
+    "end_time": "2026-11-18T07:07:35Z",
+    "duration_minutes": 16.5,
+    "lat": 5.656402470588237,
+    "lon": -0.13301470588235298,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:27:35Z",
+    "end_time": "2026-11-18T07:49:05Z",
+    "duration_minutes": 21.5,
+    "lat": 5.6230772619047595,
+    "lon": -0.2425239047619047,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:18:05Z",
+    "end_time": "2026-11-18T08:28:35Z",
+    "duration_minutes": 10.5,
+    "lat": 5.554899333333333,
+    "lon": -0.058329809523809534,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:42:35Z",
+    "end_time": "2026-11-18T08:54:05Z",
+    "duration_minutes": 11.5,
+    "lat": 5.616275249999998,
+    "lon": -0.09106020833333334,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T06:39:21Z",
+    "end_time": "2026-11-19T07:04:51Z",
+    "duration_minutes": 25.5,
+    "lat": 5.678951999999996,
+    "lon": -0.10466869230769228,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:30:21Z",
+    "end_time": "2026-11-19T07:51:51Z",
+    "duration_minutes": 21.5,
+    "lat": 5.59012388095238,
+    "lon": -0.1273341428571428,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:03:21Z",
+    "end_time": "2026-11-19T08:36:51Z",
+    "duration_minutes": 33.5,
+    "lat": 5.640306132352941,
+    "lon": -0.09339333823529412,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:21:21Z",
+    "end_time": "2026-11-19T09:45:51Z",
+    "duration_minutes": 24.5,
+    "lat": 5.635469020408163,
+    "lon": -0.2606228979591837,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T10:02:21Z",
+    "end_time": "2026-11-19T10:31:51Z",
+    "duration_minutes": 29.5,
+    "lat": 5.620993550000001,
+    "lon": -0.15108855,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:26:22Z",
+    "end_time": "2026-11-17T07:46:52Z",
+    "duration_minutes": 20.5,
+    "lat": 5.637592243902438,
+    "lon": -0.26456585365853663,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:07:22Z",
+    "end_time": "2026-11-17T08:32:52Z",
+    "duration_minutes": 25.5,
+    "lat": 5.5408898653846155,
+    "lon": -0.22440732692307688,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:57:52Z",
+    "end_time": "2026-11-17T09:27:22Z",
+    "duration_minutes": 29.5,
+    "lat": 5.573221644067798,
+    "lon": -0.1370624406779661,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:24:28Z",
+    "end_time": "2026-11-18T07:31:58Z",
+    "duration_minutes": 7.5,
+    "lat": 5.5821945625,
+    "lon": -0.26571437499999995,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:50:28Z",
+    "end_time": "2026-11-18T08:06:58Z",
+    "duration_minutes": 16.5,
+    "lat": 5.6313129687500005,
+    "lon": -0.31112850000000003,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:45:28Z",
+    "end_time": "2026-11-18T08:53:58Z",
+    "duration_minutes": 8.5,
+    "lat": 5.6453153333333335,
+    "lon": -0.20690894444444444,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T06:59:45Z",
+    "end_time": "2026-11-19T07:27:15Z",
+    "duration_minutes": 27.5,
+    "lat": 5.583732709090907,
+    "lon": -0.10707765454545452,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:32:45Z",
+    "end_time": "2026-11-19T07:56:15Z",
+    "duration_minutes": 23.5,
+    "lat": 5.560415687500001,
+    "lon": -0.07702891666666666,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:31:45Z",
+    "end_time": "2026-11-19T09:02:15Z",
+    "duration_minutes": 30.5,
+    "lat": 5.617419237288137,
+    "lon": -0.21728103389830514,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:20:15Z",
+    "end_time": "2026-11-19T09:52:45Z",
+    "duration_minutes": 32.5,
+    "lat": 5.574559296875001,
+    "lon": -0.29234582812499993,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:09:23Z",
+    "end_time": "2026-11-17T07:17:53Z",
+    "duration_minutes": 8.5,
+    "lat": 5.613366764705882,
+    "lon": -0.0519624705882353,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:47:53Z",
+    "end_time": "2026-11-17T08:22:23Z",
+    "duration_minutes": 34.5,
+    "lat": 5.560814565217391,
+    "lon": -0.2451934492753624,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:34:53Z",
+    "end_time": "2026-11-17T09:02:23Z",
+    "duration_minutes": 27.5,
+    "lat": 5.545082499999999,
+    "lon": -0.3147417962962964,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:12:50Z",
+    "end_time": "2026-11-18T07:45:20Z",
+    "duration_minutes": 32.5,
+    "lat": 5.638378476923077,
+    "lon": -0.2393072,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:27:50Z",
+    "end_time": "2026-11-18T08:51:20Z",
+    "duration_minutes": 23.5,
+    "lat": 5.539807041666666,
+    "lon": -0.13334177083333335,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:28:50Z",
+    "end_time": "2026-11-18T09:54:20Z",
+    "duration_minutes": 25.5,
+    "lat": 5.664166923076921,
+    "lon": -0.30305113461538463,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:22:18Z",
+    "end_time": "2026-11-19T07:51:48Z",
+    "duration_minutes": 29.5,
+    "lat": 5.5896860833333335,
+    "lon": -0.2525211666666667,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:58:48Z",
+    "end_time": "2026-11-19T08:28:18Z",
+    "duration_minutes": 29.5,
+    "lat": 5.574416745762709,
+    "lon": -0.2953791186440678,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:47:18Z",
+    "end_time": "2026-11-19T08:56:18Z",
+    "duration_minutes": 9,
+    "lat": 5.643373947368421,
+    "lon": -0.18545084210526314,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:13:48Z",
+    "end_time": "2026-11-19T09:46:18Z",
+    "duration_minutes": 32.5,
+    "lat": 5.5603297384615376,
+    "lon": -0.2182344153846154,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:01:10Z",
+    "end_time": "2026-11-17T07:06:40Z",
+    "duration_minutes": 5.5,
+    "lat": 5.634743833333332,
+    "lon": -0.20197949999999998,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:25:40Z",
+    "end_time": "2026-11-17T07:55:10Z",
+    "duration_minutes": 29.5,
+    "lat": 5.596432842105263,
+    "lon": -0.12285505263157896,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:53:40Z",
+    "end_time": "2026-11-17T09:25:10Z",
+    "duration_minutes": 31.5,
+    "lat": 5.662699421875001,
+    "lon": -0.27219168749999995,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:07:47Z",
+    "end_time": "2026-11-19T07:16:17Z",
+    "duration_minutes": 8.5,
+    "lat": 5.6266366111111115,
+    "lon": -0.26652988888888884,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:46:47Z",
+    "end_time": "2026-11-19T07:59:17Z",
+    "duration_minutes": 12.5,
+    "lat": 5.577321153846155,
+    "lon": -0.07510469230769232,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:24:17Z",
+    "end_time": "2026-11-19T08:45:47Z",
+    "duration_minutes": 21.5,
+    "lat": 5.543307534883721,
+    "lon": -0.1663478837209302,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:30:18Z",
+    "end_time": "2026-11-17T07:54:48Z",
+    "duration_minutes": 24.5,
+    "lat": 5.5812876000000005,
+    "lon": -0.2282817999999999,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:56:48Z",
+    "end_time": "2026-11-17T08:10:18Z",
+    "duration_minutes": 13.5,
+    "lat": 5.580664555555556,
+    "lon": -0.21616140740740739,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:36:48Z",
+    "end_time": "2026-11-17T08:53:18Z",
+    "duration_minutes": 16.5,
+    "lat": 5.601479264705882,
+    "lon": -0.13795391176470587,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:56:48Z",
+    "end_time": "2026-11-17T09:26:18Z",
+    "duration_minutes": 29.5,
+    "lat": 5.615033199999999,
+    "lon": -0.12896879999999997,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:30:48Z",
+    "end_time": "2026-11-17T10:00:18Z",
+    "duration_minutes": 29.5,
+    "lat": 5.638371016666666,
+    "lon": -0.14408519999999997,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:16:18Z",
+    "end_time": "2026-11-17T10:48:48Z",
+    "duration_minutes": 32.5,
+    "lat": 5.561170415384615,
+    "lon": -0.19880036923076924,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:48:02Z",
+    "end_time": "2026-11-18T06:53:32Z",
+    "duration_minutes": 5.5,
+    "lat": 5.674644,
+    "lon": -0.06560866666666666,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:24:32Z",
+    "end_time": "2026-11-18T07:55:02Z",
+    "duration_minutes": 30.5,
+    "lat": 5.539784854838709,
+    "lon": -0.2292105161290322,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:17:02Z",
+    "end_time": "2026-11-18T08:39:32Z",
+    "duration_minutes": 22.5,
+    "lat": 5.54004491111111,
+    "lon": -0.08695555555555554,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:14:02Z",
+    "end_time": "2026-11-18T09:20:32Z",
+    "duration_minutes": 6.5,
+    "lat": 5.618785928571429,
+    "lon": -0.27148557142857144,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:33:32Z",
+    "end_time": "2026-11-18T09:44:02Z",
+    "duration_minutes": 10.5,
+    "lat": 5.654577590909091,
+    "lon": -0.28704090909090907,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:57:32Z",
+    "end_time": "2026-11-18T10:29:02Z",
+    "duration_minutes": 31.5,
+    "lat": 5.601159666666667,
+    "lon": -0.2265524761904762,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:36:43Z",
+    "end_time": "2026-11-19T07:50:13Z",
+    "duration_minutes": 13.5,
+    "lat": 5.693957714285714,
+    "lon": -0.21843478571428573,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:09:43Z",
+    "end_time": "2026-11-19T08:29:13Z",
+    "duration_minutes": 19.5,
+    "lat": 5.672291024999999,
+    "lon": -0.11290185000000001,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:14:43Z",
+    "end_time": "2026-11-19T09:23:13Z",
+    "duration_minutes": 8.5,
+    "lat": 5.540051444444444,
+    "lon": -0.11309533333333333,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:46:13Z",
+    "end_time": "2026-11-19T10:01:43Z",
+    "duration_minutes": 15.5,
+    "lat": 5.614635781249999,
+    "lon": -0.13940918750000003,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T10:52:13Z",
+    "end_time": "2026-11-19T11:09:43Z",
+    "duration_minutes": 17.5,
+    "lat": 5.658321914285715,
+    "lon": -0.3046149999999999,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T06:53:58Z",
+    "end_time": "2026-11-17T07:16:28Z",
+    "duration_minutes": 22.5,
+    "lat": 5.680705266666668,
+    "lon": -0.22533137777777776,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:48:58Z",
+    "end_time": "2026-11-17T08:02:28Z",
+    "duration_minutes": 13.5,
+    "lat": 5.562909464285714,
+    "lon": -0.31446710714285714,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:47:28Z",
+    "end_time": "2026-11-17T09:14:58Z",
+    "duration_minutes": 27.5,
+    "lat": 5.687906357142858,
+    "lon": -0.05469975000000001,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:58:38Z",
+    "end_time": "2026-11-18T07:09:08Z",
+    "duration_minutes": 10.5,
+    "lat": 5.569633181818183,
+    "lon": -0.16876154545454544,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:21:08Z",
+    "end_time": "2026-11-18T07:30:38Z",
+    "duration_minutes": 9.5,
+    "lat": 5.60114375,
+    "lon": -0.22338680000000002,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:58:38Z",
+    "end_time": "2026-11-18T08:30:08Z",
+    "duration_minutes": 31.5,
+    "lat": 5.616430693548386,
+    "lon": -0.0973722741935484,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:50:38Z",
+    "end_time": "2026-11-18T09:25:08Z",
+    "duration_minutes": 34.5,
+    "lat": 5.656793128571429,
+    "lon": -0.2148172571428571,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:33:38Z",
+    "end_time": "2026-11-18T09:55:08Z",
+    "duration_minutes": 21.5,
+    "lat": 5.679300545454546,
+    "lon": -0.16643722727272728,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:01:41Z",
+    "end_time": "2026-11-19T07:07:11Z",
+    "duration_minutes": 5.5,
+    "lat": 5.6671164166666665,
+    "lon": -0.12476599999999999,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:31:41Z",
+    "end_time": "2026-11-19T08:02:11Z",
+    "duration_minutes": 30.5,
+    "lat": 5.667728451612906,
+    "lon": -0.23629630645161287,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:14:11Z",
+    "end_time": "2026-11-19T08:22:41Z",
+    "duration_minutes": 8.5,
+    "lat": 5.668683111111111,
+    "lon": -0.29183672222222223,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:42:41Z",
+    "end_time": "2026-11-19T09:15:11Z",
+    "duration_minutes": 32.5,
+    "lat": 5.659541184615385,
+    "lon": -0.15612372307692304,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:34:48Z",
+    "end_time": "2026-11-17T07:55:18Z",
+    "duration_minutes": 20.5,
+    "lat": 5.699264975609757,
+    "lon": -0.08929939024390246,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:09:48Z",
+    "end_time": "2026-11-17T08:28:18Z",
+    "duration_minutes": 18.5,
+    "lat": 5.628802736842106,
+    "lon": -0.0621285789473684,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:44:48Z",
+    "end_time": "2026-11-17T09:19:18Z",
+    "duration_minutes": 34.5,
+    "lat": 5.648486014285716,
+    "lon": -0.1633632,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:34:18Z",
+    "end_time": "2026-11-17T09:55:48Z",
+    "duration_minutes": 21.5,
+    "lat": 5.589444302325581,
+    "lon": -0.0953943023255814,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:24:48Z",
+    "end_time": "2026-11-17T10:59:18Z",
+    "duration_minutes": 34.5,
+    "lat": 5.639154314285714,
+    "lon": -0.2593543571428571,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T11:40:48Z",
+    "end_time": "2026-11-17T12:00:18Z",
+    "duration_minutes": 19.5,
+    "lat": 5.643378499999999,
+    "lon": -0.052988450000000006,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:05:51Z",
+    "end_time": "2026-11-18T07:11:21Z",
+    "duration_minutes": 5.5,
+    "lat": 5.604912583333334,
+    "lon": -0.10836083333333334,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:22:51Z",
+    "end_time": "2026-11-18T07:34:21Z",
+    "duration_minutes": 11.5,
+    "lat": 5.553730333333334,
+    "lon": -0.07201804166666666,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:09:21Z",
+    "end_time": "2026-11-18T08:37:51Z",
+    "duration_minutes": 28.5,
+    "lat": 5.65148454385965,
+    "lon": -0.10619499999999998,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:44:51Z",
+    "end_time": "2026-11-18T09:01:21Z",
+    "duration_minutes": 16.5,
+    "lat": 5.616584441176469,
+    "lon": -0.13252344117647058,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:19:51Z",
+    "end_time": "2026-11-18T09:52:21Z",
+    "duration_minutes": 32.5,
+    "lat": 5.65058936923077,
+    "lon": -0.05730746153846155,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:45:51Z",
+    "end_time": "2026-11-18T11:06:21Z",
+    "duration_minutes": 20.5,
+    "lat": 5.674145452380953,
+    "lon": -0.21715554761904757,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:15:36Z",
+    "end_time": "2026-11-19T07:42:06Z",
+    "duration_minutes": 26.5,
+    "lat": 5.649334188679245,
+    "lon": -0.099019679245283,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:04:36Z",
+    "end_time": "2026-11-19T08:14:06Z",
+    "duration_minutes": 9.5,
+    "lat": 5.6022759,
+    "lon": -0.20996450000000003,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:20:36Z",
+    "end_time": "2026-11-19T08:37:06Z",
+    "duration_minutes": 16.5,
+    "lat": 5.573866588235295,
+    "lon": -0.22058638235294123,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:10:06Z",
+    "end_time": "2026-11-19T09:34:36Z",
+    "duration_minutes": 24.5,
+    "lat": 5.6137557199999994,
+    "lon": -0.07289257999999997,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:45:28Z",
+    "end_time": "2026-11-17T07:57:58Z",
+    "duration_minutes": 12.5,
+    "lat": 5.637545038461538,
+    "lon": -0.07045492307692307,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:04:28Z",
+    "end_time": "2026-11-17T08:09:58Z",
+    "duration_minutes": 5.5,
+    "lat": 5.658042583333334,
+    "lon": -0.05366233333333332,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:11:58Z",
+    "end_time": "2026-11-17T09:17:28Z",
+    "duration_minutes": 5.5,
+    "lat": 5.58856175,
+    "lon": -0.30049766666666666,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:57:17Z",
+    "end_time": "2026-11-18T07:02:47Z",
+    "duration_minutes": 5.5,
+    "lat": 5.680686000000001,
+    "lon": -0.10975774999999999,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:10:17Z",
+    "end_time": "2026-11-18T08:24:47Z",
+    "duration_minutes": 14.5,
+    "lat": 5.659458103448276,
+    "lon": -0.2924124827586207,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:42:47Z",
+    "end_time": "2026-11-18T08:49:17Z",
+    "duration_minutes": 6.5,
+    "lat": 5.581493142857143,
+    "lon": -0.22065435714285714,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:08:38Z",
+    "end_time": "2026-11-19T07:43:08Z",
+    "duration_minutes": 34.5,
+    "lat": 5.556692714285714,
+    "lon": -0.1697434571428571,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:03:38Z",
+    "end_time": "2026-11-19T08:32:08Z",
+    "duration_minutes": 28.5,
+    "lat": 5.558507362068964,
+    "lon": -0.2718753103448276,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:14:08Z",
+    "end_time": "2026-11-19T09:45:38Z",
+    "duration_minutes": 31.5,
+    "lat": 5.657074650793653,
+    "lon": -0.0648703650793651,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T10:48:08Z",
+    "end_time": "2026-11-19T11:07:38Z",
+    "duration_minutes": 19.5,
+    "lat": 5.553622924999999,
+    "lon": -0.2697315250000001,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T06:40:36Z",
+    "end_time": "2026-11-17T06:51:06Z",
+    "duration_minutes": 10.5,
+    "lat": 5.5963709545454545,
+    "lon": -0.19914168181818181,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:22:06Z",
+    "end_time": "2026-11-17T07:28:36Z",
+    "duration_minutes": 6.5,
+    "lat": 5.604029071428571,
+    "lon": -0.31279699999999994,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:20:06Z",
+    "end_time": "2026-11-17T08:49:36Z",
+    "duration_minutes": 29.5,
+    "lat": 5.603665683333334,
+    "lon": -0.13439575,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:09:24Z",
+    "end_time": "2026-11-18T07:35:54Z",
+    "duration_minutes": 26.5,
+    "lat": 5.6777749245283005,
+    "lon": -0.12088416981132079,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:48:24Z",
+    "end_time": "2026-11-18T08:22:54Z",
+    "duration_minutes": 34.5,
+    "lat": 5.697092585714287,
+    "lon": -0.18524111428571433,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:42:24Z",
+    "end_time": "2026-11-18T09:10:54Z",
+    "duration_minutes": 28.5,
+    "lat": 5.634340754385963,
+    "lon": -0.20818687719298248,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:04:21Z",
+    "end_time": "2026-11-19T07:10:51Z",
+    "duration_minutes": 6.5,
+    "lat": 5.687045785714285,
+    "lon": -0.3155732857142857,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:29:21Z",
+    "end_time": "2026-11-19T07:45:51Z",
+    "duration_minutes": 16.5,
+    "lat": 5.68073603125,
+    "lon": -0.22657359375,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:18:21Z",
+    "end_time": "2026-11-19T08:23:51Z",
+    "duration_minutes": 5.5,
+    "lat": 5.565899333333333,
+    "lon": -0.25844799999999996,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:15:33Z",
+    "end_time": "2026-11-17T07:34:03Z",
+    "duration_minutes": 18.5,
+    "lat": 5.68788994736842,
+    "lon": -0.2822772105263158,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:13:33Z",
+    "end_time": "2026-11-17T08:39:03Z",
+    "duration_minutes": 25.5,
+    "lat": 5.628146117647059,
+    "lon": -0.0633757843137255,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:14:33Z",
+    "end_time": "2026-11-17T09:46:03Z",
+    "duration_minutes": 31.5,
+    "lat": 5.6989451718750015,
+    "lon": -0.299231953125,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:19:33Z",
+    "end_time": "2026-11-17T10:26:03Z",
+    "duration_minutes": 6.5,
+    "lat": 5.620605846153846,
+    "lon": -0.2015360769230769,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:52:03Z",
+    "end_time": "2026-11-17T11:20:33Z",
+    "duration_minutes": 28.5,
+    "lat": 5.5406642982456145,
+    "lon": -0.22567791228070172,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T11:34:03Z",
+    "end_time": "2026-11-17T11:53:33Z",
+    "duration_minutes": 19.5,
+    "lat": 5.585420775000001,
+    "lon": -0.15812342499999998,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:43:05Z",
+    "end_time": "2026-11-18T07:06:35Z",
+    "duration_minutes": 23.5,
+    "lat": 5.593480083333334,
+    "lon": -0.24780404166666659,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:23:05Z",
+    "end_time": "2026-11-18T07:56:35Z",
+    "duration_minutes": 33.5,
+    "lat": 5.550878117647057,
+    "lon": -0.15224652941176472,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:25:35Z",
+    "end_time": "2026-11-18T08:45:05Z",
+    "duration_minutes": 19.5,
+    "lat": 5.658023076923078,
+    "lon": -0.13758492307692308,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:20:20Z",
+    "end_time": "2026-11-19T07:36:50Z",
+    "duration_minutes": 16.5,
+    "lat": 5.680723696969696,
+    "lon": -0.17091581818181817,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:59:50Z",
+    "end_time": "2026-11-19T08:07:20Z",
+    "duration_minutes": 7.5,
+    "lat": 5.662192214285715,
+    "lon": -0.26911635714285714,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:01:50Z",
+    "end_time": "2026-11-19T09:24:20Z",
+    "duration_minutes": 22.5,
+    "lat": 5.678492695652175,
+    "lon": -0.08912545652173912,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T10:36:20Z",
+    "end_time": "2026-11-19T10:44:50Z",
+    "duration_minutes": 8.5,
+    "lat": 5.664365055555554,
+    "lon": -0.2840263888888888,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T11:12:20Z",
+    "end_time": "2026-11-19T11:42:50Z",
+    "duration_minutes": 30.5,
+    "lat": 5.66129156451613,
+    "lon": -0.11639025806451614,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:08:58Z",
+    "end_time": "2026-11-17T07:21:28Z",
+    "duration_minutes": 12.5,
+    "lat": 5.6510430000000005,
+    "lon": -0.16223838461538462,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:38:58Z",
+    "end_time": "2026-11-17T07:58:28Z",
+    "duration_minutes": 19.5,
+    "lat": 5.5803967,
+    "lon": -0.25579075,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:14:58Z",
+    "end_time": "2026-11-17T08:20:28Z",
+    "duration_minutes": 5.5,
+    "lat": 5.683405454545454,
+    "lon": -0.2459756363636364,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:49:28Z",
+    "end_time": "2026-11-17T09:13:28Z",
+    "duration_minutes": 24,
+    "lat": 5.687956755102039,
+    "lon": -0.10527906122448977,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:42:58Z",
+    "end_time": "2026-11-17T10:07:28Z",
+    "duration_minutes": 24.5,
+    "lat": 5.547416571428573,
+    "lon": -0.25411530612244904,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:32:28Z",
+    "end_time": "2026-11-17T11:04:58Z",
+    "duration_minutes": 32.5,
+    "lat": 5.687265424242426,
+    "lon": -0.23080027272727272,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:09:45Z",
+    "end_time": "2026-11-18T07:39:15Z",
+    "duration_minutes": 29.5,
+    "lat": 5.5556141499999985,
+    "lon": -0.21422303333333337,
+    "zones": [
+      "Kaneshie service area",
+      "Makola Market (no stopping)"
+    ],
+    "in_own_depot_area": false,
+    "restricted": true
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:19:15Z",
+    "end_time": "2026-11-18T08:46:45Z",
+    "duration_minutes": 27.5,
+    "lat": 5.667638981818182,
+    "lon": -0.14303952727272723,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:03:45Z",
+    "end_time": "2026-11-18T09:25:15Z",
+    "duration_minutes": 21.5,
+    "lat": 5.581567090909091,
+    "lon": -0.19876509090909103,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:32:45Z",
+    "end_time": "2026-11-18T09:44:15Z",
+    "duration_minutes": 11.5,
+    "lat": 5.616756249999999,
+    "lon": -0.22314045833333332,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:15:44Z",
+    "end_time": "2026-11-19T07:48:14Z",
+    "duration_minutes": 32.5,
+    "lat": 5.669942815384617,
+    "lon": -0.23001516923076917,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:17:14Z",
+    "end_time": "2026-11-19T08:22:44Z",
+    "duration_minutes": 5.5,
+    "lat": 5.598653250000001,
+    "lon": -0.10560141666666668,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:06:14Z",
+    "end_time": "2026-11-19T09:20:44Z",
+    "duration_minutes": 14.5,
+    "lat": 5.6941793,
+    "lon": -0.25236763333333334,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:27:51Z",
+    "end_time": "2026-11-17T07:49:21Z",
+    "duration_minutes": 21.5,
+    "lat": 5.611368744186046,
+    "lon": -0.0858544418604651,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:45:21Z",
+    "end_time": "2026-11-17T09:01:51Z",
+    "duration_minutes": 16.5,
+    "lat": 5.591835205882353,
+    "lon": -0.26765241176470583,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:05:21Z",
+    "end_time": "2026-11-17T09:23:51Z",
+    "duration_minutes": 18.5,
+    "lat": 5.576312289473684,
+    "lon": -0.25129521052631576,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:50:51Z",
+    "end_time": "2026-11-17T10:10:21Z",
+    "duration_minutes": 19.5,
+    "lat": 5.609351487179486,
+    "lon": -0.11487102564102564,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:12:14Z",
+    "end_time": "2026-11-18T07:46:44Z",
+    "duration_minutes": 34.5,
+    "lat": 5.572904405797102,
+    "lon": -0.30745668115942015,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:17:14Z",
+    "end_time": "2026-11-18T08:37:44Z",
+    "duration_minutes": 20.5,
+    "lat": 5.694553666666666,
+    "lon": -0.18060097619047624,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:05:44Z",
+    "end_time": "2026-11-18T09:28:14Z",
+    "duration_minutes": 22.5,
+    "lat": 5.606172227272727,
+    "lon": -0.30736427272727274,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:13:14Z",
+    "end_time": "2026-11-18T10:37:44Z",
+    "duration_minutes": 24.5,
+    "lat": 5.546967520000001,
+    "lon": -0.07465304000000002,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T11:01:14Z",
+    "end_time": "2026-11-18T11:25:44Z",
+    "duration_minutes": 24.5,
+    "lat": 5.55098964,
+    "lon": -0.19390250000000006,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:07:00Z",
+    "end_time": "2026-11-19T07:30:30Z",
+    "duration_minutes": 23.5,
+    "lat": 5.542382104166666,
+    "lon": -0.29958675,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:37:30Z",
+    "end_time": "2026-11-19T07:55:00Z",
+    "duration_minutes": 17.5,
+    "lat": 5.580386882352941,
+    "lon": -0.31557564705882357,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:17:00Z",
+    "end_time": "2026-11-19T08:34:30Z",
+    "duration_minutes": 17.5,
+    "lat": 5.585486694444444,
+    "lon": -0.20291758333333332,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:13:00Z",
+    "end_time": "2026-11-19T09:46:30Z",
+    "duration_minutes": 33.5,
+    "lat": 5.622281735294116,
+    "lon": -0.05770238235294118,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:53:30Z",
+    "end_time": "2026-11-19T10:07:00Z",
+    "duration_minutes": 13.5,
+    "lat": 5.667477535714284,
+    "lon": -0.05874135714285715,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:07:59Z",
+    "end_time": "2026-11-17T07:21:29Z",
+    "duration_minutes": 13.5,
+    "lat": 5.591883392857143,
+    "lon": -0.2874926785714286,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:49:59Z",
+    "end_time": "2026-11-17T08:11:29Z",
+    "duration_minutes": 21.5,
+    "lat": 5.541407590909092,
+    "lon": -0.1561607954545455,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:46:29Z",
+    "end_time": "2026-11-17T09:20:59Z",
+    "duration_minutes": 34.5,
+    "lat": 5.648024657142859,
+    "lon": -0.13228487142857143,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:28:59Z",
+    "end_time": "2026-11-17T09:56:29Z",
+    "duration_minutes": 27.5,
+    "lat": 5.5973175818181815,
+    "lon": -0.1396115818181818,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:24:28Z",
+    "end_time": "2026-11-18T07:45:58Z",
+    "duration_minutes": 21.5,
+    "lat": 5.614100931818182,
+    "lon": -0.2135435,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:59:28Z",
+    "end_time": "2026-11-18T08:27:58Z",
+    "duration_minutes": 28.5,
+    "lat": 5.660397824561405,
+    "lon": -0.24150126315789483,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:36:58Z",
+    "end_time": "2026-11-18T08:44:28Z",
+    "duration_minutes": 7.5,
+    "lat": 5.671073562500001,
+    "lon": -0.198207125,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:01:58Z",
+    "end_time": "2026-11-18T09:27:28Z",
+    "duration_minutes": 25.5,
+    "lat": 5.676550326923078,
+    "lon": -0.2869321153846153,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:43:58Z",
+    "end_time": "2026-11-18T10:05:28Z",
+    "duration_minutes": 21.5,
+    "lat": 5.681065325581397,
+    "lon": -0.21611246511627905,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:24:28Z",
+    "end_time": "2026-11-18T10:56:58Z",
+    "duration_minutes": 32.5,
+    "lat": 5.682354863636366,
+    "lon": -0.12908122727272725,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:22:56Z",
+    "end_time": "2026-11-19T07:34:26Z",
+    "duration_minutes": 11.5,
+    "lat": 5.561132652173913,
+    "lon": -0.29038934782608694,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:41:26Z",
+    "end_time": "2026-11-19T08:03:56Z",
+    "duration_minutes": 22.5,
+    "lat": 5.608952217391305,
+    "lon": -0.2901434782608696,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:31:56Z",
+    "end_time": "2026-11-19T08:46:26Z",
+    "duration_minutes": 14.5,
+    "lat": 5.546417766666667,
+    "lon": -0.13945763333333341,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:03:56Z",
+    "end_time": "2026-11-19T09:21:26Z",
+    "duration_minutes": 17.5,
+    "lat": 5.660682055555558,
+    "lon": -0.10090708333333333,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:34:26Z",
+    "end_time": "2026-11-19T09:58:56Z",
+    "duration_minutes": 24.5,
+    "lat": 5.59085572,
+    "lon": -0.05692788000000002,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T06:50:54Z",
+    "end_time": "2026-11-17T07:14:24Z",
+    "duration_minutes": 23.5,
+    "lat": 5.624800553191491,
+    "lon": -0.09547017021276595,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:57:54Z",
+    "end_time": "2026-11-17T08:07:54Z",
+    "duration_minutes": 10,
+    "lat": 5.651247857142858,
+    "lon": -0.26843252380952387,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:06:24Z",
+    "end_time": "2026-11-17T09:30:54Z",
+    "duration_minutes": 24.5,
+    "lat": 5.644887080000001,
+    "lon": -0.10789140000000001,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:47:54Z",
+    "end_time": "2026-11-17T10:00:24Z",
+    "duration_minutes": 12.5,
+    "lat": 5.668136559999999,
+    "lon": -0.1900422,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:18:24Z",
+    "end_time": "2026-11-17T10:35:54Z",
+    "duration_minutes": 17.5,
+    "lat": 5.690129057142856,
+    "lon": -0.2344929428571429,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:20:17Z",
+    "end_time": "2026-11-18T07:48:47Z",
+    "duration_minutes": 28.5,
+    "lat": 5.681438456140349,
+    "lon": -0.26813647368421045,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:12:47Z",
+    "end_time": "2026-11-18T08:29:17Z",
+    "duration_minutes": 16.5,
+    "lat": 5.68358455882353,
+    "lon": -0.1936770588235294,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:34:47Z",
+    "end_time": "2026-11-18T08:47:17Z",
+    "duration_minutes": 12.5,
+    "lat": 5.6822240769230765,
+    "lon": -0.2252745384615384,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:12:47Z",
+    "end_time": "2026-11-18T09:20:17Z",
+    "duration_minutes": 7.5,
+    "lat": 5.6364996875,
+    "lon": -0.30308562499999997,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:12:31Z",
+    "end_time": "2026-11-19T07:25:01Z",
+    "duration_minutes": 12.5,
+    "lat": 5.558596807692309,
+    "lon": -0.23355888461538457,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:56:01Z",
+    "end_time": "2026-11-19T08:13:31Z",
+    "duration_minutes": 17.5,
+    "lat": 5.635443472222222,
+    "lon": -0.1352396388888889,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:32:31Z",
+    "end_time": "2026-11-19T08:54:01Z",
+    "duration_minutes": 21.5,
+    "lat": 5.629126704545454,
+    "lon": -0.2663119318181818,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:13:31Z",
+    "end_time": "2026-11-19T09:42:01Z",
+    "duration_minutes": 28.5,
+    "lat": 5.576174877192982,
+    "lon": -0.15288854385964906,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:58:01Z",
+    "end_time": "2026-11-19T10:28:31Z",
+    "duration_minutes": 30.5,
+    "lat": 5.630758622950819,
+    "lon": -0.23487777049180328,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T06:52:58Z",
+    "end_time": "2026-11-17T07:16:28Z",
+    "duration_minutes": 23.5,
+    "lat": 5.592044395833334,
+    "lon": -0.15549543749999997,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:39:58Z",
+    "end_time": "2026-11-17T07:55:28Z",
+    "duration_minutes": 15.5,
+    "lat": 5.674433774193548,
+    "lon": -0.26320835483870964,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:54:58Z",
+    "end_time": "2026-11-17T09:00:58Z",
+    "duration_minutes": 6,
+    "lat": 5.541381416666667,
+    "lon": -0.14954175,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:50:58Z",
+    "end_time": "2026-11-17T09:56:28Z",
+    "duration_minutes": 5.5,
+    "lat": 5.683984727272728,
+    "lon": -0.13688263636363637,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:56:58Z",
+    "end_time": "2026-11-17T11:02:28Z",
+    "duration_minutes": 5.5,
+    "lat": 5.567682166666668,
+    "lon": -0.28839575,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T12:03:28Z",
+    "end_time": "2026-11-17T12:20:58Z",
+    "duration_minutes": 17.5,
+    "lat": 5.67084382857143,
+    "lon": -0.10508628571428569,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:09:37Z",
+    "end_time": "2026-11-18T07:18:07Z",
+    "duration_minutes": 8.5,
+    "lat": 5.6136415555555566,
+    "lon": -0.24361294444444445,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:40:07Z",
+    "end_time": "2026-11-18T07:57:37Z",
+    "duration_minutes": 17.5,
+    "lat": 5.6263387499999995,
+    "lon": -0.09825769444444447,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:20:07Z",
+    "end_time": "2026-11-18T08:46:37Z",
+    "duration_minutes": 26.5,
+    "lat": 5.5415900925925925,
+    "lon": -0.1751759074074074,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:10:37Z",
+    "end_time": "2026-11-18T09:24:07Z",
+    "duration_minutes": 13.5,
+    "lat": 5.688401999999999,
+    "lon": -0.17802121428571427,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T06:56:28Z",
+    "end_time": "2026-11-19T07:29:58Z",
+    "duration_minutes": 33.5,
+    "lat": 5.609905397058825,
+    "lon": -0.19319424999999996,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:47:58Z",
+    "end_time": "2026-11-19T08:18:28Z",
+    "duration_minutes": 30.5,
+    "lat": 5.556266951612904,
+    "lon": -0.2370505967741936,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:16:28Z",
+    "end_time": "2026-11-19T09:47:58Z",
+    "duration_minutes": 31.5,
+    "lat": 5.642300203125002,
+    "lon": -0.10030723437499998,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T10:24:28Z",
+    "end_time": "2026-11-19T10:53:58Z",
+    "duration_minutes": 29.5,
+    "lat": 5.620004083333336,
+    "lon": -0.26223516666666663,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:10:15Z",
+    "end_time": "2026-11-17T07:27:45Z",
+    "duration_minutes": 17.5,
+    "lat": 5.665492722222222,
+    "lon": -0.28962038888888886,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:18:15Z",
+    "end_time": "2026-11-17T08:50:45Z",
+    "duration_minutes": 32.5,
+    "lat": 5.593101338461539,
+    "lon": -0.0650094769230769,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:10:45Z",
+    "end_time": "2026-11-17T09:40:15Z",
+    "duration_minutes": 29.5,
+    "lat": 5.542899542372881,
+    "lon": -0.1836222711864407,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:24:45Z",
+    "end_time": "2026-11-17T10:41:15Z",
+    "duration_minutes": 16.5,
+    "lat": 5.607802235294118,
+    "lon": -0.29966876470588244,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:24:17Z",
+    "end_time": "2026-11-18T07:40:47Z",
+    "duration_minutes": 16.5,
+    "lat": 5.641744000000001,
+    "lon": -0.08439939393939394,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:10:17Z",
+    "end_time": "2026-11-18T08:19:47Z",
+    "duration_minutes": 9.5,
+    "lat": 5.663214052631577,
+    "lon": -0.2105878947368421,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:32:17Z",
+    "end_time": "2026-11-18T08:40:47Z",
+    "duration_minutes": 8.5,
+    "lat": 5.611543444444444,
+    "lon": -0.15545844444444443,
+    "zones": [
+      "Kotoka Airport perimeter"
+    ],
+    "in_own_depot_area": false,
+    "restricted": true
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:52:47Z",
+    "end_time": "2026-11-18T09:16:17Z",
+    "duration_minutes": 23.5,
+    "lat": 5.585720893617021,
+    "lon": -0.11336376595744684,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:42:47Z",
+    "end_time": "2026-11-18T09:50:17Z",
+    "duration_minutes": 7.5,
+    "lat": 5.597403733333333,
+    "lon": -0.225647,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T06:45:03Z",
+    "end_time": "2026-11-19T06:51:33Z",
+    "duration_minutes": 6.5,
+    "lat": 5.542493384615383,
+    "lon": -0.2257303846153846,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:07:03Z",
+    "end_time": "2026-11-19T07:41:33Z",
+    "duration_minutes": 34.5,
+    "lat": 5.603670285714285,
+    "lon": -0.18674377142857138,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:19:03Z",
+    "end_time": "2026-11-19T08:37:33Z",
+    "duration_minutes": 18.5,
+    "lat": 5.686905421052632,
+    "lon": -0.12120586842105259,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T06:44:05Z",
+    "end_time": "2026-11-17T06:54:35Z",
+    "duration_minutes": 10.5,
+    "lat": 5.5776663636363635,
+    "lon": -0.259007,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:30:05Z",
+    "end_time": "2026-11-17T07:49:35Z",
+    "duration_minutes": 19.5,
+    "lat": 5.69710965,
+    "lon": -0.20548824999999998,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:05:05Z",
+    "end_time": "2026-11-17T08:14:35Z",
+    "duration_minutes": 9.5,
+    "lat": 5.622390315789474,
+    "lon": -0.13612215789473683,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:28:05Z",
+    "end_time": "2026-11-17T08:51:35Z",
+    "duration_minutes": 23.5,
+    "lat": 5.689158510638299,
+    "lon": -0.17367129787234042,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:16:05Z",
+    "end_time": "2026-11-17T09:34:35Z",
+    "duration_minutes": 18.5,
+    "lat": 5.630285894736844,
+    "lon": -0.24215626315789474,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:59:35Z",
+    "end_time": "2026-11-17T10:30:05Z",
+    "duration_minutes": 30.5,
+    "lat": 5.64586822580645,
+    "lon": -0.07216008064516131,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:14:32Z",
+    "end_time": "2026-11-18T07:20:02Z",
+    "duration_minutes": 5.5,
+    "lat": 5.631580083333333,
+    "lon": -0.20720141666666667,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:03:32Z",
+    "end_time": "2026-11-18T08:24:02Z",
+    "duration_minutes": 20.5,
+    "lat": 5.676271880952381,
+    "lon": -0.05453161904761905,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:36:32Z",
+    "end_time": "2026-11-18T08:55:02Z",
+    "duration_minutes": 18.5,
+    "lat": 5.653696394736841,
+    "lon": -0.12559684210526315,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:26:32Z",
+    "end_time": "2026-11-18T09:38:02Z",
+    "duration_minutes": 11.5,
+    "lat": 5.676661695652174,
+    "lon": -0.3006387391304348,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T06:36:45Z",
+    "end_time": "2026-11-19T07:08:15Z",
+    "duration_minutes": 31.5,
+    "lat": 5.55499819047619,
+    "lon": -0.21379619047619056,
+    "zones": [
+      "Kaneshie service area",
+      "Makola Market (no stopping)"
+    ],
+    "in_own_depot_area": false,
+    "restricted": true
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:29:45Z",
+    "end_time": "2026-11-19T07:41:15Z",
+    "duration_minutes": 11.5,
+    "lat": 5.6529807391304345,
+    "lon": -0.1711667391304348,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:51:15Z",
+    "end_time": "2026-11-19T08:11:45Z",
+    "duration_minutes": 20.5,
+    "lat": 5.60961423809524,
+    "lon": -0.1842166428571429,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:33:45Z",
+    "end_time": "2026-11-19T08:58:15Z",
+    "duration_minutes": 24.5,
+    "lat": 5.692495836734694,
+    "lon": -0.28991434693877555,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:05:15Z",
+    "end_time": "2026-11-19T09:26:45Z",
+    "duration_minutes": 21.5,
+    "lat": 5.6586624545454525,
+    "lon": -0.3078272954545454,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:12:48Z",
+    "end_time": "2026-11-17T07:29:18Z",
+    "duration_minutes": 16.5,
+    "lat": 5.549152911764705,
+    "lon": -0.1880363235294118,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:08:18Z",
+    "end_time": "2026-11-17T08:37:48Z",
+    "duration_minutes": 29.5,
+    "lat": 5.6591037333333345,
+    "lon": -0.2700622166666667,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:27:18Z",
+    "end_time": "2026-11-17T09:48:48Z",
+    "duration_minutes": 21.5,
+    "lat": 5.6203299318181825,
+    "lon": -0.10934497727272725,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:30:18Z",
+    "end_time": "2026-11-17T11:00:48Z",
+    "duration_minutes": 30.5,
+    "lat": 5.615638999999999,
+    "lon": -0.31537520967741933,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T12:12:18Z",
+    "end_time": "2026-11-17T12:38:48Z",
+    "duration_minutes": 26.5,
+    "lat": 5.586795433962264,
+    "lon": -0.06024820754716981,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T12:50:18Z",
+    "end_time": "2026-11-17T13:21:48Z",
+    "duration_minutes": 31.5,
+    "lat": 5.649412269841268,
+    "lon": -0.053294571428571434,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:34:54Z",
+    "end_time": "2026-11-18T08:06:24Z",
+    "duration_minutes": 31.5,
+    "lat": 5.591731171875001,
+    "lon": -0.307438484375,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:46:24Z",
+    "end_time": "2026-11-18T09:16:54Z",
+    "duration_minutes": 30.5,
+    "lat": 5.565945290322582,
+    "lon": -0.14197611290322584,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:48:24Z",
+    "end_time": "2026-11-18T10:04:54Z",
+    "duration_minutes": 16.5,
+    "lat": 5.650911176470589,
+    "lon": -0.2870537941176471,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:26:24Z",
+    "end_time": "2026-11-18T10:31:54Z",
+    "duration_minutes": 5.5,
+    "lat": 5.565690666666666,
+    "lon": -0.20787908333333335,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:56:24Z",
+    "end_time": "2026-11-18T11:28:54Z",
+    "duration_minutes": 32.5,
+    "lat": 5.558122000000001,
+    "lon": -0.2869684923076923,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T11:47:54Z",
+    "end_time": "2026-11-18T11:53:24Z",
+    "duration_minutes": 5.5,
+    "lat": 5.590023833333334,
+    "lon": -0.16626191666666668,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:05:10Z",
+    "end_time": "2026-11-19T07:20:40Z",
+    "duration_minutes": 15.5,
+    "lat": 5.694562129032259,
+    "lon": -0.2976209354838709,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:52:10Z",
+    "end_time": "2026-11-19T08:23:40Z",
+    "duration_minutes": 31.5,
+    "lat": 5.667717859374998,
+    "lon": -0.07753012500000002,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:56:10Z",
+    "end_time": "2026-11-19T09:13:40Z",
+    "duration_minutes": 17.5,
+    "lat": 5.5983739166666675,
+    "lon": -0.2031221111111111,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:41:10Z",
+    "end_time": "2026-11-19T09:51:40Z",
+    "duration_minutes": 10.5,
+    "lat": 5.586908363636362,
+    "lon": -0.059480000000000005,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:04:59Z",
+    "end_time": "2026-11-17T07:13:29Z",
+    "duration_minutes": 8.5,
+    "lat": 5.543339277777779,
+    "lon": -0.09027638888888889,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:41:59Z",
+    "end_time": "2026-11-17T08:09:29Z",
+    "duration_minutes": 27.5,
+    "lat": 5.5435273928571425,
+    "lon": -0.2832619107142857,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:30:29Z",
+    "end_time": "2026-11-17T08:50:59Z",
+    "duration_minutes": 20.5,
+    "lat": 5.598046071428572,
+    "lon": -0.15204145238095237,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:22:18Z",
+    "end_time": "2026-11-18T07:33:48Z",
+    "duration_minutes": 11.5,
+    "lat": 5.578860333333334,
+    "lon": -0.1835175416666667,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:49:18Z",
+    "end_time": "2026-11-18T08:00:48Z",
+    "duration_minutes": 11.5,
+    "lat": 5.685181291666666,
+    "lon": -0.14308816666666666,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:31:48Z",
+    "end_time": "2026-11-18T08:54:18Z",
+    "duration_minutes": 22.5,
+    "lat": 5.576273022222221,
+    "lon": -0.09439975555555559,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:31:48Z",
+    "end_time": "2026-11-18T09:51:18Z",
+    "duration_minutes": 19.5,
+    "lat": 5.697379225000002,
+    "lon": -0.22884814999999997,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:42:18Z",
+    "end_time": "2026-11-18T11:05:18Z",
+    "duration_minutes": 23,
+    "lat": 5.584116829787235,
+    "lon": -0.12618127659574468,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T06:44:49Z",
+    "end_time": "2026-11-19T06:58:19Z",
+    "duration_minutes": 13.5,
+    "lat": 5.622022392857143,
+    "lon": -0.09940535714285716,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:27:49Z",
+    "end_time": "2026-11-19T07:42:19Z",
+    "duration_minutes": 14.5,
+    "lat": 5.613085,
+    "lon": -0.2621832666666667,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:51:19Z",
+    "end_time": "2026-11-19T08:17:49Z",
+    "duration_minutes": 26.5,
+    "lat": 5.554969222222223,
+    "lon": -0.24244853703703712,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:00:28Z",
+    "end_time": "2026-11-17T07:28:58Z",
+    "duration_minutes": 28.5,
+    "lat": 5.609022568965517,
+    "lon": -0.17607948275862062,
+    "zones": [
+      "Kotoka Airport perimeter"
+    ],
+    "in_own_depot_area": false,
+    "restricted": true
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:43:58Z",
+    "end_time": "2026-11-17T08:05:28Z",
+    "duration_minutes": 21.5,
+    "lat": 5.6647179090909106,
+    "lon": -0.20344438636363638,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:36:28Z",
+    "end_time": "2026-11-17T08:51:58Z",
+    "duration_minutes": 15.5,
+    "lat": 5.58843975,
+    "lon": -0.05320253125,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:04:58Z",
+    "end_time": "2026-11-17T09:38:28Z",
+    "duration_minutes": 33.5,
+    "lat": 5.572936181818181,
+    "lon": -0.12431031818181815,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:54:28Z",
+    "end_time": "2026-11-17T10:14:28Z",
+    "duration_minutes": 20,
+    "lat": 5.624511374999999,
+    "lon": -0.117621025,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:05:20Z",
+    "end_time": "2026-11-18T07:17:50Z",
+    "duration_minutes": 12.5,
+    "lat": 5.573005653846153,
+    "lon": -0.09757784615384615,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:10:20Z",
+    "end_time": "2026-11-18T08:27:50Z",
+    "duration_minutes": 17.5,
+    "lat": 5.6661180571428575,
+    "lon": -0.26199017142857145,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:41:20Z",
+    "end_time": "2026-11-18T09:11:50Z",
+    "duration_minutes": 30.5,
+    "lat": 5.608837327868853,
+    "lon": -0.31605847540983606,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:57:20Z",
+    "end_time": "2026-11-18T10:03:50Z",
+    "duration_minutes": 6.5,
+    "lat": 5.6355185714285705,
+    "lon": -0.12287957142857144,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:10:20Z",
+    "end_time": "2026-11-18T10:30:50Z",
+    "duration_minutes": 20.5,
+    "lat": 5.602834476190476,
+    "lon": -0.1137339761904762,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:45:50Z",
+    "end_time": "2026-11-18T11:10:20Z",
+    "duration_minutes": 24.5,
+    "lat": 5.6979224399999975,
+    "lon": -0.10568370000000003,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T06:42:04Z",
+    "end_time": "2026-11-19T06:56:34Z",
+    "duration_minutes": 14.5,
+    "lat": 5.6211530000000005,
+    "lon": -0.2687698620689655,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:14:04Z",
+    "end_time": "2026-11-19T07:43:34Z",
+    "duration_minutes": 29.5,
+    "lat": 5.5413788166666675,
+    "lon": -0.24618551666666671,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:14:04Z",
+    "end_time": "2026-11-19T08:22:34Z",
+    "duration_minutes": 8.5,
+    "lat": 5.70592538888889,
+    "lon": -0.1368708888888889,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:57:34Z",
+    "end_time": "2026-11-19T09:20:04Z",
+    "duration_minutes": 22.5,
+    "lat": 5.651566282608695,
+    "lon": -0.2907199782608696,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:13:05Z",
+    "end_time": "2026-11-17T07:27:35Z",
+    "duration_minutes": 14.5,
+    "lat": 5.548803433333333,
+    "lon": -0.0952103,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:55:35Z",
+    "end_time": "2026-11-17T08:05:05Z",
+    "duration_minutes": 9.5,
+    "lat": 5.589583349999999,
+    "lon": -0.28269375,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:18:05Z",
+    "end_time": "2026-11-17T08:48:35Z",
+    "duration_minutes": 30.5,
+    "lat": 5.602373524590165,
+    "lon": -0.23411665573770493,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:58:05Z",
+    "end_time": "2026-11-17T09:10:35Z",
+    "duration_minutes": 12.5,
+    "lat": 5.599173346153846,
+    "lon": -0.2827266923076924,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:12:05Z",
+    "end_time": "2026-11-17T10:23:35Z",
+    "duration_minutes": 11.5,
+    "lat": 5.58648443478261,
+    "lon": -0.07450878260869565,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:24:37Z",
+    "end_time": "2026-11-18T07:30:07Z",
+    "duration_minutes": 5.5,
+    "lat": 5.579155363636364,
+    "lon": -0.3133502727272728,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:14:37Z",
+    "end_time": "2026-11-18T08:31:07Z",
+    "duration_minutes": 16.5,
+    "lat": 5.674113088235295,
+    "lon": -0.06669017647058824,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:36:07Z",
+    "end_time": "2026-11-18T10:08:37Z",
+    "duration_minutes": 32.5,
+    "lat": 5.562720461538461,
+    "lon": -0.2040969846153846,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T10:20:07Z",
+    "end_time": "2026-11-18T10:39:37Z",
+    "duration_minutes": 19.5,
+    "lat": 5.582297900000001,
+    "lon": -0.14377895000000002,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:05:28Z",
+    "end_time": "2026-11-19T07:24:58Z",
+    "duration_minutes": 19.5,
+    "lat": 5.584599947368421,
+    "lon": -0.17814671052631587,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:11:28Z",
+    "end_time": "2026-11-19T08:22:58Z",
+    "duration_minutes": 11.5,
+    "lat": 5.684953083333332,
+    "lon": -0.059481833333333345,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:00:28Z",
+    "end_time": "2026-11-19T09:05:58Z",
+    "duration_minutes": 5.5,
+    "lat": 5.559155083333334,
+    "lon": -0.2493795833333333,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T06:44:28Z",
+    "end_time": "2026-11-17T07:06:58Z",
+    "duration_minutes": 22.5,
+    "lat": 5.697724521739129,
+    "lon": -0.07714210869565216,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:49:58Z",
+    "end_time": "2026-11-17T08:15:28Z",
+    "duration_minutes": 25.5,
+    "lat": 5.551178399999999,
+    "lon": -0.12955551999999998,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:35:28Z",
+    "end_time": "2026-11-17T08:53:58Z",
+    "duration_minutes": 18.5,
+    "lat": 5.618123736842107,
+    "lon": -0.060852526315789475,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:08:58Z",
+    "end_time": "2026-11-17T09:41:28Z",
+    "duration_minutes": 32.5,
+    "lat": 5.55695846969697,
+    "lon": -0.10457533333333328,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:44:14Z",
+    "end_time": "2026-11-18T07:01:44Z",
+    "duration_minutes": 17.5,
+    "lat": 5.684932828571428,
+    "lon": -0.16802448571428577,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:12:14Z",
+    "end_time": "2026-11-18T07:35:44Z",
+    "duration_minutes": 23.5,
+    "lat": 5.67610647826087,
+    "lon": -0.10849326086956523,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:01:44Z",
+    "end_time": "2026-11-18T08:30:14Z",
+    "duration_minutes": 28.5,
+    "lat": 5.5617762241379305,
+    "lon": -0.13129322413793104,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:00:44Z",
+    "end_time": "2026-11-18T09:23:14Z",
+    "duration_minutes": 22.5,
+    "lat": 5.636489599999999,
+    "lon": -0.2541114666666667,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:31:14Z",
+    "end_time": "2026-11-18T10:00:44Z",
+    "duration_minutes": 29.5,
+    "lat": 5.659916683333334,
+    "lon": -0.22143238333333326,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:20:35Z",
+    "end_time": "2026-11-19T07:40:05Z",
+    "duration_minutes": 19.5,
+    "lat": 5.658879700000002,
+    "lon": -0.28021147500000004,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:51:05Z",
+    "end_time": "2026-11-19T08:11:35Z",
+    "duration_minutes": 20.5,
+    "lat": 5.613106243902437,
+    "lon": -0.2799697073170732,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:36:05Z",
+    "end_time": "2026-11-19T09:02:35Z",
+    "duration_minutes": 26.5,
+    "lat": 5.646502461538461,
+    "lon": -0.11864073076923075,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:12:00Z",
+    "end_time": "2026-11-17T07:43:30Z",
+    "duration_minutes": 31.5,
+    "lat": 5.613948656250001,
+    "lon": -0.25536775000000006,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:02:00Z",
+    "end_time": "2026-11-17T08:33:30Z",
+    "duration_minutes": 31.5,
+    "lat": 5.684019968750001,
+    "lon": -0.21514365624999998,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:48:30Z",
+    "end_time": "2026-11-17T09:21:00Z",
+    "duration_minutes": 32.5,
+    "lat": 5.6201951060606055,
+    "lon": -0.2091147121212122,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:37:49Z",
+    "end_time": "2026-11-18T06:53:19Z",
+    "duration_minutes": 15.5,
+    "lat": 5.590273656250001,
+    "lon": -0.26939228125,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:27:49Z",
+    "end_time": "2026-11-18T08:02:19Z",
+    "duration_minutes": 34.5,
+    "lat": 5.639876771428573,
+    "lon": -0.14388854285714284,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:36:49Z",
+    "end_time": "2026-11-18T09:07:19Z",
+    "duration_minutes": 30.5,
+    "lat": 5.547501360655736,
+    "lon": -0.20405459016393446,
+    "zones": [
+      "Kaneshie service area",
+      "Makola Market (no stopping)"
+    ],
+    "in_own_depot_area": false,
+    "restricted": true
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:07:47Z",
+    "end_time": "2026-11-19T07:36:17Z",
+    "duration_minutes": 28.5,
+    "lat": 5.626574034482759,
+    "lon": -0.1328898275862069,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:51:17Z",
+    "end_time": "2026-11-19T08:22:47Z",
+    "duration_minutes": 31.5,
+    "lat": 5.689559936507936,
+    "lon": -0.16434552380952389,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:42:17Z",
+    "end_time": "2026-11-19T09:09:47Z",
+    "duration_minutes": 27.5,
+    "lat": 5.583034363636363,
+    "lon": -0.20763074545454552,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T09:48:47Z",
+    "end_time": "2026-11-19T10:08:17Z",
+    "duration_minutes": 19.5,
+    "lat": 5.551123897435898,
+    "lon": -0.09379323076923077,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:10:49Z",
+    "end_time": "2026-11-17T07:24:19Z",
+    "duration_minutes": 13.5,
+    "lat": 5.639873518518519,
+    "lon": -0.2856287037037037,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T07:31:19Z",
+    "end_time": "2026-11-17T07:47:49Z",
+    "duration_minutes": 16.5,
+    "lat": 5.611560218749999,
+    "lon": -0.2880616875,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:10:49Z",
+    "end_time": "2026-11-17T08:38:19Z",
+    "duration_minutes": 27.5,
+    "lat": 5.616969392857141,
+    "lon": -0.17689575,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T08:57:19Z",
+    "end_time": "2026-11-17T09:16:49Z",
+    "duration_minutes": 19.5,
+    "lat": 5.683892275,
+    "lon": -0.1154838,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T09:26:19Z",
+    "end_time": "2026-11-17T09:40:49Z",
+    "duration_minutes": 14.5,
+    "lat": 5.6346413448275845,
+    "lon": -0.1180638620689655,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-17",
+    "start_time": "2026-11-17T10:26:49Z",
+    "end_time": "2026-11-17T10:40:19Z",
+    "duration_minutes": 13.5,
+    "lat": 5.5804886428571425,
+    "lon": -0.25350603571428565,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T06:44:40Z",
+    "end_time": "2026-11-18T07:08:10Z",
+    "duration_minutes": 23.5,
+    "lat": 5.5809013541666666,
+    "lon": -0.22435752083333335,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T07:17:10Z",
+    "end_time": "2026-11-18T07:34:40Z",
+    "duration_minutes": 17.5,
+    "lat": 5.552615555555556,
+    "lon": -0.2520234166666666,
+    "zones": [
+      "Kaneshie service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:06:40Z",
+    "end_time": "2026-11-18T08:12:10Z",
+    "duration_minutes": 5.5,
+    "lat": 5.660184083333333,
+    "lon": -0.18383258333333338,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T08:27:40Z",
+    "end_time": "2026-11-18T08:58:10Z",
+    "duration_minutes": 30.5,
+    "lat": 5.63131929032258,
+    "lon": -0.09976482258064519,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-18",
+    "start_time": "2026-11-18T09:05:10Z",
+    "end_time": "2026-11-18T09:14:40Z",
+    "duration_minutes": 9.5,
+    "lat": 5.6022035,
+    "lon": -0.11731499999999999,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T07:15:07Z",
+    "end_time": "2026-11-19T07:36:37Z",
+    "duration_minutes": 21.5,
+    "lat": 5.6992905681818185,
+    "lon": -0.09793872727272727,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:02:37Z",
+    "end_time": "2026-11-19T08:26:07Z",
+    "duration_minutes": 23.5,
+    "lat": 5.633383395833334,
+    "lon": -0.1779626666666666,
+    "zones": [],
+    "in_own_depot_area": false,
+    "restricted": false
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-19",
+    "start_time": "2026-11-19T08:38:07Z",
+    "end_time": "2026-11-19T08:53:37Z",
+    "duration_minutes": 15.5,
+    "lat": 5.628226516129032,
+    "lon": -0.12301819354838708,
+    "zones": [
+      "Tema Motorway service area"
+    ],
+    "in_own_depot_area": false,
+    "restricted": false
+  }
+]

@@ -1,0 +1,1154 @@
+[
+  {
+    "type": "register_id_conflict",
+    "vehicle_id": "GT-1008",
+    "timestamp": "",
+    "reason": "Multiple register rows share this ID; plate and depot attribution withheld",
+    "action": "flagged",
+    "source_row": "[{\"vehicle_id\":\"GT-1008\",\"plate\":\"GR 8414-22\",\"depot\":\"Tema Motorway\",\"depot_lat\":5.646,\"depot_lon\":-0.09},{\"vehicle_id\":\"GT-1008\",\"plate\":\"GR 7731-21\",\"depot\":\"Spintex\",\"depot_lat\":5.634,\"depot_lon\":-0.105}]"
+  },
+  {
+    "type": "invalid_zone_geometry",
+    "vehicle_id": "",
+    "timestamp": "",
+    "reason": "Z-SPX has an invalid coordinate ring",
+    "action": "dropped",
+    "source_row": "{\"type\":\"Feature\",\"properties\":{\"zone_id\":\"Z-SPX\",\"name\":\"Spintex service area\",\"type\":\"service\",\"note\":\"exported from vendor system\"},\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-11688.55,634216.58],[-10128.07,634011.08],[-8674.01,633408.77],[-7425.34,632450.51],[-6467.22,631201.75],[-5864.87,629747.63],[-5659.48,628187.17],[-5864.87,626626.74],[-6467.22,625172.73],[-7425.34,623924.1],[-8674.01,622965.98],[-10128.07,622363.78],[-11688.55,622158.31],[-13249.02,622363.78],[-14703.08,622965.98],[-15951.75,623924.1],[-16909.88,625172.73],[-17512.23,626626.74],[-17717.61,628187.17],[-17512.23,629747.63],[-16909.88,631201.75],[-15951.75,632450.51],[-14703.08,633408.77],[-13249.02,634011.08],[-11688.55,634216.58]]]}}"
+  },
+  {
+    "type": "invalid_zone_geometry",
+    "vehicle_id": "",
+    "timestamp": "",
+    "reason": "Z-ACH has a self-intersecting, zero-area, or out-of-shell ring",
+    "action": "dropped",
+    "source_row": "{\"type\":\"Feature\",\"properties\":{\"zone_id\":\"Z-ACH\",\"name\":\"Achimota service area\",\"type\":\"service\"},\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[-0.228,5.668899],[-0.213983,5.667062],[-0.200921,5.661678],[-0.189704,5.653112],[-0.181097,5.641949],[-0.280313,5.60105],[-0.173841,5.615],[-0.175687,5.60105],[-0.181097,5.588051],[-0.189704,5.576888],[-0.200921,5.568322],[-0.213983,5.562938],[-0.228,5.561101],[-0.242017,5.562938],[-0.255079,5.568322],[-0.266296,5.576888],[-0.274903,5.588051],[-0.175687,5.62895],[-0.282159,5.615],[-0.280313,5.62895],[-0.274903,5.641949],[-0.266296,5.653112],[-0.255079,5.661678],[-0.242017,5.667062],[-0.228,5.668899]]]}}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-17T07:00:52Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"1142\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-17T07:00:52Z\",\"lat\":\"5.640341\",\"lon\":\"-0.166530\",\"speed_kmh\":\"26.2\",\"accuracy_m\":\"718.5\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1004",
+    "timestamp": "2026-11-17T06:53:29Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"1248\",\"vehicle_id\":\"GT-1004\",\"timestamp\":\"2026-11-17T06:53:29Z\",\"lat\":\"5.611906\",\"lon\":\"-0.205415\",\"speed_kmh\":\"41.1\",\"accuracy_m\":\"642.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-19T08:42:43Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"1434\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-19T08:42:43Z\",\"lat\":\"5.635399\",\"lon\":\"-0.115740\",\"speed_kmh\":\"19.5\",\"accuracy_m\":\"751.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-19T06:44:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"1799\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-19T06:44:28Z\",\"lat\":\"5.620764\",\"lon\":\"-0.150247\",\"speed_kmh\":\"25.1\",\"accuracy_m\":\"379.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1011",
+    "timestamp": "2026-11-17T11:39:18Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"1872\",\"vehicle_id\":\"GT-1011\",\"timestamp\":\"2026-11-17T11:39:18Z\",\"lat\":\"5.643324\",\"lon\":\"-0.058004\",\"speed_kmh\":\"33.5\",\"accuracy_m\":\"405.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-18T07:30:17Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"2042\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-18T07:30:17Z\",\"lat\":\"5.681486\",\"lon\":\"-0.268107\",\"speed_kmh\":\"0.4\",\"accuracy_m\":\"794.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1001",
+    "timestamp": "2026-11-17T07:59:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"2261\",\"vehicle_id\":\"GT-1001\",\"timestamp\":\"2026-11-17T07:59:28Z\",\"lat\":\"5.642305\",\"lon\":\"-0.065882\",\"speed_kmh\":\"30.2\",\"accuracy_m\":\"803.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-19T10:15:00Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"2453\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-19T10:15:00Z\",\"lat\":\"5.655543\",\"lon\":\"-0.094113\",\"speed_kmh\":\"30.8\",\"accuracy_m\":\"517.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1009",
+    "timestamp": "2026-11-17T07:16:19Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"3041\",\"vehicle_id\":\"GT-1009\",\"timestamp\":\"2026-11-17T07:16:19Z\",\"lat\":\"5.639884\",\"lon\":\"-0.285606\",\"speed_kmh\":\"0.6\",\"accuracy_m\":\"883.5\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-19T06:55:01Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"3152\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-19T06:55:01Z\",\"lat\":\"5.621554\",\"lon\":\"-0.132922\",\"speed_kmh\":\"48.6\",\"accuracy_m\":\"539.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-19T09:49:30Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"3393\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-19T09:49:30Z\",\"lat\":\"5.642996\",\"lon\":\"-0.058035\",\"speed_kmh\":\"48.6\",\"accuracy_m\":\"822.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1007",
+    "timestamp": "2026-11-18T08:21:38Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"3399\",\"vehicle_id\":\"GT-1007\",\"timestamp\":\"2026-11-18T08:21:38Z\",\"lat\":\"5.616457\",\"lon\":\"-0.097369\",\"speed_kmh\":\"0.2\",\"accuracy_m\":\"608.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1013",
+    "timestamp": "2026-11-17T07:09:35Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"3448\",\"vehicle_id\":\"GT-1013\",\"timestamp\":\"2026-11-17T07:09:35Z\",\"lat\":\"5.631401\",\"lon\":\"-0.238602\",\"speed_kmh\":\"26.2\",\"accuracy_m\":\"333.0\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-18T11:03:50Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"3478\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-18T11:03:50Z\",\"lat\":\"5.634431\",\"lon\":\"-0.107851\",\"speed_kmh\":\"19.2\",\"accuracy_m\":\"541.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1003",
+    "timestamp": "2026-11-19T09:30:34Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"4559\",\"vehicle_id\":\"GT-1003\",\"timestamp\":\"2026-11-19T09:30:34Z\",\"lat\":\"5.620058\",\"lon\":\"-0.238089\",\"speed_kmh\":\"32.3\",\"accuracy_m\":\"896.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1007",
+    "timestamp": "2026-11-18T07:43:08Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"4830\",\"vehicle_id\":\"GT-1007\",\"timestamp\":\"2026-11-18T07:43:08Z\",\"lat\":\"5.610272\",\"lon\":\"-0.168293\",\"speed_kmh\":\"19.8\",\"accuracy_m\":\"607.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1019",
+    "timestamp": "2026-11-17T07:41:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"5093\",\"vehicle_id\":\"GT-1019\",\"timestamp\":\"2026-11-17T07:41:45Z\",\"lat\":\"5.644164\",\"lon\":\"-0.225671\",\"speed_kmh\":\"31.1\",\"accuracy_m\":\"398.9\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-17T08:12:05Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"5178\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-17T08:12:05Z\",\"lat\":\"5.599351\",\"lon\":\"-0.258093\",\"speed_kmh\":\"28.2\",\"accuracy_m\":\"832.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1001",
+    "timestamp": "2026-11-19T10:38:08Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"5291\",\"vehicle_id\":\"GT-1001\",\"timestamp\":\"2026-11-19T10:38:08Z\",\"lat\":\"5.569898\",\"lon\":\"-0.238770\",\"speed_kmh\":\"23.5\",\"accuracy_m\":\"417.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1014",
+    "timestamp": "2026-11-18T09:41:54Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"5373\",\"vehicle_id\":\"GT-1014\",\"timestamp\":\"2026-11-18T09:41:54Z\",\"lat\":\"5.638656\",\"lon\":\"-0.263433\",\"speed_kmh\":\"32.3\",\"accuracy_m\":\"773.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-17T07:26:24Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"5868\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-17T07:26:24Z\",\"lat\":\"5.634223\",\"lon\":\"-0.145790\",\"speed_kmh\":\"28.6\",\"accuracy_m\":\"169.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-18T07:37:50Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"5916\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-18T07:37:50Z\",\"lat\":\"5.638407\",\"lon\":\"-0.239250\",\"speed_kmh\":\"1.2\",\"accuracy_m\":\"171.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-19T10:24:31Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"6517\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-19T10:24:31Z\",\"lat\":\"5.630725\",\"lon\":\"-0.234841\",\"speed_kmh\":\"0.7\",\"accuracy_m\":\"807.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-17T08:55:24Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"6526\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-17T08:55:24Z\",\"lat\":\"5.645632\",\"lon\":\"-0.136328\",\"speed_kmh\":\"18.7\",\"accuracy_m\":\"817.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-18T09:46:14Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"6645\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-18T09:46:14Z\",\"lat\":\"5.581223\",\"lon\":\"-0.209883\",\"speed_kmh\":\"35.2\",\"accuracy_m\":\"345.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-19T09:44:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7103\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-19T09:44:45Z\",\"lat\":\"5.575459\",\"lon\":\"-0.290654\",\"speed_kmh\":\"0.6\",\"accuracy_m\":\"378.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1019",
+    "timestamp": "2026-11-17T08:26:15Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7149\",\"vehicle_id\":\"GT-1019\",\"timestamp\":\"2026-11-17T08:26:15Z\",\"lat\":\"5.594143\",\"lon\":\"-0.066082\",\"speed_kmh\":\"1.2\",\"accuracy_m\":\"283.5\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1023",
+    "timestamp": "2026-11-18T07:11:24Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7153\",\"vehicle_id\":\"GT-1023\",\"timestamp\":\"2026-11-18T07:11:24Z\",\"lat\":\"5.677757\",\"lon\":\"-0.120921\",\"speed_kmh\":\"0.5\",\"accuracy_m\":\"215.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1011",
+    "timestamp": "2026-11-19T07:44:06Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7309\",\"vehicle_id\":\"GT-1011\",\"timestamp\":\"2026-11-19T07:44:06Z\",\"lat\":\"5.644925\",\"lon\":\"-0.108974\",\"speed_kmh\":\"35.1\",\"accuracy_m\":\"158.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1004",
+    "timestamp": "2026-11-18T08:15:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7316\",\"vehicle_id\":\"GT-1004\",\"timestamp\":\"2026-11-18T08:15:28Z\",\"lat\":\"5.660380\",\"lon\":\"-0.241501\",\"speed_kmh\":\"0.3\",\"accuracy_m\":\"582.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1005",
+    "timestamp": "2026-11-17T08:30:33Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7599\",\"vehicle_id\":\"GT-1005\",\"timestamp\":\"2026-11-17T08:30:33Z\",\"lat\":\"5.628123\",\"lon\":\"-0.063280\",\"speed_kmh\":\"0.1\",\"accuracy_m\":\"173.9\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-19T09:27:01Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7802\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-19T09:27:01Z\",\"lat\":\"5.576185\",\"lon\":\"-0.152925\",\"speed_kmh\":\"0.2\",\"accuracy_m\":\"301.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1009",
+    "timestamp": "2026-11-19T09:00:07Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"7941\",\"vehicle_id\":\"GT-1009\",\"timestamp\":\"2026-11-19T09:00:07Z\",\"lat\":\"5.605171\",\"lon\":\"-0.161173\",\"speed_kmh\":\"44.0\",\"accuracy_m\":\"534.3\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-18T07:59:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"8446\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-18T07:59:58Z\",\"lat\":\"5.631304\",\"lon\":\"-0.311133\",\"speed_kmh\":\"0.9\",\"accuracy_m\":\"287.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-17T11:32:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"8559\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-17T11:32:58Z\",\"lat\":\"5.617939\",\"lon\":\"-0.194219\",\"speed_kmh\":\"22.0\",\"accuracy_m\":\"488.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1010",
+    "timestamp": "2026-11-18T07:17:14Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"8588\",\"vehicle_id\":\"GT-1010\",\"timestamp\":\"2026-11-18T07:17:14Z\",\"lat\":\"5.676090\",\"lon\":\"-0.108468\",\"speed_kmh\":\"1.3\",\"accuracy_m\":\"260.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-17T12:06:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"8679\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-17T12:06:58Z\",\"lat\":\"5.670894\",\"lon\":\"-0.105090\",\"speed_kmh\":\"0.4\",\"accuracy_m\":\"690.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1017",
+    "timestamp": "2026-11-17T06:48:10Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"8884\",\"vehicle_id\":\"GT-1017\",\"timestamp\":\"2026-11-17T06:48:10Z\",\"lat\":\"5.579931\",\"lon\":\"-0.229236\",\"speed_kmh\":\"31.2\",\"accuracy_m\":\"155.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1024",
+    "timestamp": "2026-11-17T11:24:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"8932\",\"vehicle_id\":\"GT-1024\",\"timestamp\":\"2026-11-17T11:24:58Z\",\"lat\":\"5.650629\",\"lon\":\"-0.103677\",\"speed_kmh\":\"50.0\",\"accuracy_m\":\"765.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1013",
+    "timestamp": "2026-11-19T09:46:15Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"9084\",\"vehicle_id\":\"GT-1013\",\"timestamp\":\"2026-11-19T09:46:15Z\",\"lat\":\"5.610764\",\"lon\":\"-0.270830\",\"speed_kmh\":\"21.8\",\"accuracy_m\":\"207.2\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-17T09:59:54Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"9123\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-17T09:59:54Z\",\"lat\":\"5.668144\",\"lon\":\"-0.190068\",\"speed_kmh\":\"0.1\",\"accuracy_m\":\"815.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1019",
+    "timestamp": "2026-11-18T09:49:17Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"9362\",\"vehicle_id\":\"GT-1019\",\"timestamp\":\"2026-11-18T09:49:17Z\",\"lat\":\"5.597318\",\"lon\":\"-0.225676\",\"speed_kmh\":\"0.0\",\"accuracy_m\":\"457.3\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1009",
+    "timestamp": "2026-11-19T06:50:37Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"9633\",\"vehicle_id\":\"GT-1009\",\"timestamp\":\"2026-11-19T06:50:37Z\",\"lat\":\"5.622199\",\"lon\":\"-0.181060\",\"speed_kmh\":\"31.1\",\"accuracy_m\":\"172.4\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1003",
+    "timestamp": "2026-11-19T06:43:04Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"10198\",\"vehicle_id\":\"GT-1003\",\"timestamp\":\"2026-11-19T06:43:04Z\",\"lat\":\"5.621152\",\"lon\":\"-0.268820\",\"speed_kmh\":\"0.3\",\"accuracy_m\":\"681.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1003",
+    "timestamp": "2026-11-18T07:47:50Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"10275\",\"vehicle_id\":\"GT-1003\",\"timestamp\":\"2026-11-18T07:47:50Z\",\"lat\":\"5.625408\",\"lon\":\"-0.191118\",\"speed_kmh\":\"23.7\",\"accuracy_m\":\"675.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1009",
+    "timestamp": "2026-11-18T08:59:40Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"10741\",\"vehicle_id\":\"GT-1009\",\"timestamp\":\"2026-11-18T08:59:40Z\",\"lat\":\"5.623791\",\"lon\":\"-0.103007\",\"speed_kmh\":\"35.7\",\"accuracy_m\":\"340.0\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1014",
+    "timestamp": "2026-11-17T13:20:48Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"11054\",\"vehicle_id\":\"GT-1014\",\"timestamp\":\"2026-11-17T13:20:48Z\",\"lat\":\"5.649450\",\"lon\":\"-0.053306\",\"speed_kmh\":\"0.2\",\"accuracy_m\":\"814.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1001",
+    "timestamp": "2026-11-19T09:51:38Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"11515\",\"vehicle_id\":\"GT-1001\",\"timestamp\":\"2026-11-19T09:51:38Z\",\"lat\":\"5.647341\",\"lon\":\"-0.084971\",\"speed_kmh\":\"23.7\",\"accuracy_m\":\"727.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1005",
+    "timestamp": "2026-11-19T10:52:20Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"11652\",\"vehicle_id\":\"GT-1005\",\"timestamp\":\"2026-11-19T10:52:20Z\",\"lat\":\"5.664980\",\"lon\":\"-0.238930\",\"speed_kmh\":\"38.8\",\"accuracy_m\":\"819.7\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-17T09:01:23Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"11691\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-17T09:01:23Z\",\"lat\":\"5.545107\",\"lon\":\"-0.314737\",\"speed_kmh\":\"1.7\",\"accuracy_m\":\"759.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-18T07:28:07Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"11906\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-18T07:28:07Z\",\"lat\":\"5.579127\",\"lon\":\"-0.313372\",\"speed_kmh\":\"0.6\",\"accuracy_m\":\"405.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-18T08:41:32Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"11976\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-18T08:41:32Z\",\"lat\":\"5.544342\",\"lon\":\"-0.097476\",\"speed_kmh\":\"39.4\",\"accuracy_m\":\"478.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-19T08:33:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12198\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-19T08:33:45Z\",\"lat\":\"5.617438\",\"lon\":\"-0.217271\",\"speed_kmh\":\"0.1\",\"accuracy_m\":\"771.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-18T07:56:14Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12255\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-18T07:56:14Z\",\"lat\":\"5.612323\",\"lon\":\"-0.268185\",\"speed_kmh\":\"39.1\",\"accuracy_m\":\"636.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-19T07:01:18Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12310\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-19T07:01:18Z\",\"lat\":\"5.613236\",\"lon\":\"-0.168328\",\"speed_kmh\":\"26.7\",\"accuracy_m\":\"826.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-18T09:06:37Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12312\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-18T09:06:37Z\",\"lat\":\"5.612071\",\"lon\":\"-0.141583\",\"speed_kmh\":\"19.1\",\"accuracy_m\":\"654.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-19T08:35:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12500\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-19T08:35:45Z\",\"lat\":\"5.617414\",\"lon\":\"-0.217316\",\"speed_kmh\":\"0.5\",\"accuracy_m\":\"401.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1004",
+    "timestamp": "2026-11-19T09:22:26Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12536\",\"vehicle_id\":\"GT-1004\",\"timestamp\":\"2026-11-19T09:22:26Z\",\"lat\":\"5.657584\",\"lon\":\"-0.095912\",\"speed_kmh\":\"48.8\",\"accuracy_m\":\"428.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-17T07:17:48Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12694\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-17T07:17:48Z\",\"lat\":\"5.596553\",\"lon\":\"-0.195002\",\"speed_kmh\":\"20.9\",\"accuracy_m\":\"169.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1013",
+    "timestamp": "2026-11-19T07:09:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"12934\",\"vehicle_id\":\"GT-1013\",\"timestamp\":\"2026-11-19T07:09:45Z\",\"lat\":\"5.562205\",\"lon\":\"-0.208972\",\"speed_kmh\":\"33.9\",\"accuracy_m\":\"784.1\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1005",
+    "timestamp": "2026-11-19T08:05:20Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"13045\",\"vehicle_id\":\"GT-1005\",\"timestamp\":\"2026-11-19T08:05:20Z\",\"lat\":\"5.662251\",\"lon\":\"-0.269156\",\"speed_kmh\":\"1.9\",\"accuracy_m\":\"330.7\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1013",
+    "timestamp": "2026-11-17T07:18:05Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"13069\",\"vehicle_id\":\"GT-1013\",\"timestamp\":\"2026-11-17T07:18:05Z\",\"lat\":\"5.660106\",\"lon\":\"-0.225299\",\"speed_kmh\":\"24.4\",\"accuracy_m\":\"881.7\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-19T08:30:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"13414\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-19T08:30:58Z\",\"lat\":\"5.575339\",\"lon\":\"-0.207685\",\"speed_kmh\":\"18.6\",\"accuracy_m\":\"151.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1024",
+    "timestamp": "2026-11-19T08:39:14Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"13506\",\"vehicle_id\":\"GT-1024\",\"timestamp\":\"2026-11-19T08:39:14Z\",\"lat\":\"5.632209\",\"lon\":\"-0.158807\",\"speed_kmh\":\"26.1\",\"accuracy_m\":\"204.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1007",
+    "timestamp": "2026-11-17T10:05:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"13661\",\"vehicle_id\":\"GT-1007\",\"timestamp\":\"2026-11-17T10:05:28Z\",\"lat\":\"5.623682\",\"lon\":\"-0.208606\",\"speed_kmh\":\"13.2\",\"accuracy_m\":\"659.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-18T07:59:20Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"13928\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-18T07:59:20Z\",\"lat\":\"5.608246\",\"lon\":\"-0.205496\",\"speed_kmh\":\"21.1\",\"accuracy_m\":\"636.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1011",
+    "timestamp": "2026-11-19T07:22:06Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"14136\",\"vehicle_id\":\"GT-1011\",\"timestamp\":\"2026-11-19T07:22:06Z\",\"lat\":\"5.649361\",\"lon\":\"-0.098991\",\"speed_kmh\":\"1.1\",\"accuracy_m\":\"500.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1011",
+    "timestamp": "2026-11-18T09:42:21Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"14369\",\"vehicle_id\":\"GT-1011\",\"timestamp\":\"2026-11-18T09:42:21Z\",\"lat\":\"5.650612\",\"lon\":\"-0.057250\",\"speed_kmh\":\"1.6\",\"accuracy_m\":\"424.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-19T07:38:00Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"14495\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-19T07:38:00Z\",\"lat\":\"5.580342\",\"lon\":\"-0.315596\",\"speed_kmh\":\"0.7\",\"accuracy_m\":\"456.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1017",
+    "timestamp": "2026-11-17T07:50:40Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"14684\",\"vehicle_id\":\"GT-1017\",\"timestamp\":\"2026-11-17T07:50:40Z\",\"lat\":\"5.597330\",\"lon\":\"-0.124877\",\"speed_kmh\":\"1.7\",\"accuracy_m\":\"872.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1008",
+    "timestamp": "2026-11-19T07:49:21Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"14889\",\"vehicle_id\":\"GT-1008\",\"timestamp\":\"2026-11-19T07:49:21Z\",\"lat\":\"5.590110\",\"lon\":\"-0.127365\",\"speed_kmh\":\"1.8\",\"accuracy_m\":\"236.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-18T07:59:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"14944\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-18T07:59:28Z\",\"lat\":\"5.631266\",\"lon\":\"-0.311087\",\"speed_kmh\":\"0.7\",\"accuracy_m\":\"162.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1003",
+    "timestamp": "2026-11-18T07:34:20Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"15161\",\"vehicle_id\":\"GT-1003\",\"timestamp\":\"2026-11-18T07:34:20Z\",\"lat\":\"5.601410\",\"lon\":\"-0.148615\",\"speed_kmh\":\"23.8\",\"accuracy_m\":\"320.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1019",
+    "timestamp": "2026-11-18T07:31:47Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"15311\",\"vehicle_id\":\"GT-1019\",\"timestamp\":\"2026-11-18T07:31:47Z\",\"lat\":\"5.641791\",\"lon\":\"-0.084377\",\"speed_kmh\":\"0.6\",\"accuracy_m\":\"422.1\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1024",
+    "timestamp": "2026-11-18T08:45:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"15329\",\"vehicle_id\":\"GT-1024\",\"timestamp\":\"2026-11-18T08:45:45Z\",\"lat\":\"5.667599\",\"lon\":\"-0.143025\",\"speed_kmh\":\"0.7\",\"accuracy_m\":\"381.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-18T08:05:32Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"15553\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-18T08:05:32Z\",\"lat\":\"5.538366\",\"lon\":\"-0.156879\",\"speed_kmh\":\"44.5\",\"accuracy_m\":\"627.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-18T09:20:44Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"15868\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-18T09:20:44Z\",\"lat\":\"5.607539\",\"lon\":\"-0.304821\",\"speed_kmh\":\"0.3\",\"accuracy_m\":\"177.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1007",
+    "timestamp": "2026-11-19T06:40:41Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"15943\",\"vehicle_id\":\"GT-1007\",\"timestamp\":\"2026-11-19T06:40:41Z\",\"lat\":\"5.619389\",\"lon\":\"-0.215506\",\"speed_kmh\":\"21.6\",\"accuracy_m\":\"660.5\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-17T10:26:24Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"16496\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-17T10:26:24Z\",\"lat\":\"5.690165\",\"lon\":\"-0.234507\",\"speed_kmh\":\"1.0\",\"accuracy_m\":\"585.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-17T09:22:52Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"16497\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-17T09:22:52Z\",\"lat\":\"5.572106\",\"lon\":\"-0.135979\",\"speed_kmh\":\"0.7\",\"accuracy_m\":\"662.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1005",
+    "timestamp": "2026-11-19T07:29:50Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"16636\",\"vehicle_id\":\"GT-1005\",\"timestamp\":\"2026-11-19T07:29:50Z\",\"lat\":\"5.680699\",\"lon\":\"-0.170934\",\"speed_kmh\":\"1.3\",\"accuracy_m\":\"317.1\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-17T09:21:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"16874\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-17T09:21:28Z\",\"lat\":\"5.602867\",\"lon\":\"-0.145880\",\"speed_kmh\":\"18.5\",\"accuracy_m\":\"632.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1004",
+    "timestamp": "2026-11-19T07:30:26Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"17282\",\"vehicle_id\":\"GT-1004\",\"timestamp\":\"2026-11-19T07:30:26Z\",\"lat\":\"5.561166\",\"lon\":\"-0.290398\",\"speed_kmh\":\"0.8\",\"accuracy_m\":\"323.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1008",
+    "timestamp": "2026-11-18T08:26:35Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"17499\",\"vehicle_id\":\"GT-1008\",\"timestamp\":\"2026-11-18T08:26:35Z\",\"lat\":\"5.554955\",\"lon\":\"-0.058339\",\"speed_kmh\":\"1.9\",\"accuracy_m\":\"834.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-19T07:12:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"17658\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-19T07:12:58Z\",\"lat\":\"5.584631\",\"lon\":\"-0.178091\",\"speed_kmh\":\"1.3\",\"accuracy_m\":\"648.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1005",
+    "timestamp": "2026-11-18T08:01:05Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"17794\",\"vehicle_id\":\"GT-1005\",\"timestamp\":\"2026-11-18T08:01:05Z\",\"lat\":\"5.569665\",\"lon\":\"-0.151799\",\"speed_kmh\":\"28.4\",\"accuracy_m\":\"742.9\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-17T11:01:54Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"17837\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-17T11:01:54Z\",\"lat\":\"5.660555\",\"lon\":\"-0.142037\",\"speed_kmh\":\"23.7\",\"accuracy_m\":\"533.5\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1014",
+    "timestamp": "2026-11-17T11:43:48Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"18139\",\"vehicle_id\":\"GT-1014\",\"timestamp\":\"2026-11-17T11:43:48Z\",\"lat\":\"5.597484\",\"lon\":\"-0.160176\",\"speed_kmh\":\"23.0\",\"accuracy_m\":\"400.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-18T08:39:14Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"18472\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-18T08:39:14Z\",\"lat\":\"5.690467\",\"lon\":\"-0.188033\",\"speed_kmh\":\"36.8\",\"accuracy_m\":\"525.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1015",
+    "timestamp": "2026-11-19T08:54:00Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"18750\",\"vehicle_id\":\"GT-1015\",\"timestamp\":\"2026-11-19T08:54:00Z\",\"lat\":\"5.606472\",\"lon\":\"-0.130498\",\"speed_kmh\":\"26.4\",\"accuracy_m\":\"888.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1010",
+    "timestamp": "2026-11-17T08:01:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"19023\",\"vehicle_id\":\"GT-1010\",\"timestamp\":\"2026-11-17T08:01:58Z\",\"lat\":\"5.551168\",\"lon\":\"-0.129563\",\"speed_kmh\":\"1.2\",\"accuracy_m\":\"428.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-17T10:18:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"19059\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-17T10:18:28Z\",\"lat\":\"5.643563\",\"lon\":\"-0.194635\",\"speed_kmh\":\"20.2\",\"accuracy_m\":\"778.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-17T09:24:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"19453\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-17T09:24:28Z\",\"lat\":\"5.611482\",\"lon\":\"-0.145169\",\"speed_kmh\":\"18.7\",\"accuracy_m\":\"292.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1011",
+    "timestamp": "2026-11-18T08:24:21Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"19544\",\"vehicle_id\":\"GT-1011\",\"timestamp\":\"2026-11-18T08:24:21Z\",\"lat\":\"5.651518\",\"lon\":\"-0.106190\",\"speed_kmh\":\"0.9\",\"accuracy_m\":\"304.5\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-17T08:58:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"19847\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-17T08:58:28Z\",\"lat\":\"5.541318\",\"lon\":\"-0.149556\",\"speed_kmh\":\"1.5\",\"accuracy_m\":\"817.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-19T09:47:15Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"20173\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-19T09:47:15Z\",\"lat\":\"5.575462\",\"lon\":\"-0.290642\",\"speed_kmh\":\"1.9\",\"accuracy_m\":\"817.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1010",
+    "timestamp": "2026-11-18T09:18:14Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"20430\",\"vehicle_id\":\"GT-1010\",\"timestamp\":\"2026-11-18T09:18:14Z\",\"lat\":\"5.636518\",\"lon\":\"-0.254215\",\"speed_kmh\":\"0.6\",\"accuracy_m\":\"337.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-18T08:50:17Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"20661\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-18T08:50:17Z\",\"lat\":\"5.675512\",\"lon\":\"-0.233389\",\"speed_kmh\":\"24.4\",\"accuracy_m\":\"190.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-19T08:49:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"20764\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-19T08:49:58Z\",\"lat\":\"5.595265\",\"lon\":\"-0.200166\",\"speed_kmh\":\"42.4\",\"accuracy_m\":\"775.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-19T07:06:01Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"20916\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-19T07:06:01Z\",\"lat\":\"5.581375\",\"lon\":\"-0.198605\",\"speed_kmh\":\"44.5\",\"accuracy_m\":\"412.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1019",
+    "timestamp": "2026-11-19T06:50:03Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"21072\",\"vehicle_id\":\"GT-1019\",\"timestamp\":\"2026-11-19T06:50:03Z\",\"lat\":\"5.542466\",\"lon\":\"-0.225747\",\"speed_kmh\":\"0.8\",\"accuracy_m\":\"213.0\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1019",
+    "timestamp": "2026-11-17T07:07:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"21581\",\"vehicle_id\":\"GT-1019\",\"timestamp\":\"2026-11-17T07:07:45Z\",\"lat\":\"5.659386\",\"lon\":\"-0.282430\",\"speed_kmh\":\"31.6\",\"accuracy_m\":\"810.2\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1022",
+    "timestamp": "2026-11-18T09:20:18Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"21707\",\"vehicle_id\":\"GT-1022\",\"timestamp\":\"2026-11-18T09:20:18Z\",\"lat\":\"5.660331\",\"lon\":\"-0.187837\",\"speed_kmh\":\"33.8\",\"accuracy_m\":\"222.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1004",
+    "timestamp": "2026-11-17T07:45:59Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"21883\",\"vehicle_id\":\"GT-1004\",\"timestamp\":\"2026-11-17T07:45:59Z\",\"lat\":\"5.548071\",\"lon\":\"-0.172926\",\"speed_kmh\":\"33.3\",\"accuracy_m\":\"578.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-18T10:15:32Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"21904\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-18T10:15:32Z\",\"lat\":\"5.601188\",\"lon\":\"-0.226569\",\"speed_kmh\":\"0.5\",\"accuracy_m\":\"780.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-18T07:15:02Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"22248\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-18T07:15:02Z\",\"lat\":\"5.578138\",\"lon\":\"-0.177681\",\"speed_kmh\":\"45.0\",\"accuracy_m\":\"516.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1022",
+    "timestamp": "2026-11-18T08:33:48Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"22271\",\"vehicle_id\":\"GT-1022\",\"timestamp\":\"2026-11-18T08:33:48Z\",\"lat\":\"5.576256\",\"lon\":\"-0.094386\",\"speed_kmh\":\"0.8\",\"accuracy_m\":\"898.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1017",
+    "timestamp": "2026-11-19T08:31:47Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"22751\",\"vehicle_id\":\"GT-1017\",\"timestamp\":\"2026-11-19T08:31:47Z\",\"lat\":\"5.543310\",\"lon\":\"-0.166297\",\"speed_kmh\":\"0.1\",\"accuracy_m\":\"294.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1019",
+    "timestamp": "2026-11-18T09:39:17Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"22891\",\"vehicle_id\":\"GT-1019\",\"timestamp\":\"2026-11-18T09:39:17Z\",\"lat\":\"5.595439\",\"lon\":\"-0.212058\",\"speed_kmh\":\"30.2\",\"accuracy_m\":\"804.8\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1024",
+    "timestamp": "2026-11-17T08:15:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"23175\",\"vehicle_id\":\"GT-1024\",\"timestamp\":\"2026-11-17T08:15:28Z\",\"lat\":\"5.683407\",\"lon\":\"-0.246003\",\"speed_kmh\":\"0.6\",\"accuracy_m\":\"746.5\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1024",
+    "timestamp": "2026-11-19T08:57:14Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"23306\",\"vehicle_id\":\"GT-1024\",\"timestamp\":\"2026-11-19T08:57:14Z\",\"lat\":\"5.673364\",\"lon\":\"-0.221412\",\"speed_kmh\":\"29.4\",\"accuracy_m\":\"399.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1008",
+    "timestamp": "2026-11-17T06:49:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"23627\",\"vehicle_id\":\"GT-1008\",\"timestamp\":\"2026-11-17T06:49:58Z\",\"lat\":\"5.697456\",\"lon\":\"-0.158302\",\"speed_kmh\":\"1.3\",\"accuracy_m\":\"396.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-17T07:03:23Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"24072\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-17T07:03:23Z\",\"lat\":\"5.617207\",\"lon\":\"-0.066950\",\"speed_kmh\":\"21.7\",\"accuracy_m\":\"275.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-19T09:57:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"24270\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-19T09:57:58Z\",\"lat\":\"5.635085\",\"lon\":\"-0.144262\",\"speed_kmh\":\"30.7\",\"accuracy_m\":\"507.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1001",
+    "timestamp": "2026-11-17T07:43:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"24849\",\"vehicle_id\":\"GT-1001\",\"timestamp\":\"2026-11-17T07:43:58Z\",\"lat\":\"5.636400\",\"lon\":\"-0.073550\",\"speed_kmh\":\"22.6\",\"accuracy_m\":\"371.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1008",
+    "timestamp": "2026-11-17T07:45:28Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"25117\",\"vehicle_id\":\"GT-1008\",\"timestamp\":\"2026-11-17T07:45:28Z\",\"lat\":\"5.609195\",\"lon\":\"-0.168103\",\"speed_kmh\":\"18.6\",\"accuracy_m\":\"161.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-18T09:53:02Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"25269\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-18T09:53:02Z\",\"lat\":\"5.617658\",\"lon\":\"-0.245228\",\"speed_kmh\":\"42.6\",\"accuracy_m\":\"372.3\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-19T08:23:15Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"25435\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-19T08:23:15Z\",\"lat\":\"5.602719\",\"lon\":\"-0.183602\",\"speed_kmh\":\"30.8\",\"accuracy_m\":\"318.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1016",
+    "timestamp": "2026-11-19T07:37:01Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"25515\",\"vehicle_id\":\"GT-1016\",\"timestamp\":\"2026-11-19T07:37:01Z\",\"lat\":\"5.591257\",\"lon\":\"-0.197309\",\"speed_kmh\":\"26.0\",\"accuracy_m\":\"235.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1005",
+    "timestamp": "2026-11-19T11:43:20Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"25710\",\"vehicle_id\":\"GT-1005\",\"timestamp\":\"2026-11-19T11:43:20Z\",\"lat\":\"5.659467\",\"lon\":\"-0.118604\",\"speed_kmh\":\"38.0\",\"accuracy_m\":\"197.3\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1013",
+    "timestamp": "2026-11-19T07:16:15Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"25995\",\"vehicle_id\":\"GT-1013\",\"timestamp\":\"2026-11-19T07:16:15Z\",\"lat\":\"5.590535\",\"lon\":\"-0.194442\",\"speed_kmh\":\"33.4\",\"accuracy_m\":\"640.3\",\"quality_issue_ids\":\"DQ-008|DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1003",
+    "timestamp": "2026-11-17T09:59:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"26038\",\"vehicle_id\":\"GT-1003\",\"timestamp\":\"2026-11-17T09:59:58Z\",\"lat\":\"5.624530\",\"lon\":\"-0.117658\",\"speed_kmh\":\"1.7\",\"accuracy_m\":\"514.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-19T09:31:48Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"26212\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-19T09:31:48Z\",\"lat\":\"5.560371\",\"lon\":\"-0.218314\",\"speed_kmh\":\"1.0\",\"accuracy_m\":\"763.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1004",
+    "timestamp": "2026-11-19T08:21:26Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"26226\",\"vehicle_id\":\"GT-1004\",\"timestamp\":\"2026-11-19T08:21:26Z\",\"lat\":\"5.570302\",\"lon\":\"-0.195395\",\"speed_kmh\":\"38.7\",\"accuracy_m\":\"289.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-18T09:51:07Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"26470\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-18T09:51:07Z\",\"lat\":\"5.562718\",\"lon\":\"-0.204115\",\"speed_kmh\":\"0.7\",\"accuracy_m\":\"373.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-17T09:35:22Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"26625\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-17T09:35:22Z\",\"lat\":\"5.602709\",\"lon\":\"-0.117443\",\"speed_kmh\":\"28.8\",\"accuracy_m\":\"636.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-17T10:21:05Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"26810\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-17T10:21:05Z\",\"lat\":\"5.586463\",\"lon\":\"-0.074530\",\"speed_kmh\":\"1.1\",\"accuracy_m\":\"444.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-17T09:13:58Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"27351\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-17T09:13:58Z\",\"lat\":\"5.581084\",\"lon\":\"-0.147409\",\"speed_kmh\":\"18.7\",\"accuracy_m\":\"759.6\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-19T07:14:45Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"27637\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-19T07:14:45Z\",\"lat\":\"5.583753\",\"lon\":\"-0.107093\",\"speed_kmh\":\"0.1\",\"accuracy_m\":\"509.8\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1001",
+    "timestamp": "2026-11-18T08:51:47Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"28222\",\"vehicle_id\":\"GT-1001\",\"timestamp\":\"2026-11-18T08:51:47Z\",\"lat\":\"5.574897\",\"lon\":\"-0.235369\",\"speed_kmh\":\"41.3\",\"accuracy_m\":\"487.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-19T08:43:15Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"28264\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-19T08:43:15Z\",\"lat\":\"5.617385\",\"lon\":\"-0.217306\",\"speed_kmh\":\"0.3\",\"accuracy_m\":\"871.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1011",
+    "timestamp": "2026-11-17T07:10:18Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"28477\",\"vehicle_id\":\"GT-1011\",\"timestamp\":\"2026-11-17T07:10:18Z\",\"lat\":\"5.665830\",\"lon\":\"-0.145803\",\"speed_kmh\":\"18.9\",\"accuracy_m\":\"437.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1020",
+    "timestamp": "2026-11-17T08:42:05Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"29603\",\"vehicle_id\":\"GT-1020\",\"timestamp\":\"2026-11-17T08:42:05Z\",\"lat\":\"5.602327\",\"lon\":\"-0.234103\",\"speed_kmh\":\"1.3\",\"accuracy_m\":\"309.5\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1006",
+    "timestamp": "2026-11-18T09:47:07Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"29827\",\"vehicle_id\":\"GT-1006\",\"timestamp\":\"2026-11-18T09:47:07Z\",\"lat\":\"5.642830\",\"lon\":\"-0.116589\",\"speed_kmh\":\"25.1\",\"accuracy_m\":\"664.1\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-19T08:02:48Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"29886\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-19T08:02:48Z\",\"lat\":\"5.574475\",\"lon\":\"-0.295385\",\"speed_kmh\":\"0.5\",\"accuracy_m\":\"837.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1021",
+    "timestamp": "2026-11-19T08:52:47Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"29901\",\"vehicle_id\":\"GT-1021\",\"timestamp\":\"2026-11-19T08:52:47Z\",\"lat\":\"5.583021\",\"lon\":\"-0.207706\",\"speed_kmh\":\"0.1\",\"accuracy_m\":\"709.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1011",
+    "timestamp": "2026-11-19T08:52:06Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"30690\",\"vehicle_id\":\"GT-1011\",\"timestamp\":\"2026-11-19T08:52:06Z\",\"lat\":\"5.587562\",\"lon\":\"-0.149710\",\"speed_kmh\":\"30.0\",\"accuracy_m\":\"251.7\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1012",
+    "timestamp": "2026-11-17T09:43:22Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"30706\",\"vehicle_id\":\"GT-1012\",\"timestamp\":\"2026-11-17T09:43:22Z\",\"lat\":\"5.632904\",\"lon\":\"-0.098431\",\"speed_kmh\":\"30.0\",\"accuracy_m\":\"460.2\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1002",
+    "timestamp": "2026-11-17T08:46:53Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"31194\",\"vehicle_id\":\"GT-1002\",\"timestamp\":\"2026-11-17T08:46:53Z\",\"lat\":\"5.545103\",\"lon\":\"-0.314742\",\"speed_kmh\":\"0.9\",\"accuracy_m\":\"271.4\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1018",
+    "timestamp": "2026-11-17T08:22:18Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"31363\",\"vehicle_id\":\"GT-1018\",\"timestamp\":\"2026-11-17T08:22:18Z\",\"lat\":\"5.592822\",\"lon\":\"-0.182619\",\"speed_kmh\":\"21.0\",\"accuracy_m\":\"507.9\",\"quality_issue_ids\":\"DQ-020\"}"
+  },
+  {
+    "type": "poor_accuracy",
+    "vehicle_id": "GT-1001",
+    "timestamp": "2026-11-18T08:13:47Z",
+    "reason": "Accuracy is missing, negative, or exceeds 100 m",
+    "action": "dropped",
+    "source_row": "{\"_source_row\":\"31565\",\"vehicle_id\":\"GT-1001\",\"timestamp\":\"2026-11-18T08:13:47Z\",\"lat\":\"5.659463\",\"lon\":\"-0.292353\",\"speed_kmh\":\"1.6\",\"accuracy_m\":\"877.0\",\"quality_issue_ids\":\"DQ-020\"}"
+  }
+]

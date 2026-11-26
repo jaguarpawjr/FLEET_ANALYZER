@@ -1,0 +1,186 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-19",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.108288,
+            5.635158
+          ],
+          [
+            -0.163752,
+            5.65441
+          ],
+          [
+            -0.20489,
+            5.667857
+          ],
+          [
+            -0.247523,
+            5.68067
+          ],
+          [
+            -0.297693,
+            5.694521
+          ],
+          [
+            -0.231893,
+            5.684938
+          ],
+          [
+            -0.185258,
+            5.678827
+          ],
+          [
+            -0.136117,
+            5.673328
+          ],
+          [
+            -0.07747,
+            5.667761
+          ],
+          [
+            -0.111482,
+            5.646855
+          ],
+          [
+            -0.138555,
+            5.63128
+          ],
+          [
+            -0.16643,
+            5.616509
+          ],
+          [
+            -0.203195,
+            5.598351
+          ],
+          [
+            -0.161073,
+            5.593037
+          ],
+          [
+            -0.128496,
+            5.589834
+          ],
+          [
+            -0.097232,
+            5.587944
+          ],
+          [
+            -0.059411,
+            5.586863
+          ],
+          [
+            -0.105,
+            5.634
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T07:05:10Z",
+        "end_time": "2026-11-19T07:20:40Z",
+        "duration_minutes": 15.5,
+        "lat": 5.694562129032259,
+        "lon": -0.2976209354838709,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2976209354838709,
+          5.694562129032259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T07:52:10Z",
+        "end_time": "2026-11-19T08:23:40Z",
+        "duration_minutes": 31.5,
+        "lat": 5.667717859374998,
+        "lon": -0.07753012500000002,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.07753012500000002,
+          5.667717859374998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T08:56:10Z",
+        "end_time": "2026-11-19T09:13:40Z",
+        "duration_minutes": 17.5,
+        "lat": 5.5983739166666675,
+        "lon": -0.2031221111111111,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2031221111111111,
+          5.5983739166666675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T09:41:10Z",
+        "end_time": "2026-11-19T09:51:40Z",
+        "duration_minutes": 10.5,
+        "lat": 5.586908363636362,
+        "lon": -0.059480000000000005,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.059480000000000005,
+          5.586908363636362
+        ]
+      }
+    }
+  ]
+}

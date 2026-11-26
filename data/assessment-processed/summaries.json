@@ -1,0 +1,1010 @@
+[
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-17",
+    "distance_km": 135.598,
+    "moving_minutes": 136.5,
+    "stopped_minutes": 23.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 39.7,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 8,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-17",
+    "distance_km": 62.194,
+    "moving_minutes": 109,
+    "stopped_minutes": 70.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 49.1,
+    "data_quality_issues": 9,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 6,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-17",
+    "distance_km": 173.557,
+    "moving_minutes": 119.5,
+    "stopped_minutes": 119,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 41.3,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 35,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-17",
+    "distance_km": 94.06,
+    "moving_minutes": 118.5,
+    "stopped_minutes": 97,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 54.3,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-17",
+    "distance_km": 168.532,
+    "moving_minutes": 191,
+    "stopped_minutes": 130,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 49.5,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 2
+    }
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-17",
+    "distance_km": 231.457,
+    "moving_minutes": 281,
+    "stopped_minutes": 73.5,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 41.2,
+    "data_quality_issues": 11,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 4,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-17",
+    "distance_km": 76.854,
+    "moving_minutes": 144,
+    "stopped_minutes": 63.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 35,
+    "data_quality_issues": 4,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-17",
+    "distance_km": 48.105,
+    "moving_minutes": 100.5,
+    "stopped_minutes": 64,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 55.4,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 9.5,
+      "Makola Market (no stopping)": 0.5
+    }
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-17",
+    "distance_km": 86.313,
+    "moving_minutes": 120.5,
+    "stopped_minutes": 105,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 90.5,
+    "data_quality_issues": 4,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 5.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-17",
+    "distance_km": 78.726,
+    "moving_minutes": 101.5,
+    "stopped_minutes": 99,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 45.7,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-17",
+    "distance_km": 268.767,
+    "moving_minutes": 204,
+    "stopped_minutes": 149,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 46.1,
+    "data_quality_issues": 7,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 3.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-17",
+    "distance_km": 206.138,
+    "moving_minutes": 110.5,
+    "stopped_minutes": 75.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 38.4,
+    "data_quality_issues": 13,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 2.5
+    }
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-17",
+    "distance_km": 86.987,
+    "moving_minutes": 158,
+    "stopped_minutes": 112,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 57.4,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-17",
+    "distance_km": 112.569,
+    "moving_minutes": 263.5,
+    "stopped_minutes": 156,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 44.4,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 8,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-17",
+    "distance_km": 168.613,
+    "moving_minutes": 154.5,
+    "stopped_minutes": 76,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 63.9,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 24,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-17",
+    "distance_km": 119.74,
+    "moving_minutes": 184.5,
+    "stopped_minutes": 88,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 39.9,
+    "data_quality_issues": 12,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-17",
+    "distance_km": 100.721,
+    "moving_minutes": 115.5,
+    "stopped_minutes": 66.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 35.9,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 10.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-17",
+    "distance_km": 55.476,
+    "moving_minutes": 115.5,
+    "stopped_minutes": 146,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 84.8,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 21,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-17",
+    "distance_km": 150.196,
+    "moving_minutes": 150,
+    "stopped_minutes": 96,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 47.9,
+    "data_quality_issues": 7,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 4
+    }
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-17",
+    "distance_km": 114.05,
+    "moving_minutes": 151.5,
+    "stopped_minutes": 78.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 51.7,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-17",
+    "distance_km": 29.027,
+    "moving_minutes": 59,
+    "stopped_minutes": 95.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 35.9,
+    "data_quality_issues": 1,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-17",
+    "distance_km": 108.028,
+    "moving_minutes": 76.5,
+    "stopped_minutes": 56.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 50.4,
+    "data_quality_issues": 2,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 1.5,
+      "Makola Market (no stopping)": 1.5
+    }
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-17",
+    "distance_km": 47.088,
+    "moving_minutes": 124,
+    "stopped_minutes": 46.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 38.2,
+    "data_quality_issues": 1,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 18,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-17",
+    "distance_km": 165.859,
+    "moving_minutes": 150.5,
+    "stopped_minutes": 118.5,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 50.1,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-18",
+    "distance_km": 78.974,
+    "moving_minutes": 113.5,
+    "stopped_minutes": 26.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 48.8,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-18",
+    "distance_km": 176.411,
+    "moving_minutes": 173,
+    "stopped_minutes": 81.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 43.7,
+    "data_quality_issues": 9,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-18",
+    "distance_km": 98.419,
+    "moving_minutes": 182.5,
+    "stopped_minutes": 112,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 50.8,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 10,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-18",
+    "distance_km": 106.287,
+    "moving_minutes": 118.5,
+    "stopped_minutes": 137,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 39.8,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-18",
+    "distance_km": 42.263,
+    "moving_minutes": 74.5,
+    "stopped_minutes": 76.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 47.1,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-18",
+    "distance_km": 95.09,
+    "moving_minutes": 133.5,
+    "stopped_minutes": 66,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 47.8,
+    "data_quality_issues": 11,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 4,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-18",
+    "distance_km": 112.512,
+    "moving_minutes": 102,
+    "stopped_minutes": 107.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 32,
+    "data_quality_issues": 4,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 5.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-18",
+    "distance_km": 50.819,
+    "moving_minutes": 77,
+    "stopped_minutes": 60,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 60.4,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 2,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-18",
+    "distance_km": 48.881,
+    "moving_minutes": 86,
+    "stopped_minutes": 86.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 47.4,
+    "data_quality_issues": 4,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-18",
+    "distance_km": 63.235,
+    "moving_minutes": 120.5,
+    "stopped_minutes": 121.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 48,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-18",
+    "distance_km": 94.05,
+    "moving_minutes": 168.5,
+    "stopped_minutes": 115,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 48.3,
+    "data_quality_issues": 7,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 6.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-18",
+    "distance_km": 52.784,
+    "moving_minutes": 112.5,
+    "stopped_minutes": 32.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 39.9,
+    "data_quality_issues": 13,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-18",
+    "distance_km": 67.65,
+    "moving_minutes": 132,
+    "stopped_minutes": 56,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 46.7,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-18",
+    "distance_km": 161.973,
+    "moving_minutes": 202.5,
+    "stopped_minutes": 122,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 49.6,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 2,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-18",
+    "distance_km": 177.521,
+    "moving_minutes": 154,
+    "stopped_minutes": 126.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 49.1,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-18",
+    "distance_km": 66.018,
+    "moving_minutes": 145,
+    "stopped_minutes": 65,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 47.3,
+    "data_quality_issues": 12,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-18",
+    "distance_km": 0,
+    "moving_minutes": 0,
+    "stopped_minutes": 0,
+    "stop_count": 0,
+    "highest_believable_speed_kmh": null,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-18",
+    "distance_km": 122.446,
+    "moving_minutes": 172,
+    "stopped_minutes": 107,
+    "stop_count": 6,
+    "highest_believable_speed_kmh": 48.2,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 6,
+      "Makola Market (no stopping)": 1.5
+    }
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-18",
+    "distance_km": 59.285,
+    "moving_minutes": 126,
+    "stopped_minutes": 65.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 44.4,
+    "data_quality_issues": 7,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 10.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-18",
+    "distance_km": 144.3,
+    "moving_minutes": 171,
+    "stopped_minutes": 74,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 45.1,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 6.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-18",
+    "distance_km": 55.792,
+    "moving_minutes": 80.5,
+    "stopped_minutes": 80.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 63.2,
+    "data_quality_issues": 1,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 8,
+      "Makola Market (no stopping)": 33
+    }
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-18",
+    "distance_km": 101.661,
+    "moving_minutes": 166,
+    "stopped_minutes": 88,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 55,
+    "data_quality_issues": 2,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 3.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-18",
+    "distance_km": 49.107,
+    "moving_minutes": 66,
+    "stopped_minutes": 89.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 41,
+    "data_quality_issues": 1,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-18",
+    "distance_km": 63.875,
+    "moving_minutes": 126.5,
+    "stopped_minutes": 90,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 45,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 10,
+      "Makola Market (no stopping)": 31
+    }
+  },
+  {
+    "vehicle_id": "GT-1001",
+    "date": "2026-11-19",
+    "distance_km": 74.84,
+    "moving_minutes": 142,
+    "stopped_minutes": 114,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 49.1,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 12,
+      "Makola Market (no stopping)": 2.5
+    }
+  },
+  {
+    "vehicle_id": "GT-1002",
+    "date": "2026-11-19",
+    "distance_km": 62.233,
+    "moving_minutes": 107.5,
+    "stopped_minutes": 100.5,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 53.3,
+    "data_quality_issues": 9,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 8,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1003",
+    "date": "2026-11-19",
+    "distance_km": 91.752,
+    "moving_minutes": 102.5,
+    "stopped_minutes": 75,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 49,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1004",
+    "date": "2026-11-19",
+    "distance_km": 130.427,
+    "moving_minutes": 125,
+    "stopped_minutes": 90.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 53.1,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 3.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1005",
+    "date": "2026-11-19",
+    "distance_km": 152.691,
+    "moving_minutes": 224,
+    "stopped_minutes": 85.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 44.7,
+    "data_quality_issues": 6,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 2,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1006",
+    "date": "2026-11-19",
+    "distance_km": 97.592,
+    "moving_minutes": 173,
+    "stopped_minutes": 125,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 32.1,
+    "data_quality_issues": 11,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 13.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1007",
+    "date": "2026-11-19",
+    "distance_km": 56.531,
+    "moving_minutes": 99,
+    "stopped_minutes": 77,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 31.3,
+    "data_quality_issues": 4,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1008",
+    "date": "2026-11-19",
+    "distance_km": 60.431,
+    "moving_minutes": 124.5,
+    "stopped_minutes": 134.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 50.9,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1009",
+    "date": "2026-11-19",
+    "distance_km": 53.598,
+    "moving_minutes": 97,
+    "stopped_minutes": 60.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 49.7,
+    "data_quality_issues": 4,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 3.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1010",
+    "date": "2026-11-19",
+    "distance_km": 45.444,
+    "moving_minutes": 68.5,
+    "stopped_minutes": 66.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 59.9,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1011",
+    "date": "2026-11-19",
+    "distance_km": 103.187,
+    "moving_minutes": 122.5,
+    "stopped_minutes": 77,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 42.1,
+    "data_quality_issues": 7,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 1,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1012",
+    "date": "2026-11-19",
+    "distance_km": 107.892,
+    "moving_minutes": 114,
+    "stopped_minutes": 114,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 58.9,
+    "data_quality_issues": 13,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 5.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1013",
+    "date": "2026-11-19",
+    "distance_km": 95.733,
+    "moving_minutes": 100.5,
+    "stopped_minutes": 109.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 49.1,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 32
+    }
+  },
+  {
+    "vehicle_id": "GT-1014",
+    "date": "2026-11-19",
+    "distance_km": 86.522,
+    "moving_minutes": 138.5,
+    "stopped_minutes": 75,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 51.6,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 6,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1015",
+    "date": "2026-11-19",
+    "distance_km": 103.288,
+    "moving_minutes": 137.5,
+    "stopped_minutes": 105.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 50.7,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 5.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1016",
+    "date": "2026-11-19",
+    "distance_km": 209.588,
+    "moving_minutes": 142,
+    "stopped_minutes": 110.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 50,
+    "data_quality_issues": 12,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 8.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1017",
+    "date": "2026-11-19",
+    "distance_km": 103.375,
+    "moving_minutes": 93,
+    "stopped_minutes": 42.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 46.8,
+    "data_quality_issues": 3,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 4,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1018",
+    "date": "2026-11-19",
+    "distance_km": 118.408,
+    "moving_minutes": 243.5,
+    "stopped_minutes": 74.5,
+    "stop_count": 5,
+    "highest_believable_speed_kmh": 40,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1019",
+    "date": "2026-11-19",
+    "distance_km": 42.587,
+    "moving_minutes": 84.5,
+    "stopped_minutes": 59.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 50,
+    "data_quality_issues": 7,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1020",
+    "date": "2026-11-19",
+    "distance_km": 74.616,
+    "moving_minutes": 130.5,
+    "stopped_minutes": 36.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 49.5,
+    "data_quality_issues": 8,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 16,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1021",
+    "date": "2026-11-19",
+    "distance_km": 94.723,
+    "moving_minutes": 113,
+    "stopped_minutes": 107,
+    "stop_count": 4,
+    "highest_believable_speed_kmh": 48.4,
+    "data_quality_issues": 1,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 3.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1022",
+    "date": "2026-11-19",
+    "distance_km": 69.087,
+    "moving_minutes": 70.5,
+    "stopped_minutes": 54.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 52,
+    "data_quality_issues": 2,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 3.5,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1023",
+    "date": "2026-11-19",
+    "distance_km": 66.579,
+    "moving_minutes": 89,
+    "stopped_minutes": 28.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 38.7,
+    "data_quality_issues": 1,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  },
+  {
+    "vehicle_id": "GT-1024",
+    "date": "2026-11-19",
+    "distance_km": 122.862,
+    "moving_minutes": 148,
+    "stopped_minutes": 52.5,
+    "stop_count": 3,
+    "highest_believable_speed_kmh": 44,
+    "data_quality_issues": 5,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market (no stopping)": 0
+    }
+  }
+]

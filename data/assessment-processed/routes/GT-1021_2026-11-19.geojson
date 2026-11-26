@@ -1,0 +1,218 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1021",
+        "date": "2026-11-19",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.235129,
+            5.570777
+          ],
+          [
+            -0.209124,
+            5.586601
+          ],
+          [
+            -0.18542,
+            5.600079
+          ],
+          [
+            -0.16408,
+            5.611273
+          ],
+          [
+            -0.132842,
+            5.626616
+          ],
+          [
+            -0.142742,
+            5.644026
+          ],
+          [
+            -0.252513,
+            5.73603
+          ],
+          [
+            -0.145369,
+            5.648829
+          ],
+          [
+            -0.155461,
+            5.668712
+          ],
+          [
+            -0.164378,
+            5.689628
+          ],
+          [
+            -0.169522,
+            5.671083
+          ],
+          [
+            -0.174124,
+            5.655973
+          ],
+          [
+            -0.178133,
+            5.644213
+          ],
+          [
+            -0.182499,
+            5.632809
+          ],
+          [
+            -0.187244,
+            5.621784
+          ],
+          [
+            -0.192346,
+            5.611117
+          ],
+          [
+            -0.199134,
+            5.598192
+          ],
+          [
+            -0.207684,
+            5.582994
+          ],
+          [
+            -0.179795,
+            5.57648
+          ],
+          [
+            -0.15383,
+            5.569667
+          ],
+          [
+            -0.128177,
+            5.562103
+          ],
+          [
+            -0.093696,
+            5.551119
+          ],
+          [
+            -0.134592,
+            5.557471
+          ],
+          [
+            -0.167844,
+            5.562011
+          ],
+          [
+            -0.200143,
+            5.565598
+          ],
+          [
+            -0.238,
+            5.569
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1021",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T07:07:47Z",
+        "end_time": "2026-11-19T07:36:17Z",
+        "duration_minutes": 28.5,
+        "lat": 5.626574034482759,
+        "lon": -0.1328898275862069,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1328898275862069,
+          5.626574034482759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1021",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T07:51:17Z",
+        "end_time": "2026-11-19T08:22:47Z",
+        "duration_minutes": 31.5,
+        "lat": 5.689559936507936,
+        "lon": -0.16434552380952389,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.16434552380952389,
+          5.689559936507936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1021",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T08:42:17Z",
+        "end_time": "2026-11-19T09:09:47Z",
+        "duration_minutes": 27.5,
+        "lat": 5.583034363636363,
+        "lon": -0.20763074545454552,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.20763074545454552,
+          5.583034363636363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1021",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T09:48:47Z",
+        "end_time": "2026-11-19T10:08:17Z",
+        "duration_minutes": 19.5,
+        "lat": 5.551123897435898,
+        "lon": -0.09379323076923077,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.09379323076923077,
+          5.551123897435898
+        ]
+      }
+    }
+  ]
+}

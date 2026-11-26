@@ -1,0 +1,238 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1015",
+        "date": "2026-11-17",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.226489,
+            5.614924
+          ],
+          [
+            -0.193307,
+            5.613297
+          ],
+          [
+            -0.10916,
+            5.727537
+          ],
+          [
+            -0.1903,
+            5.613158
+          ],
+          [
+            -0.14257,
+            5.611326
+          ],
+          [
+            -0.08384,
+            5.609947
+          ],
+          [
+            -0.169269,
+            5.669132
+          ],
+          [
+            -0.083843,
+            5.609948
+          ],
+          [
+            -0.118157,
+            5.604261
+          ],
+          [
+            -0.143562,
+            5.600557
+          ],
+          [
+            -0.169616,
+            5.597502
+          ],
+          [
+            -0.194711,
+            5.595308
+          ],
+          [
+            -0.131774,
+            5.665031
+          ],
+          [
+            -0.198105,
+            5.595064
+          ],
+          [
+            -0.227347,
+            5.593378
+          ],
+          [
+            -0.267713,
+            5.5918
+          ],
+          [
+            -0.251295,
+            5.576244
+          ],
+          [
+            -0.217691,
+            5.58633
+          ],
+          [
+            -0.202961,
+            5.590295
+          ],
+          [
+            -0.187933,
+            5.593963
+          ],
+          [
+            -0.172584,
+            5.597309
+          ],
+          [
+            -0.15693,
+            5.60035
+          ],
+          [
+            -0.116955,
+            5.606993
+          ],
+          [
+            -0.037633,
+            5.696736
+          ],
+          [
+            -0.116856,
+            5.607013
+          ],
+          [
+            -0.145604,
+            5.606666
+          ],
+          [
+            -0.159217,
+            5.607054
+          ],
+          [
+            -0.170481,
+            5.607737
+          ],
+          [
+            -0.194033,
+            5.610129
+          ],
+          [
+            -0.228,
+            5.615
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1015",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T07:27:51Z",
+        "end_time": "2026-11-17T07:49:21Z",
+        "duration_minutes": 21.5,
+        "lat": 5.611368744186046,
+        "lon": -0.0858544418604651,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0858544418604651,
+          5.611368744186046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1015",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T08:45:21Z",
+        "end_time": "2026-11-17T09:01:51Z",
+        "duration_minutes": 16.5,
+        "lat": 5.591835205882353,
+        "lon": -0.26765241176470583,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.26765241176470583,
+          5.591835205882353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1015",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T09:05:21Z",
+        "end_time": "2026-11-17T09:23:51Z",
+        "duration_minutes": 18.5,
+        "lat": 5.576312289473684,
+        "lon": -0.25129521052631576,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.25129521052631576,
+          5.576312289473684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1015",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T09:50:51Z",
+        "end_time": "2026-11-17T10:10:21Z",
+        "duration_minutes": 19.5,
+        "lat": 5.609351487179486,
+        "lon": -0.11487102564102564,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.11487102564102564,
+          5.609351487179486
+        ]
+      }
+    }
+  ]
+}

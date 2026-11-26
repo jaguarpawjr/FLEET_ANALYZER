@@ -6,23 +6,23 @@ Fleetwatch turns tracker pings into daily fleet metrics, stops, zone events and 
 
 ## Run locally
 
-Requirements: Node.js 22+ and Docker Compose (or npm for local development).
+Requirements: Node.js 22+; Docker Compose is optional.
 
 ```sh
 npm ci
 npm test
 npm run cleaning                 # reads root pings.csv and vehicles.csv; writes auditable outputs beside them
 npm run pipeline                 # reads the cleaned assessment files and root zones.geojson
-npm run api                      # http://localhost:3000
+npm run dev                      # dashboard at http://localhost:5173, API at http://localhost:3000
 ```
 
-Or start both containers with one command: `npm start` (dashboard at http://localhost:4173, API at http://localhost:3000). For hot reload, use `npm run dev`; it refreshes the Part 1 cleaning outputs before generating analytics. The API and Docker startup fail explicitly if required assessment files are missing. The pipeline can also accept input and output directories: `npm run pipeline -- /path/to/raw /path/to/output`. Running it repeatedly replaces its deterministic outputs.
+To start only the API after generating the outputs, run `npm run api`. Alternatively, `npm start` builds and starts both Docker services (dashboard at http://localhost:4173, API at http://localhost:3000). `npm run dev` refreshes the Part 1 cleaning outputs before generating analytics and starts the API with the Vite dashboard. The API and Docker startup fail explicitly if required assessment files are missing. The pipeline can also accept input and output directories: `npm run pipeline -- /path/to/raw /path/to/output`. Running it repeatedly replaces its deterministic outputs.
 
 The assessment cleaner is independent of the demo analytics pipeline. `npm run cleaning` writes `pings_clean.csv`, `vehicles_clean.csv`, `rejects.csv`, `data_quality_issues.csv`, `data_quality_summary.json`, and `DATA_QUALITY_LOGBOOK.md` in the repository root. It accepts optional input and output directories: `npm run cleaning -- /path/to/input /path/to/output`. It never overwrites the raw CSV inputs.
 
 ## Data and decisions
 
-By default, `npm run pipeline` reads root `pings_clean.csv`, `vehicles_clean.csv`, and `zones.geojson`, so fleet summaries, routes, stops, trips, and Part 1 quality reports describe the same 17–19 Nov 2026 assessment. Set `FLEET_DATASET=demo` to opt into `data/raw/` instead. Explicit pipeline input/output directory arguments continue to use `pings.csv`, `vehicles.csv`, and `zones.geojson` in the input directory.
+By default, `npm run pipeline` reads root `pings_clean.csv`, `vehicles_clean.csv`, and `zones.geojson`, so fleet summaries, routes, stops, trips, and Part 1 quality reports describe the same 17–19 Nov 2026 assessment. The optional demo pipeline can be run separately by setting `FLEET_DATASET=demo`; it reads `data/raw/` and writes to `data/processed/`. The dashboard defaults to the assessment outputs and never silently switches to the demo dataset. Explicit pipeline input/output directory arguments continue to use `pings.csv`, `vehicles.csv`, and `zones.geojson` in the input directory.
 
 The analytics pipeline normalizes parseable timestamps to UTC ISO-8601, drops rows with an unknown vehicle, invalid/out-of-Ghana coordinates, invalid timestamps, accuracy above 100 m, or exact duplicates, and retains pings with speed outside 0–160 km/h while marking speed unknown. Every drop or change is recorded with its type, source vehicle/time, reason and action in `data/assessment-processed/anomalies.json` and `rejects.csv`; the latter deliberately includes changed as well as dropped rows. Invalid polygon rings are recorded, closed when possible, and unusable geometries are dropped. If a register ID has conflicting rows, telemetry remains available by ID but plate, depot, and own-depot attribution are withheld.
 
@@ -50,7 +50,11 @@ Errors use `{ "error": { "code": "...", "message": "..." } }`. The dashboard inc
 
 ## AWS and containers
 
-`Dockerfile.api` and `Dockerfile.dashboard` build independently; Compose runs both locally. `infra/app.ts` defines a VPC, two ECS Fargate services behind load balancers, Cloud Map service discovery, CloudWatch log groups, an encrypted private versioned S3 bucket and an API task role scoped to `PutObject` under `processed/*`. On AWS, the pipeline uploads all exports to that prefix. Deploy with `npx cdk deploy` after configuring AWS credentials and a CDK bootstrap for the target account/region. The dashboard proxies `/api/*` to the API service, so no client-side AWS URL configuration is needed. The starter deployment packages demo inputs; copy the assessment files into the API image/build context and rebuild to analyze them.
+`Dockerfile.api` and `Dockerfile.dashboard` build independently; Compose runs both locally. The API container runs the cleaner and assessment pipeline at startup, and Compose persists generated assessment analytics under `data/assessment-processed`. The dashboard serves the built application and proxies `/api/*` to the API service.
+
+`infra/app.ts` defines a VPC, two ECS Fargate services behind load balancers, Cloud Map service discovery, CloudWatch log groups, an encrypted private versioned S3 bucket, and an API task role scoped to `PutObject` under `processed/*`. The API image build context includes the root assessment inputs, and the pipeline uploads exports to that S3 prefix when `PROCESSED_BUCKET` is configured. Deploy with `npx cdk deploy` after configuring AWS credentials and a CDK bootstrap for the target account/region.
+
+**CDK configuration note:** the current API task definition sets `OUTPUT_DIR` to `/app/data/processed`, while the default assessment pipeline writes to `/app/data/assessment-processed`. Align the task definition with the assessment output path before deploying; otherwise the API may not find the files generated at container startup.
 
 See [DESIGN.md](DESIGN.md) for cleaning rationale, scale architecture and next steps.
 

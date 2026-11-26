@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "zone_id": "ACCRA", "name": "Accra depot service area", "type": "service" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-0.22,5.54],[-0.18,5.54],[-0.18,5.58],[-0.22,5.58],[-0.22,5.54]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zone_id": "KOTOKA", "name": "Kotoka Airport perimeter", "type": "restricted" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-0.18,5.59],[-0.15,5.59],[-0.15,5.62],[-0.18,5.62],[-0.18,5.59]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "zone_id": "MAKOLA", "name": "Makola Market", "type": "restricted" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-0.22,5.54],[-0.20,5.54],[-0.20,5.56],[-0.22,5.56],[-0.22,5.54]]] }
+    }
+  ]
+}

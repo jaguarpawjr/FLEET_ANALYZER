@@ -7,11 +7,13 @@
     "pipeline": "tsx scripts/pipeline.ts",
     "api": "tsx src/server.ts",
     "build": "tsc -p tsconfig.json && vite build",
-    "test": "vitest run",
-    "dev": "concurrently \"npm:api\" \"vite --host 0.0.0.0\"",
+    "test": "vitest run --config vitest.config.ts",
+    "start": "docker compose up --build",
+    "dev": "npm run pipeline && concurrently \"npm:api\" \"vite --host 0.0.0.0\"",
     "cdk": "cdk"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1178.0",
     "aws-cdk-lib": "^2.278.0",
     "constructs": "^10.8.1",
     "leaflet": "^1.9.4",
@@ -20,6 +22,7 @@
     "react-leaflet": "^5.0.0"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.3.3",
     "@types/leaflet": "^1.9.23",
     "@types/node": "^26.6.11",
     "@types/react": "^19.3.3",
@@ -27,6 +30,7 @@
     "@vitejs/plugin-react": "^6.3.0",
     "aws-cdk": "^2.1100.0",
     "concurrently": "^9.2.1",
+    "jsdom": "^31.0.1",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.4.0",

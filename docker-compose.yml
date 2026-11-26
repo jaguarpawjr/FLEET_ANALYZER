@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      PORT: 3000
+      OUTPUT_DIR: /app/data/processed
+    ports:
+      - "3000:3000"
+    volumes:
+      - analytics-data:/app/data/processed
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+      args:
+        VITE_API_URL: /api
+    environment:
+      API_ORIGIN: http://api:3000
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "4173:4173"
+volumes:
+  analytics-data:

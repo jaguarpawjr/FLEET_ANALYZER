@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "V002",
+        "date": "2025-01-15",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.2038,
+            5.561
+          ],
+          [
+            -0.2,
+            5.562
+          ],
+          [
+            -0.18,
+            5.57
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "V002",
+        "date": "2025-01-15",
+        "start_time": "2025-01-15T08:25:00Z",
+        "end_time": "2025-01-15T08:32:00Z",
+        "duration_minutes": 7,
+        "lat": 5.5680499999999995,
+        "lon": -0.18505,
+        "zones": [
+          "Accra depot service area"
+        ],
+        "in_own_depot_area": true,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.18505,
+          5.5680499999999995
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+vehicle_id,date,distance_km,moving_minutes,stopped_minutes,stop_count,highest_believable_speed_kmh,data_quality_issues,restricted_minutes
+V001,2025-01-15,1.911,21,13,2,32,0,"{""Kotoka Airport perimeter"":0,""Makola Market"":6}"
+V002,2025-01-15,2.842,31,7,1,30,0,"{""Kotoka Airport perimeter"":0,""Makola Market"":0}"

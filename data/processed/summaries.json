@@ -1,0 +1,30 @@
+[
+  {
+    "vehicle_id": "V001",
+    "date": "2025-01-15",
+    "distance_km": 1.911,
+    "moving_minutes": 21,
+    "stopped_minutes": 13,
+    "stop_count": 2,
+    "highest_believable_speed_kmh": 32,
+    "data_quality_issues": 0,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market": 6
+    }
+  },
+  {
+    "vehicle_id": "V002",
+    "date": "2025-01-15",
+    "distance_km": 2.842,
+    "moving_minutes": 31,
+    "stopped_minutes": 7,
+    "stop_count": 1,
+    "highest_believable_speed_kmh": 30,
+    "data_quality_issues": 0,
+    "restricted_minutes": {
+      "Kotoka Airport perimeter": 0,
+      "Makola Market": 0
+    }
+  }
+]

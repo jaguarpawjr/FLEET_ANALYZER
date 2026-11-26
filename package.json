@@ -10,7 +10,7 @@
     "build": "tsc -p tsconfig.json && vite build",
     "test": "vitest run --config vitest.config.ts",
     "start": "docker compose up --build",
-    "dev": "npm run pipeline && concurrently \"npm:api\" \"vite --host 0.0.0.0\"",
+    "dev": "npm run cleaning && npm run pipeline && concurrently \"npm:api\" \"vite --host 0.0.0.0\"",
     "cdk": "cdk"
   },
   "dependencies": {
@@ -18,6 +18,7 @@
     "aws-cdk-lib": "^2.278.0",
     "constructs": "^10.8.1",
     "leaflet": "^1.9.4",
+    "lucide-react": "^1.81.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-leaflet": "^5.0.0"

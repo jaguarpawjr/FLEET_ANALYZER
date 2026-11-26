@@ -11,6 +11,7 @@ type Summary = {
   stop_count: number; highest_believable_speed_kmh: number | null; data_quality_issues: number;
   restricted_minutes: Record<string, number>;
 };
+type InputFiles = { pings?: string; vehicles?: string; zones?: string };
 
 export function parseCsv(input: string): string[][] {
   const rows: string[][] = [];
@@ -97,28 +98,54 @@ function repairZones(input: FeatureCollection, anomalies: Anomaly[]): Zone[] {
   });
 }
 
-export async function runPipeline(inputDir = "data/raw", outputDir = "data/processed"): Promise<void> {
+export async function runPipeline(
+  inputDir = "data/raw",
+  outputDir = "data/processed",
+  files: InputFiles = {}
+): Promise<void> {
   await mkdir(outputDir, { recursive: true });
   const [pingText, vehicleText, rawZones] = await Promise.all([
-    readFile(join(inputDir, "pings.csv"), "utf8"),
-    readFile(join(inputDir, "vehicles.csv"), "utf8"),
-    readFile(join(inputDir, "zones.geojson"), "utf8")
+    readFile(join(inputDir, files.pings ?? "pings.csv"), "utf8"),
+    readFile(join(inputDir, files.vehicles ?? "vehicles.csv"), "utf8"),
+    readFile(join(inputDir, files.zones ?? "zones.geojson"), "utf8")
   ]);
   const [pingHeaders, ...pingRows] = parseCsv(pingText);
   const [vehicleHeaders, ...vehicleRows] = parseCsv(vehicleText);
   const anomalies: Anomaly[] = [];
   const processingDates = new Set<string>();
   const vehicles = new Map<string, Vehicle>();
+  const registerRows = new Map<string, Vehicle[]>();
+  const registerConflicts = new Set<string>();
   for (const cells of vehicleRows) {
     const v = Object.fromEntries(vehicleHeaders.map((header, i) => [header, cells[i]?.trim() ?? ""])) as Record<string, string>;
     const vehicle: Vehicle = { vehicle_id: v.vehicle_id, plate: v.plate, depot: v.depot, depot_lat: Number(v.depot_lat), depot_lon: Number(v.depot_lon) };
-    if (vehicle.vehicle_id && inGhanaBounds(vehicle.depot_lat, vehicle.depot_lon) && !vehicles.has(vehicle.vehicle_id)) vehicles.set(vehicle.vehicle_id, vehicle);
-    else anomalies.push({ type: "invalid_vehicle_record", vehicle_id: vehicle.vehicle_id ?? "", timestamp: "", reason: "Missing/duplicate vehicle ID or depot coordinates outside Ghana", action: "dropped", source_row: JSON.stringify(v) });
+    const records = registerRows.get(vehicle.vehicle_id) ?? [];
+    records.push(vehicle);
+    registerRows.set(vehicle.vehicle_id, records);
+  }
+  for (const [vehicleId, records] of registerRows) {
+    const validRecords = records.filter((record) => inGhanaBounds(record.depot_lat, record.depot_lon));
+    if (records.length > 1) {
+      registerConflicts.add(vehicleId);
+      anomalies.push({
+        type: "register_id_conflict", vehicle_id: vehicleId, timestamp: "",
+        reason: "Multiple register rows share this ID; plate and depot attribution withheld",
+        action: "flagged", source_row: JSON.stringify(records)
+      });
+      if (validRecords.length) {
+        vehicles.set(vehicleId, { vehicle_id: vehicleId, plate: "", depot: "", depot_lat: NaN, depot_lon: NaN });
+      }
+    } else if (validRecords.length === 1) {
+      vehicles.set(vehicleId, validRecords[0]);
+    } else {
+      anomalies.push({ type: "invalid_vehicle_record", vehicle_id: vehicleId, timestamp: "", reason: "Missing vehicle ID or depot coordinates outside Ghana", action: "dropped", source_row: JSON.stringify(records[0]) });
+    }
   }
   const zones = repairZones(JSON.parse(rawZones), anomalies);
   const seen = new Set<string>();
   const byVehicle = new Map<string, Ping[]>();
   const qualityCounts = new Map<string, number>();
+  for (const vehicleId of registerConflicts) qualityCounts.set(vehicleId, 1);
   for (const cells of pingRows) {
     const source = Object.fromEntries(pingHeaders.map((header, i) => [header, cells[i]?.trim() ?? ""])) as Record<string, string>;
     const vehicleId = source.vehicle_id;
@@ -209,7 +236,7 @@ export async function runPipeline(inputDir = "data/raw", outputDir = "data/proce
           const trip = day.slice(tripStart, stopIndex + 1);
           const duration = (Date.parse(trip.at(-1)!.timestamp) - Date.parse(trip[0].timestamp)) / 60000;
           const tripDistance = trip.slice(1).reduce((sum, p, i) => sum + haversineKm([trip[i].lon, trip[i].lat], [p.lon, p.lat]), 0);
-          if (duration > 60 && tripDistance < 5) inefficient.push({ vehicle_id: vehicleId, date, trip_number: ++tripNumber, start_time: trip[0].timestamp, end_time: trip.at(-1)!.timestamp, duration_minutes: +duration.toFixed(1), distance_km: +tripDistance.toFixed(3), reason: "Trip exceeded 60 minutes while covering under 5 km" });
+          if (duration > 60 && tripDistance < 5) inefficient.push({ vehicle_id: vehicleId, date, trip_number: ++tripNumber, start_time: trip[0].timestamp, end_time: trip.at(-1)!.timestamp, duration_minutes: +duration.toFixed(1), distance_km: +tripDistance.toFixed(3), stop_count: 1, reason: "Trip exceeded 60 minutes while covering under 5 km" });
         }
         tripStart = Math.max(tripStart, stopIndex);
       }

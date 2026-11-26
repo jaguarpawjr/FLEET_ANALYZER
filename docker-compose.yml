@@ -5,11 +5,14 @@ services:
       dockerfile: Dockerfile.api
     environment:
       PORT: 3000
-      OUTPUT_DIR: /app/data/processed
+      OUTPUT_DIR: /app/data/assessment-processed
+      ASSESSMENT_DIR: /app
+      INPUT_DIR: /app
+      REGISTER_FILE: vehicles_clean.csv
     ports:
       - "3000:3000"
     volumes:
-      - analytics-data:/app/data/processed
+      - analytics-data:/app/data/assessment-processed
   dashboard:
     build:
       context: .

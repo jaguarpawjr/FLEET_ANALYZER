@@ -1,0 +1,182 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1008",
+        "date": "2026-11-18",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.092199,
+            5.646567
+          ],
+          [
+            -0.132988,
+            5.656472
+          ],
+          [
+            -0.162023,
+            5.645117
+          ],
+          [
+            -0.183939,
+            5.637736
+          ],
+          [
+            -0.195263,
+            5.634412
+          ],
+          [
+            -0.209753,
+            5.630592
+          ],
+          [
+            -0.24258,
+            5.62309
+          ],
+          [
+            -0.188205,
+            5.601326
+          ],
+          [
+            -0.148658,
+            5.586203
+          ],
+          [
+            -0.110539,
+            5.572507
+          ],
+          [
+            -0.058292,
+            5.554832
+          ],
+          [
+            -0.075531,
+            5.585891
+          ],
+          [
+            -0.091123,
+            5.616241
+          ],
+          [
+            -0.092123,
+            5.625033
+          ],
+          [
+            -0.092407,
+            5.633013
+          ],
+          [
+            -0.091592,
+            5.639895
+          ],
+          [
+            -0.09,
+            5.646
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1008",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T06:51:05Z",
+        "end_time": "2026-11-18T07:07:35Z",
+        "duration_minutes": 16.5,
+        "lat": 5.656402470588237,
+        "lon": -0.13301470588235298,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.13301470588235298,
+          5.656402470588237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1008",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T07:27:35Z",
+        "end_time": "2026-11-18T07:49:05Z",
+        "duration_minutes": 21.5,
+        "lat": 5.6230772619047595,
+        "lon": -0.2425239047619047,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2425239047619047,
+          5.6230772619047595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1008",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T08:18:05Z",
+        "end_time": "2026-11-18T08:28:35Z",
+        "duration_minutes": 10.5,
+        "lat": 5.554899333333333,
+        "lon": -0.058329809523809534,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.058329809523809534,
+          5.554899333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1008",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T08:42:35Z",
+        "end_time": "2026-11-18T08:54:05Z",
+        "duration_minutes": 11.5,
+        "lat": 5.616275249999998,
+        "lon": -0.09106020833333334,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.09106020833333334,
+          5.616275249999998
+        ]
+      }
+    }
+  ]
+}

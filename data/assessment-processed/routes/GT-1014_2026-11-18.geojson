@@ -1,0 +1,276 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-18",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.107233,
+            5.633514
+          ],
+          [
+            -0.198993,
+            5.613797
+          ],
+          [
+            -0.280253,
+            5.597174
+          ],
+          [
+            -0.367723,
+            5.69146
+          ],
+          [
+            -0.284782,
+            5.596266
+          ],
+          [
+            -0.30746,
+            5.591671
+          ],
+          [
+            -0.256534,
+            5.581497
+          ],
+          [
+            -0.220211,
+            5.575234
+          ],
+          [
+            -0.185404,
+            5.570487
+          ],
+          [
+            -0.141903,
+            5.565944
+          ],
+          [
+            -0.187938,
+            5.594368
+          ],
+          [
+            -0.219751,
+            5.613503
+          ],
+          [
+            -0.249961,
+            5.631035
+          ],
+          [
+            -0.289856,
+            5.653445
+          ],
+          [
+            -0.194437,
+            5.569151
+          ],
+          [
+            -0.289855,
+            5.653414
+          ],
+          [
+            -0.207842,
+            5.565696
+          ],
+          [
+            -0.245282,
+            5.561581
+          ],
+          [
+            -0.286954,
+            5.558055
+          ],
+          [
+            -0.248449,
+            5.564977
+          ],
+          [
+            -0.234901,
+            5.567928
+          ],
+          [
+            -0.22171,
+            5.571237
+          ],
+          [
+            -0.208894,
+            5.574921
+          ],
+          [
+            -0.196425,
+            5.578951
+          ],
+          [
+            -0.166246,
+            5.589979
+          ],
+          [
+            -0.146944,
+            5.600784
+          ],
+          [
+            -0.133311,
+            5.609699
+          ],
+          [
+            -0.120689,
+            5.619625
+          ],
+          [
+            -0.105,
+            5.634
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T07:34:54Z",
+        "end_time": "2026-11-18T08:06:24Z",
+        "duration_minutes": 31.5,
+        "lat": 5.591731171875001,
+        "lon": -0.307438484375,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.307438484375,
+          5.591731171875001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T08:46:24Z",
+        "end_time": "2026-11-18T09:16:54Z",
+        "duration_minutes": 30.5,
+        "lat": 5.565945290322582,
+        "lon": -0.14197611290322584,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.14197611290322584,
+          5.565945290322582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T09:48:24Z",
+        "end_time": "2026-11-18T10:04:54Z",
+        "duration_minutes": 16.5,
+        "lat": 5.650911176470589,
+        "lon": -0.2870537941176471,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2870537941176471,
+          5.650911176470589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T10:26:24Z",
+        "end_time": "2026-11-18T10:31:54Z",
+        "duration_minutes": 5.5,
+        "lat": 5.565690666666666,
+        "lon": -0.20787908333333335,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.20787908333333335,
+          5.565690666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T10:56:24Z",
+        "end_time": "2026-11-18T11:28:54Z",
+        "duration_minutes": 32.5,
+        "lat": 5.558122000000001,
+        "lon": -0.2869684923076923,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2869684923076923,
+          5.558122000000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1014",
+        "date": "2026-11-18",
+        "start_time": "2026-11-18T11:47:54Z",
+        "end_time": "2026-11-18T11:53:24Z",
+        "duration_minutes": 5.5,
+        "lat": 5.590023833333334,
+        "lon": -0.16626191666666668,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.16626191666666668,
+          5.590023833333334
+        ]
+      }
+    }
+  ]
+}

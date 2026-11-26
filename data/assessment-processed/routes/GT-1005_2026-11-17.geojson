@@ -1,0 +1,280 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1005",
+        "date": "2026-11-17",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.238845,
+            5.57128
+          ],
+          [
+            -0.282339,
+            5.68794
+          ],
+          [
+            -0.221764,
+            5.670232
+          ],
+          [
+            -0.170718,
+            5.655913
+          ],
+          [
+            -0.12073,
+            5.642651
+          ],
+          [
+            -0.06328,
+            5.628156
+          ],
+          [
+            -0.126502,
+            5.646469
+          ],
+          [
+            -0.180124,
+            5.662364
+          ],
+          [
+            -0.24114,
+            5.680936
+          ],
+          [
+            -0.299211,
+            5.699043
+          ],
+          [
+            -0.201479,
+            5.620598
+          ],
+          [
+            -0.209224,
+            5.599725
+          ],
+          [
+            -0.214765,
+            5.582816
+          ],
+          [
+            -0.219691,
+            5.565293
+          ],
+          [
+            -0.225746,
+            5.540622
+          ],
+          [
+            -0.204986,
+            5.551744
+          ],
+          [
+            -0.187863,
+            5.561853
+          ],
+          [
+            -0.171533,
+            5.572753
+          ],
+          [
+            -0.153146,
+            5.586185
+          ],
+          [
+            -0.265215,
+            5.656114
+          ],
+          [
+            -0.153162,
+            5.586248
+          ],
+          [
+            -0.238114,
+            5.485678
+          ],
+          [
+            -0.153186,
+            5.586206
+          ],
+          [
+            -0.181046,
+            5.584039
+          ],
+          [
+            -0.19162,
+            5.582613
+          ],
+          [
+            -0.199241,
+            5.581236
+          ],
+          [
+            -0.206585,
+            5.57958
+          ],
+          [
+            -0.215965,
+            5.576962
+          ],
+          [
+            -0.224952,
+            5.573951
+          ],
+          [
+            -0.238,
+            5.569
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1005",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T07:15:33Z",
+        "end_time": "2026-11-17T07:34:03Z",
+        "duration_minutes": 18.5,
+        "lat": 5.68788994736842,
+        "lon": -0.2822772105263158,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2822772105263158,
+          5.68788994736842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1005",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T08:13:33Z",
+        "end_time": "2026-11-17T08:39:03Z",
+        "duration_minutes": 25.5,
+        "lat": 5.628146117647059,
+        "lon": -0.0633757843137255,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0633757843137255,
+          5.628146117647059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1005",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T09:14:33Z",
+        "end_time": "2026-11-17T09:46:03Z",
+        "duration_minutes": 31.5,
+        "lat": 5.6989451718750015,
+        "lon": -0.299231953125,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.299231953125,
+          5.6989451718750015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1005",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T10:19:33Z",
+        "end_time": "2026-11-17T10:26:03Z",
+        "duration_minutes": 6.5,
+        "lat": 5.620605846153846,
+        "lon": -0.2015360769230769,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2015360769230769,
+          5.620605846153846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1005",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T10:52:03Z",
+        "end_time": "2026-11-17T11:20:33Z",
+        "duration_minutes": 28.5,
+        "lat": 5.5406642982456145,
+        "lon": -0.22567791228070172,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.22567791228070172,
+          5.5406642982456145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1005",
+        "date": "2026-11-17",
+        "start_time": "2026-11-17T11:34:03Z",
+        "end_time": "2026-11-17T11:53:33Z",
+        "duration_minutes": 19.5,
+        "lat": 5.585420775000001,
+        "lon": -0.15812342499999998,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.15812342499999998,
+          5.585420775000001
+        ]
+      }
+    }
+  ]
+}

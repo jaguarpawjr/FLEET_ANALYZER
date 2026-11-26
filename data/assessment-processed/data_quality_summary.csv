@@ -1,0 +1,4 @@
+type,affected_rows
+register_id_conflict,1
+invalid_zone_geometry,2
+poor_accuracy,141

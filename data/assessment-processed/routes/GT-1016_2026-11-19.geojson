@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1016",
+        "date": "2026-11-19",
+        "kind": "route"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.093077,
+            5.644265
+          ],
+          [
+            -0.129876,
+            5.623321
+          ],
+          [
+            -0.163103,
+            5.603617
+          ],
+          [
+            -0.195674,
+            5.583256
+          ],
+          [
+            -0.233547,
+            5.558545
+          ],
+          [
+            -0.208136,
+            5.581982
+          ],
+          [
+            -0.198874,
+            5.58995
+          ],
+          [
+            -0.187781,
+            5.598959
+          ],
+          [
+            -0.176357,
+            5.607638
+          ],
+          [
+            -0.164621,
+            5.616004
+          ],
+          [
+            -0.135169,
+            5.635452
+          ],
+          [
+            -0.232308,
+            5.629048
+          ],
+          [
+            -0.352203,
+            5.552995
+          ],
+          [
+            -0.239486,
+            5.628562
+          ],
+          [
+            -0.268243,
+            5.626617
+          ],
+          [
+            -0.185482,
+            5.737225
+          ],
+          [
+            -0.268236,
+            5.62667
+          ],
+          [
+            -0.210685,
+            5.60154
+          ],
+          [
+            -0.319096,
+            5.486315
+          ],
+          [
+            -0.204614,
+            5.598883
+          ],
+          [
+            -0.152829,
+            5.576166
+          ],
+          [
+            -0.194445,
+            5.604471
+          ],
+          [
+            -0.23491,
+            5.63085
+          ],
+          [
+            -0.159457,
+            5.639092
+          ],
+          [
+            -0.094493,
+            5.645566
+          ],
+          [
+            -0.040798,
+            5.542251
+          ],
+          [
+            -0.09,
+            5.646
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1016",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T07:12:31Z",
+        "end_time": "2026-11-19T07:25:01Z",
+        "duration_minutes": 12.5,
+        "lat": 5.558596807692309,
+        "lon": -0.23355888461538457,
+        "zones": [
+          "Kaneshie service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23355888461538457,
+          5.558596807692309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1016",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T07:56:01Z",
+        "end_time": "2026-11-19T08:13:31Z",
+        "duration_minutes": 17.5,
+        "lat": 5.635443472222222,
+        "lon": -0.1352396388888889,
+        "zones": [
+          "Tema Motorway service area"
+        ],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1352396388888889,
+          5.635443472222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1016",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T08:32:31Z",
+        "end_time": "2026-11-19T08:54:01Z",
+        "duration_minutes": 21.5,
+        "lat": 5.629126704545454,
+        "lon": -0.2663119318181818,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2663119318181818,
+          5.629126704545454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1016",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T09:13:31Z",
+        "end_time": "2026-11-19T09:42:01Z",
+        "duration_minutes": 28.5,
+        "lat": 5.576174877192982,
+        "lon": -0.15288854385964906,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.15288854385964906,
+          5.576174877192982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "vehicle_id": "GT-1016",
+        "date": "2026-11-19",
+        "start_time": "2026-11-19T09:58:01Z",
+        "end_time": "2026-11-19T10:28:31Z",
+        "duration_minutes": 30.5,
+        "lat": 5.630758622950819,
+        "lon": -0.23487777049180328,
+        "zones": [],
+        "in_own_depot_area": false,
+        "restricted": false,
+        "kind": "stop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.23487777049180328,
+          5.630758622950819
+        ]
+      }
+    }
+  ]
+}

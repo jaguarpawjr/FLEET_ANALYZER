@@ -1,0 +1,1291 @@
+{
+  "input_sha256": {
+    "pings": "2991df8e2a253071a62ffbf80470584d55046855dd0c4769a53dfb0bfbbe08bd",
+    "vehicles": "184a3cf4213ce6b48d999a28673038fc849a5cd0d391dd9c3b082b19a23c218d"
+  },
+  "initial_row_counts": {
+    "pings": 32001,
+    "vehicles": 25
+  },
+  "final_clean_row_counts": {
+    "pings_clean": 31076,
+    "vehicles_clean": 25
+  },
+  "reconciliation": {
+    "pings": {
+      "input_rows": 32001,
+      "cleaned_rows": 31076,
+      "dropped_rows": 925,
+      "fixed_rows": 6364,
+      "flagged_rows": 468,
+      "rows_accounted_for": true
+    },
+    "vehicles": {
+      "input_rows": 25,
+      "cleaned_rows": 25,
+      "dropped_rows": 0,
+      "fixed_rows": 1,
+      "flagged_rows": 2,
+      "rows_accounted_for": true
+    },
+    "total_input_rows": 32026,
+    "total_clean_rows": 31101,
+    "total_rejected_rows": 925,
+    "all_rows_accounted_for": true
+  },
+  "row_treatment_totals": {
+    "unique_records_affected_by_any_issue": 7541,
+    "rows_fixed": 6365,
+    "rows_flagged": 470,
+    "rows_rejected": 925,
+    "counts_are_non_exclusive": true,
+    "note": "A source row may have multiple issue IDs and may be both fixed and flagged. Rejected rows are not included in cleaned outputs."
+  },
+  "issue_row_references_by_dataset": {
+    "pings.csv": 7847,
+    "vehicles.csv": 3
+  },
+  "telemetry_observations": {
+    "stationary_adjacent_pairs_within_5m_and_90s": 5503,
+    "reporting_intervals_over_90_seconds": 48,
+    "reporting_interval_seconds": {
+      "median": 30,
+      "p95": 30,
+      "maximum": 161857
+    },
+    "implausible_jump_segments_over_160_kmh": 184,
+    "interpretation": "Stationary pairs are an operational observation, not automatically a defect; jump and reporting-gap endpoints are retained and explicitly flagged."
+  },
+  "quality_checks": [
+    {
+      "name": "Required CSV columns exist",
+      "passed": true,
+      "evidence": "Both input schemas were checked before processing."
+    },
+    {
+      "name": "Every retained ping has a registered vehicle ID",
+      "passed": true,
+      "evidence": "31076 retained pings checked against 24 unique normalized register IDs."
+    },
+    {
+      "name": "Vehicle register IDs, plates, and depots are populated",
+      "passed": true,
+      "evidence": "25 retained register rows checked; missing fields remain explicitly flagged."
+    },
+    {
+      "name": "Retained coordinates are populated and inside Ghana bounds",
+      "passed": true,
+      "evidence": "31076 retained coordinate pairs checked."
+    },
+    {
+      "name": "Retained timestamps are normalized UTC ISO-8601",
+      "passed": true,
+      "evidence": "31076 retained timestamps checked."
+    },
+    {
+      "name": "Retained timestamps are within the assessment period",
+      "passed": true,
+      "evidence": "Every retained UTC timestamp falls from 17 November up to (but not including) 20 November 2026."
+    },
+    {
+      "name": "No exact normalized ping duplicates remain",
+      "passed": true,
+      "evidence": "31076 cleaned ping records checked for duplicate six-field signatures."
+    },
+    {
+      "name": "Retained speed and accuracy values are valid when present",
+      "passed": true,
+      "evidence": "31076 retained speed and accuracy values checked; missing values remain traceable as quality issues."
+    },
+    {
+      "name": "Exact duplicate removal is auditable",
+      "passed": true,
+      "evidence": "605 duplicate source rows were removed and referenced in rejects.csv."
+    },
+    {
+      "name": "Every changed or dropped record is in rejects.csv",
+      "passed": true,
+      "evidence": "7147 changed or dropped source records are present in rejects.csv."
+    },
+    {
+      "name": "Ping row counts reconcile",
+      "passed": true,
+      "evidence": "32001 = 31076 retained + 925 dropped."
+    },
+    {
+      "name": "Vehicle register row counts reconcile",
+      "passed": true,
+      "evidence": "25 = 25 retained + 0 dropped."
+    },
+    {
+      "name": "Flagged observations are retained and traceable",
+      "passed": true,
+      "evidence": "Flagged retained rows are represented in data_quality_issues.csv and carry quality_issue_ids."
+    }
+  ],
+  "all_quality_checks_passed": true,
+  "issues": [
+    {
+      "issueId": "DQ-002",
+      "issueName": "Vehicle identifier whitespace or casing",
+      "dataset": "pings.csv",
+      "columns": [
+        "vehicle_id"
+      ],
+      "affectedRows": 356,
+      "percentageAffected": 1.1124652354613918,
+      "severity": "Low",
+      "decision": "FIX",
+      "rule": "Trim surrounding whitespace and convert identifiers to uppercase.",
+      "justification": "Case and whitespace normalization is unambiguous and leaves the register mapping unchanged.",
+      "impact": "Without normalization, valid pings may be treated as unknown vehicles or split across IDs.",
+      "verification": "Every retained identifier is compared against the canonical official ID set.",
+      "examples": [
+        {
+          "sourceRow": 181,
+          "original": {
+            "vehicle_id": " gt-1021 ",
+            "timestamp": "2026-11-18T08:29:19Z",
+            "lat": "5.568434",
+            "lon": "-0.193584",
+            "speed_kmh": "22.9",
+            "accuracy_m": "17.0"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1021",
+            "timestamp": "2026-11-18T08:29:19Z",
+            "lat": "5.568434",
+            "lon": "-0.193584",
+            "speed_kmh": "22.9",
+            "accuracy_m": "17.0"
+          },
+          "reason": "Trimmed or uppercased the vehicle identifier.",
+          "details": []
+        },
+        {
+          "sourceRow": 316,
+          "original": {
+            "vehicle_id": " gt-1021 ",
+            "timestamp": "2026-11-19T10:08:47Z",
+            "lat": "5.551667",
+            "lon": "-0.097204",
+            "speed_kmh": "46.6",
+            "accuracy_m": "11.9"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1021",
+            "timestamp": "2026-11-19T10:08:47Z",
+            "lat": "5.551667",
+            "lon": "-0.097204",
+            "speed_kmh": "46.6",
+            "accuracy_m": "11.9"
+          },
+          "reason": "Trimmed or uppercased the vehicle identifier.",
+          "details": []
+        },
+        {
+          "sourceRow": 353,
+          "original": {
+            "vehicle_id": " gt-1021 ",
+            "timestamp": "2026-11-19T07:58:17Z",
+            "lat": "5.689556",
+            "lon": "-0.164378",
+            "speed_kmh": "1.4",
+            "accuracy_m": "9.2"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1021",
+            "timestamp": "2026-11-19T07:58:17Z",
+            "lat": "5.689556",
+            "lon": "-0.164378",
+            "speed_kmh": "1.4",
+            "accuracy_m": "9.2"
+          },
+          "reason": "Trimmed or uppercased the vehicle identifier.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-003",
+      "issueName": "Vehicle identifier missing separator",
+      "dataset": "pings.csv",
+      "columns": [
+        "vehicle_id"
+      ],
+      "affectedRows": 288,
+      "percentageAffected": 0.8999718758788787,
+      "severity": "Medium",
+      "decision": "FIX",
+      "rule": "Convert only `GTdddd` to `GT-dddd`, then require an exact official-register match.",
+      "justification": "The four-digit value maps unambiguously to the corresponding formatted register ID.",
+      "impact": "Unnormalized IDs can be incorrectly rejected or fragmented in per-vehicle summaries.",
+      "verification": "Check canonical IDs against the register after normalization.",
+      "examples": [
+        {
+          "sourceRow": 171,
+          "original": {
+            "vehicle_id": "GT1003",
+            "timestamp": "2026-11-18T09:54:50Z",
+            "lat": "5.634571",
+            "lon": "-0.131698",
+            "speed_kmh": "29.2",
+            "accuracy_m": "17.8"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1003",
+            "timestamp": "2026-11-18T09:54:50Z",
+            "lat": "5.634571",
+            "lon": "-0.131698",
+            "speed_kmh": "29.2",
+            "accuracy_m": "17.8"
+          },
+          "reason": "Inserted the missing hyphen in a register-compatible vehicle ID.",
+          "details": []
+        },
+        {
+          "sourceRow": 203,
+          "original": {
+            "vehicle_id": "GT1003",
+            "timestamp": "2026-11-19T07:26:04Z",
+            "lat": "5.541388",
+            "lon": "-0.246208",
+            "speed_kmh": "1.4",
+            "accuracy_m": "19.2"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1003",
+            "timestamp": "2026-11-19T07:26:04Z",
+            "lat": "5.541388",
+            "lon": "-0.246208",
+            "speed_kmh": "1.4",
+            "accuracy_m": "19.2"
+          },
+          "reason": "Inserted the missing hyphen in a register-compatible vehicle ID.",
+          "details": []
+        },
+        {
+          "sourceRow": 234,
+          "original": {
+            "vehicle_id": "GT1003",
+            "timestamp": "2026-11-18T09:47:20Z",
+            "lat": "5.630959",
+            "lon": "-0.164730",
+            "speed_kmh": "30.7",
+            "accuracy_m": "22.7"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1003",
+            "timestamp": "2026-11-18T09:47:20Z",
+            "lat": "5.630959",
+            "lon": "-0.164730",
+            "speed_kmh": "30.7",
+            "accuracy_m": "22.7"
+          },
+          "reason": "Inserted the missing hyphen in a register-compatible vehicle ID.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-004",
+      "issueName": "Vehicle identifier absent from official register",
+      "dataset": "pings.csv",
+      "columns": [
+        "vehicle_id"
+      ],
+      "affectedRows": 120,
+      "percentageAffected": 0.3749882816161995,
+      "severity": "High",
+      "decision": "DROP",
+      "rule": "Drop pings whose normalized vehicle_id is absent from the official register.",
+      "justification": "The reference register is authoritative; there is no safe vehicle mapping for an unknown ID.",
+      "impact": "Unknown pings would create unregistered vehicle reporting and unreliable asset attribution.",
+      "verification": "Assert every retained ping ID is in the canonical register identifier set.",
+      "examples": [
+        {
+          "sourceRow": 457,
+          "original": {
+            "vehicle_id": "GT-1099",
+            "timestamp": "2026-11-18T09:13:30Z",
+            "lat": "5.605400",
+            "lon": "-0.197300",
+            "speed_kmh": "25.0",
+            "accuracy_m": "8.0"
+          },
+          "corrected": null,
+          "reason": "Vehicle ID GT-1099 is absent from vehicles.csv.",
+          "details": []
+        },
+        {
+          "sourceRow": 752,
+          "original": {
+            "vehicle_id": "GT-1099",
+            "timestamp": "2026-11-18T09:31:00Z",
+            "lat": "5.612400",
+            "lon": "-0.193800",
+            "speed_kmh": "25.0",
+            "accuracy_m": "8.0"
+          },
+          "corrected": null,
+          "reason": "Vehicle ID GT-1099 is absent from vehicles.csv.",
+          "details": []
+        },
+        {
+          "sourceRow": 815,
+          "original": {
+            "vehicle_id": "GT-1099",
+            "timestamp": "2026-11-18T09:46:00Z",
+            "lat": "5.618400",
+            "lon": "-0.190800",
+            "speed_kmh": "25.0",
+            "accuracy_m": "8.0"
+          },
+          "corrected": null,
+          "reason": "Vehicle ID GT-1099 is absent from vehicles.csv.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-006",
+      "issueName": "Unparseable timestamp",
+      "dataset": "pings.csv",
+      "columns": [
+        "timestamp"
+      ],
+      "affectedRows": 8,
+      "percentageAffected": 0.0249992187744133,
+      "severity": "High",
+      "decision": "DROP",
+      "rule": "Drop timestamps that cannot be parsed strictly to a valid instant.",
+      "justification": "The original timestamp does not provide a defensible time value.",
+      "impact": "Unparseable times can break sequence ordering, trip boundaries, and interval calculations.",
+      "verification": "All retained values must be valid UTC ISO-8601 timestamps.",
+      "examples": [
+        {
+          "sourceRow": 1871,
+          "original": {
+            "vehicle_id": "GT-1005",
+            "timestamp": "1770",
+            "lat": "5.662192",
+            "lon": "-0.269066",
+            "speed_kmh": "1.3",
+            "accuracy_m": "20.8"
+          },
+          "corrected": null,
+          "reason": "Timestamp could not be parsed using the supported formats.",
+          "details": []
+        },
+        {
+          "sourceRow": 3432,
+          "original": {
+            "vehicle_id": "GT-1013",
+            "timestamp": "1159",
+            "lat": "5.692552",
+            "lon": "-0.289942",
+            "speed_kmh": "1.2",
+            "accuracy_m": "22.7"
+          },
+          "corrected": null,
+          "reason": "Timestamp could not be parsed using the supported formats.",
+          "details": []
+        },
+        {
+          "sourceRow": 9554,
+          "original": {
+            "vehicle_id": "GT-1005",
+            "timestamp": "1400",
+            "lat": "5.540677",
+            "lon": "-0.225691",
+            "speed_kmh": "0.9",
+            "accuracy_m": "20.1"
+          },
+          "corrected": null,
+          "reason": "Timestamp could not be parsed using the supported formats.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-007",
+      "issueName": "Timestamp outside assessment period",
+      "dataset": "pings.csv",
+      "columns": [
+        "timestamp"
+      ],
+      "affectedRows": 46,
+      "percentageAffected": 0.14374550795287647,
+      "severity": "High",
+      "decision": "DROP",
+      "rule": "Keep only UTC instants in [2026-11-17T00:00:00Z, 2026-11-20T00:00:00Z).",
+      "justification": "The assessment defines this three-day period; out-of-period rows are not part of the target dataset.",
+      "impact": "Extraneous times can inflate reporting periods and create enormous false movement intervals.",
+      "verification": "Assert every retained UTC timestamp falls within the documented half-open interval.",
+      "examples": [
+        {
+          "sourceRow": 1941,
+          "original": {
+            "vehicle_id": "GT-1008",
+            "timestamp": "1970-01-01T00:51:16Z",
+            "lat": "5.573443",
+            "lon": "-0.173455",
+            "speed_kmh": "18.3",
+            "accuracy_m": "7.0"
+          },
+          "corrected": null,
+          "reason": "UTC timestamp 1970-01-01T00:51:16.000Z is outside the assessment period.",
+          "details": []
+        },
+        {
+          "sourceRow": 2436,
+          "original": {
+            "vehicle_id": "GT-1001",
+            "timestamp": "1970-01-01T00:27:56Z",
+            "lat": "5.578432",
+            "lon": "-0.222440",
+            "speed_kmh": "25.6",
+            "accuracy_m": "11.3"
+          },
+          "corrected": null,
+          "reason": "UTC timestamp 1970-01-01T00:27:56.000Z is outside the assessment period.",
+          "details": []
+        },
+        {
+          "sourceRow": 2467,
+          "original": {
+            "vehicle_id": "GT-1010",
+            "timestamp": "1970-01-01T00:50:08Z",
+            "lat": "5.619493",
+            "lon": "-0.257952",
+            "speed_kmh": "45.0",
+            "accuracy_m": "4.5"
+          },
+          "corrected": null,
+          "reason": "UTC timestamp 1970-01-01T00:50:08.000Z is outside the assessment period.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-008",
+      "issueName": "Timestamp format or timezone normalization",
+      "dataset": "pings.csv",
+      "columns": [
+        "timestamp"
+      ],
+      "affectedRows": 5264,
+      "percentageAffected": 16.44948595356395,
+      "severity": "Medium",
+      "decision": "FIX",
+      "rule": "Parse supported timestamp formats, treat timezone-naive values as UTC (Ghana), and serialize as UTC ISO-8601.",
+      "justification": "The source context states UTC/Ghana; explicit offsets are converted to UTC rather than discarded.",
+      "impact": "Mixed representations can break sorting, joins, and date grouping.",
+      "verification": "Retained timestamps use canonical `YYYY-MM-DDTHH:mm:ss.sssZ` serialization and parse to the original instant.",
+      "examples": [
+        {
+          "sourceRow": 13,
+          "original": {
+            "vehicle_id": "GT-1005",
+            "timestamp": "1795073180",
+            "lat": "5.680734",
+            "lon": "-0.170900",
+            "speed_kmh": "0.1",
+            "accuracy_m": "19.0"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1005",
+            "timestamp": "2026-11-19T07:26:20Z",
+            "lat": "5.680734",
+            "lon": "-0.170900",
+            "speed_kmh": "0.1",
+            "accuracy_m": "19.0"
+          },
+          "reason": "Normalized the timestamp to canonical UTC ISO-8601.",
+          "details": []
+        },
+        {
+          "sourceRow": 23,
+          "original": {
+            "vehicle_id": "GT-1019",
+            "timestamp": "2026-11-18T08:18:47+01:00",
+            "lat": "5.638978",
+            "lon": "-0.102668",
+            "speed_kmh": "24.4",
+            "accuracy_m": "17.3"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1019",
+            "timestamp": "2026-11-18T07:18:47Z",
+            "lat": "5.638978",
+            "lon": "-0.102668",
+            "speed_kmh": "24.4",
+            "accuracy_m": "17.3"
+          },
+          "reason": "Normalized the timestamp to canonical UTC ISO-8601.",
+          "details": []
+        },
+        {
+          "sourceRow": 28,
+          "original": {
+            "vehicle_id": "GT-1013",
+            "timestamp": "1794908075",
+            "lat": "5.630311",
+            "lon": "-0.242164",
+            "speed_kmh": "0.9",
+            "accuracy_m": "3.5"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1013",
+            "timestamp": "2026-11-17T09:34:35Z",
+            "lat": "5.630311",
+            "lon": "-0.242164",
+            "speed_kmh": "0.9",
+            "accuracy_m": "3.5"
+          },
+          "reason": "Normalized the timestamp to canonical UTC ISO-8601.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-010",
+      "issueName": "Decimal-comma coordinates",
+      "dataset": "pings.csv",
+      "columns": [
+        "lat",
+        "lon"
+      ],
+      "affectedRows": 102,
+      "percentageAffected": 0.31874003937376955,
+      "severity": "Medium",
+      "decision": "FIX",
+      "rule": "Replace a comma with a decimal point only for a coordinate matching a signed decimal-comma number.",
+      "justification": "The observed coordinate form is unambiguous and the resulting value is checked against geographic bounds.",
+      "impact": "Unparsed coordinates can be dropped or incorrectly interpreted during spatial analysis.",
+      "verification": "Confirm the normalized pair parses numerically and is within the accepted Ghana bounds.",
+      "examples": [
+        {
+          "sourceRow": 387,
+          "original": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-18T08:31:54Z",
+            "lat": "5,571997",
+            "lon": "-0,197524",
+            "speed_kmh": "27.4",
+            "accuracy_m": "13.4"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-18T08:31:54Z",
+            "lat": "5.571997",
+            "lon": "-0.197524",
+            "speed_kmh": "27.4",
+            "accuracy_m": "13.4"
+          },
+          "reason": "Converted unambiguous decimal-comma coordinate notation to a decimal point.",
+          "details": []
+        },
+        {
+          "sourceRow": 455,
+          "original": {
+            "vehicle_id": "GT-1002",
+            "timestamp": "2026-11-18T09:55:20Z",
+            "lat": "5,662646",
+            "lon": "-0,301884",
+            "speed_kmh": "18.1",
+            "accuracy_m": "14.2"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1002",
+            "timestamp": "2026-11-18T09:55:20Z",
+            "lat": "5.662646",
+            "lon": "-0.301884",
+            "speed_kmh": "18.1",
+            "accuracy_m": "14.2"
+          },
+          "reason": "Converted unambiguous decimal-comma coordinate notation to a decimal point.",
+          "details": []
+        },
+        {
+          "sourceRow": 480,
+          "original": {
+            "vehicle_id": "GT-1022",
+            "timestamp": "2026-11-18T07:46:48Z",
+            "lat": "5,670521",
+            "lon": "-0,152869",
+            "speed_kmh": "45.8",
+            "accuracy_m": "15.2"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1022",
+            "timestamp": "2026-11-18T07:46:48Z",
+            "lat": "5.670521",
+            "lon": "-0.152869",
+            "speed_kmh": "45.8",
+            "accuracy_m": "15.2"
+          },
+          "reason": "Converted unambiguous decimal-comma coordinate notation to a decimal point.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-011",
+      "issueName": "Latitude and longitude reversed",
+      "dataset": "pings.csv",
+      "columns": [
+        "lat",
+        "lon"
+      ],
+      "affectedRows": 318,
+      "percentageAffected": 0.9937189462829286,
+      "severity": "High",
+      "decision": "FIX",
+      "rule": "Swap the pair only when the original is outside the Ghana bounds and the reversed pair is inside them.",
+      "justification": "The bounded geographic context makes this correction unambiguous for the observed records.",
+      "impact": "Uncorrected axis order can place a vehicle on another continent and produce impossible route distances.",
+      "verification": "Recheck corrected coordinates against WGS 84 ranges and Ghana bounds.",
+      "examples": [
+        {
+          "sourceRow": 35,
+          "original": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-18T07:02:24Z",
+            "lat": "-0.163103",
+            "lon": "5.621411",
+            "speed_kmh": "30.2",
+            "accuracy_m": "15.1"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-18T07:02:24Z",
+            "lat": "5.621411",
+            "lon": "-0.163103",
+            "speed_kmh": "30.2",
+            "accuracy_m": "15.1"
+          },
+          "reason": "Swapped coordinate axes because only the reversed pair falls within Ghana bounds.",
+          "details": []
+        },
+        {
+          "sourceRow": 141,
+          "original": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-17T12:04:48Z",
+            "lat": "-0.085183",
+            "lon": "5.589418",
+            "speed_kmh": "24.5",
+            "accuracy_m": "23.6"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-17T12:04:48Z",
+            "lat": "5.589418",
+            "lon": "-0.085183",
+            "speed_kmh": "24.5",
+            "accuracy_m": "23.6"
+          },
+          "reason": "Swapped coordinate axes because only the reversed pair falls within Ghana bounds.",
+          "details": []
+        },
+        {
+          "sourceRow": 192,
+          "original": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-17T10:10:48Z",
+            "lat": "-0.218983",
+            "lon": "5.616896",
+            "speed_kmh": "31.9",
+            "accuracy_m": "23.8"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-17T10:10:48Z",
+            "lat": "5.616896",
+            "lon": "-0.218983",
+            "speed_kmh": "31.9",
+            "accuracy_m": "23.8"
+          },
+          "reason": "Swapped coordinate axes because only the reversed pair falls within Ghana bounds.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-012",
+      "issueName": "Zero, invalid, or out-of-area coordinates",
+      "dataset": "pings.csv",
+      "columns": [
+        "lat",
+        "lon"
+      ],
+      "affectedRows": 148,
+      "percentageAffected": 0.46248554732664604,
+      "severity": "High",
+      "decision": "DROP",
+      "rule": "After decimal and axis-order repairs, drop nonnumeric, WGS 84-invalid, zero, or out-of-Ghana pairs.",
+      "justification": "No reliable location can be recovered from these observations using the available source data.",
+      "impact": "Bad positions can create false trips, extreme distances, and misleading spatial summaries.",
+      "verification": "Assert every retained pair is nonzero, WGS 84-valid, and inside the documented Ghana bounds.",
+      "examples": [
+        {
+          "sourceRow": 173,
+          "original": {
+            "vehicle_id": "GT-1024",
+            "timestamp": "2026-11-17T10:25:58Z",
+            "lat": "0.000000",
+            "lon": "0.000000",
+            "speed_kmh": "36.7",
+            "accuracy_m": "19.3"
+          },
+          "corrected": null,
+          "reason": "Zero coordinate values are not credible locations for the Ghana operating area.",
+          "details": []
+        },
+        {
+          "sourceRow": 682,
+          "original": {
+            "vehicle_id": "GT-1010",
+            "timestamp": "2026-11-17T08:22:28Z",
+            "lat": "0.000000",
+            "lon": "0.000000",
+            "speed_kmh": "33.9",
+            "accuracy_m": "22.2"
+          },
+          "corrected": null,
+          "reason": "Zero coordinate values are not credible locations for the Ghana operating area.",
+          "details": []
+        },
+        {
+          "sourceRow": 751,
+          "original": {
+            "vehicle_id": "GT-1004",
+            "timestamp": "2026-11-17T09:50:29Z",
+            "lat": "0.000000",
+            "lon": "0.000000",
+            "speed_kmh": "0.6",
+            "accuracy_m": "7.9"
+          },
+          "corrected": null,
+          "reason": "Zero coordinate values are not credible locations for the Ghana operating area.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-013",
+      "issueName": "Exact duplicate GPS reading",
+      "dataset": "pings.csv",
+      "columns": [
+        "vehicle_id",
+        "timestamp",
+        "lat",
+        "lon",
+        "speed_kmh",
+        "accuracy_m"
+      ],
+      "affectedRows": 605,
+      "percentageAffected": 1.8905659198150058,
+      "severity": "Medium",
+      "decision": "DROP",
+      "rule": "Keep the earliest source record for each identical normalized record and drop later copies.",
+      "justification": "An identical repeat adds no new observation; preserving the first occurrence is deterministic.",
+      "impact": "Duplicates inflate ping counts and can produce zero-duration segments or bias reporting intervals.",
+      "verification": "Confirm there is one retained row per exact normalized record and each removed copy is listed in rejects.csv.",
+      "examples": [
+        {
+          "sourceRow": 974,
+          "original": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-18T07:02:24Z",
+            "lat": "-0.163103",
+            "lon": "5.621411",
+            "speed_kmh": "30.2",
+            "accuracy_m": "15.1"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-18T07:02:24Z",
+            "lat": "5.621411",
+            "lon": "-0.163103",
+            "speed_kmh": "30.2",
+            "accuracy_m": "15.1"
+          },
+          "reason": "Exact duplicate of the earlier normalized source record at row 35.",
+          "details": []
+        },
+        {
+          "sourceRow": 1616,
+          "original": {
+            "vehicle_id": "GT-1003",
+            "timestamp": "2026-11-17T10:44:28Z",
+            "lat": "5.615180",
+            "lon": "-0.210805",
+            "speed_kmh": "21.7",
+            "accuracy_m": "3.3"
+          },
+          "corrected": null,
+          "reason": "Exact duplicate of the earlier normalized source record at row 1302.",
+          "details": []
+        },
+        {
+          "sourceRow": 1635,
+          "original": {
+            "vehicle_id": "GT-1010",
+            "timestamp": "2026-11-17T08:06:58Z",
+            "lat": "5.551203",
+            "lon": "-0.129555",
+            "speed_kmh": "0.8",
+            "accuracy_m": "17.3"
+          },
+          "corrected": null,
+          "reason": "Exact duplicate of the earlier normalized source record at row 1608.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-016",
+      "issueName": "Invalid speed measurement",
+      "dataset": "pings.csv",
+      "columns": [
+        "speed_kmh"
+      ],
+      "affectedRows": 124,
+      "percentageAffected": 0.38748789100340614,
+      "severity": "Medium",
+      "decision": "FIX",
+      "rule": "Replace an unparseable or negative speed with an empty value; retain the GPS position.",
+      "justification": "The invalid measurement can be isolated without discarding otherwise usable location data.",
+      "impact": "An invalid speed could distort movement and trip metrics.",
+      "verification": "Every retained non-empty speed is numeric and nonnegative; original values remain in rejects.csv.",
+      "examples": [
+        {
+          "sourceRow": 320,
+          "original": {
+            "vehicle_id": "GT-1015",
+            "timestamp": "2026-11-18T09:49:14Z",
+            "lat": "5.577061",
+            "lon": "-0.194291",
+            "speed_kmh": "-1",
+            "accuracy_m": "9.9"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1015",
+            "timestamp": "2026-11-18T09:49:14Z",
+            "lat": "5.577061",
+            "lon": "-0.194291",
+            "speed_kmh": "",
+            "accuracy_m": "9.9"
+          },
+          "reason": "Replaced a nonnumeric or negative speed with an empty value.",
+          "details": []
+        },
+        {
+          "sourceRow": 540,
+          "original": {
+            "vehicle_id": "GT-1010",
+            "timestamp": "2026-11-18T08:45:44Z",
+            "lat": "5.600194",
+            "lon": "-0.194569",
+            "speed_kmh": "-1",
+            "accuracy_m": "6.9"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1010",
+            "timestamp": "2026-11-18T08:45:44Z",
+            "lat": "5.600194",
+            "lon": "-0.194569",
+            "speed_kmh": "",
+            "accuracy_m": "6.9"
+          },
+          "reason": "Replaced a nonnumeric or negative speed with an empty value.",
+          "details": []
+        },
+        {
+          "sourceRow": 839,
+          "original": {
+            "vehicle_id": "GT-1013",
+            "timestamp": "1794912785",
+            "lat": "5.597835",
+            "lon": "-0.163682",
+            "speed_kmh": "-1",
+            "accuracy_m": "11.9"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1013",
+            "timestamp": "2026-11-17T10:53:05Z",
+            "lat": "5.597835",
+            "lon": "-0.163682",
+            "speed_kmh": "",
+            "accuracy_m": "11.9"
+          },
+          "reason": "Replaced a nonnumeric or negative speed with an empty value.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-020",
+      "issueName": "Poor GPS accuracy",
+      "dataset": "pings.csv",
+      "columns": [
+        "accuracy_m"
+      ],
+      "affectedRows": 145,
+      "percentageAffected": 0.4531108402862411,
+      "severity": "Medium",
+      "decision": "FLAG",
+      "rule": "Retain readings with accuracy greater than 100 m and flag them; do not use them to diagnose GPS jumps.",
+      "justification": "Poor accuracy is suspicious, but the observation may still be useful and should not be silently removed.",
+      "impact": "Low-confidence coordinates can distort short distance estimates or geofence analysis.",
+      "verification": "The reported accuracy is unchanged and the issue ID is included in the clean output.",
+      "examples": [
+        {
+          "sourceRow": 1142,
+          "original": {
+            "vehicle_id": "GT-1012",
+            "timestamp": "2026-11-17T07:00:52Z",
+            "lat": "5.640341",
+            "lon": "-0.166530",
+            "speed_kmh": "26.2",
+            "accuracy_m": "718.5"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1012",
+            "timestamp": "2026-11-17T07:00:52Z",
+            "lat": "5.640341",
+            "lon": "-0.166530",
+            "speed_kmh": "26.2",
+            "accuracy_m": "718.5"
+          },
+          "reason": "Reported accuracy 718.5 m exceeds the 100 m quality threshold.",
+          "details": []
+        },
+        {
+          "sourceRow": 1248,
+          "original": {
+            "vehicle_id": "GT-1004",
+            "timestamp": "2026-11-17T06:53:29Z",
+            "lat": "5.611906",
+            "lon": "-0.205415",
+            "speed_kmh": "41.1",
+            "accuracy_m": "642.2"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1004",
+            "timestamp": "2026-11-17T06:53:29Z",
+            "lat": "5.611906",
+            "lon": "-0.205415",
+            "speed_kmh": "41.1",
+            "accuracy_m": "642.2"
+          },
+          "reason": "Reported accuracy 642.2 m exceeds the 100 m quality threshold.",
+          "details": []
+        },
+        {
+          "sourceRow": 1434,
+          "original": {
+            "vehicle_id": "GT-1018",
+            "timestamp": "2026-11-19T08:42:43Z",
+            "lat": "5.635399",
+            "lon": "-0.115740",
+            "speed_kmh": "19.5",
+            "accuracy_m": "751.6"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1018",
+            "timestamp": "2026-11-19T08:42:43Z",
+            "lat": "5.635399",
+            "lon": "-0.115740",
+            "speed_kmh": "19.5",
+            "accuracy_m": "751.6"
+          },
+          "reason": "Reported accuracy 751.6 m exceeds the 100 m quality threshold.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-021",
+      "issueName": "Physically implausible implied GPS speed",
+      "dataset": "pings.csv",
+      "columns": [
+        "vehicle_id",
+        "timestamp",
+        "lat",
+        "lon",
+        "accuracy_m"
+      ],
+      "affectedRows": 275,
+      "percentageAffected": 0.8593481453704572,
+      "severity": "High",
+      "decision": "FLAG",
+      "rule": "Flag both endpoints of a segment whose haversine speed exceeds 160 km/h; retain both source readings.",
+      "justification": "The location error cannot be assigned safely to either endpoint, so neither point is discarded.",
+      "impact": "Such a segment can materially inflate route distance and create false movement.",
+      "verification": "Recalculate speed from retained UTC timestamps and coordinates; each endpoint is traceable in the issues output.",
+      "examples": [
+        {
+          "sourceRow": 255,
+          "original": {
+            "vehicle_id": "GT-1012",
+            "timestamp": "2026-11-19T09:49:15Z",
+            "lat": "5.575456",
+            "lon": "-0.290642",
+            "speed_kmh": "0.4",
+            "accuracy_m": "11.6"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1012",
+            "timestamp": "2026-11-19T09:49:15Z",
+            "lat": "5.575456",
+            "lon": "-0.290642",
+            "speed_kmh": "0.4",
+            "accuracy_m": "11.6"
+          },
+          "reason": "Adjacent high-accuracy points imply travel above 160 km/h.",
+          "details": [
+            "Segment source rows 255-27046; distance_km: 13.696; interval_seconds: 30.0; implied_speed_kmh: 1643.6"
+          ]
+        },
+        {
+          "sourceRow": 310,
+          "original": {
+            "vehicle_id": "GT-1002",
+            "timestamp": "2026-11-18T08:44:20Z",
+            "lat": "5.542163",
+            "lon": "-0.132057",
+            "speed_kmh": "0.9",
+            "accuracy_m": "7.1"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1002",
+            "timestamp": "2026-11-18T08:44:20Z",
+            "lat": "5.542163",
+            "lon": "-0.132057",
+            "speed_kmh": "0.9",
+            "accuracy_m": "7.1"
+          },
+          "reason": "Adjacent high-accuracy points imply travel above 160 km/h.",
+          "details": [
+            "Segment source rows 310-23019; distance_km: 14.393; interval_seconds: 30.0; implied_speed_kmh: 1727.2"
+          ]
+        },
+        {
+          "sourceRow": 466,
+          "original": {
+            "vehicle_id": "GT-1015",
+            "timestamp": "2026-11-19T08:58:30Z",
+            "lat": "5.610656",
+            "lon": "-0.113127",
+            "speed_kmh": "25.6",
+            "accuracy_m": "12.2"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1015",
+            "timestamp": "2026-11-19T08:58:30Z",
+            "lat": "5.610656",
+            "lon": "-0.113127",
+            "speed_kmh": "25.6",
+            "accuracy_m": "12.2"
+          },
+          "reason": "Adjacent high-accuracy points imply travel above 160 km/h.",
+          "details": [
+            "Segment source rows 466-6009; distance_km: 16.668; interval_seconds: 30.0; implied_speed_kmh: 2000.2"
+          ]
+        }
+      ]
+    },
+    {
+      "issueId": "DQ-022",
+      "issueName": "Unusually long reporting interval",
+      "dataset": "pings.csv",
+      "columns": [
+        "vehicle_id",
+        "timestamp"
+      ],
+      "affectedRows": 48,
+      "percentageAffected": 0.14999531264647978,
+      "severity": "Low",
+      "decision": "FLAG",
+      "rule": "Flag the later reading when the preceding interval is greater than 90 seconds.",
+      "justification": "A gap may reflect tracker downtime or normal switched-off operation; it is not evidence that either endpoint is erroneous.",
+      "impact": "Unobserved travel across gaps can make route distances and trip timing incomplete.",
+      "verification": "Recompute sorted per-vehicle intervals and confirm flagged endpoints remain in the cleaned output.",
+      "examples": [
+        {
+          "sourceRow": 185,
+          "original": {
+            "vehicle_id": "GT-1018",
+            "timestamp": "2026-11-19T06:52:13Z",
+            "lat": "5.634670",
+            "lon": "-0.106270",
+            "speed_kmh": "19.0",
+            "accuracy_m": "7.1"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1018",
+            "timestamp": "2026-11-19T06:52:13Z",
+            "lat": "5.634670",
+            "lon": "-0.106270",
+            "speed_kmh": "19.0",
+            "accuracy_m": "7.1"
+          },
+          "reason": "Reporting interval of 70661.0 seconds exceeds the 90-second review threshold.",
+          "details": [
+            "Previous source row: 30223; interval_seconds: 70661.0"
+          ]
+        },
+        {
+          "sourceRow": 2020,
+          "original": {
+            "vehicle_id": "GT-1024",
+            "timestamp": "2026-11-18T06:40:45Z",
+            "lat": "5.644401",
+            "lon": "-0.092101",
+            "speed_kmh": "35.3",
+            "accuracy_m": "12.6"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1024",
+            "timestamp": "2026-11-18T06:40:45Z",
+            "lat": "5.644401",
+            "lon": "-0.092101",
+            "speed_kmh": "35.3",
+            "accuracy_m": "12.6"
+          },
+          "reason": "Reporting interval of 69227.0 seconds exceeds the 90-second review threshold.",
+          "details": [
+            "Previous source row: 2450; interval_seconds: 69227.0"
+          ]
+        },
+        {
+          "sourceRow": 2981,
+          "original": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-19T06:34:10Z",
+            "lat": "5.635158",
+            "lon": "-0.108288",
+            "speed_kmh": "46.3",
+            "accuracy_m": "16.0"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1014",
+            "timestamp": "2026-11-19T06:34:10Z",
+            "lat": "5.635158",
+            "lon": "-0.108288",
+            "speed_kmh": "46.3",
+            "accuracy_m": "16.0"
+          },
+          "reason": "Reporting interval of 65986.0 seconds exceeds the 90-second review threshold.",
+          "details": [
+            "Previous source row: 6082; interval_seconds: 65986.0"
+          ]
+        }
+      ]
+    },
+    {
+      "issueId": "VQ-002",
+      "issueName": "Duplicate official vehicle identifier",
+      "dataset": "vehicles.csv",
+      "columns": [
+        "vehicle_id",
+        "plate",
+        "depot"
+      ],
+      "affectedRows": 2,
+      "percentageAffected": 8,
+      "severity": "High",
+      "decision": "FLAG",
+      "rule": "Retain and flag every row in a duplicate-ID group; never choose a preferred row automatically.",
+      "justification": "The source register does not establish which conflicting record is authoritative.",
+      "impact": "Vehicle plate/depot attribution can be ambiguous even when tracker IDs match.",
+      "verification": "Confirm all duplicate register rows remain traceable and the summary reports the non-unique ID.",
+      "examples": [
+        {
+          "sourceRow": 9,
+          "original": {
+            "vehicle_id": "GT-1008",
+            "plate": "GR 8414-22",
+            "depot": "Tema Motorway",
+            "depot_lat": "5.6460",
+            "depot_lon": "-0.0900"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1008",
+            "plate": "GR 8414-22",
+            "depot": "Tema Motorway",
+            "depot_lat": "5.6460",
+            "depot_lon": "-0.0900"
+          },
+          "reason": "Official register ID GT-1008 has multiple records with conflicting vehicle attributes.",
+          "details": []
+        },
+        {
+          "sourceRow": 10,
+          "original": {
+            "vehicle_id": "GT-1008",
+            "plate": "GR 7731-21",
+            "depot": "Spintex",
+            "depot_lat": "5.6340",
+            "depot_lon": "-0.1050"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1008",
+            "plate": "GR 7731-21",
+            "depot": "Spintex",
+            "depot_lat": "5.6340",
+            "depot_lon": "-0.1050"
+          },
+          "reason": "Official register ID GT-1008 has multiple records with conflicting vehicle attributes.",
+          "details": []
+        }
+      ]
+    },
+    {
+      "issueId": "VQ-004",
+      "issueName": "Reversed depot coordinate axes",
+      "dataset": "vehicles.csv",
+      "columns": [
+        "depot_lat",
+        "depot_lon"
+      ],
+      "affectedRows": 1,
+      "percentageAffected": 4,
+      "severity": "High",
+      "decision": "FIX",
+      "rule": "Swap only when the original pair is outside Ghana and the reversed pair is inside Ghana.",
+      "justification": "The register's stated latitude/longitude columns and geographic bounds make the correction unambiguous.",
+      "impact": "An invalid depot point can break depot proximity and vehicle-home-depot analytics.",
+      "verification": "Check corrected depot coordinates against WGS 84 and Ghana bounds.",
+      "examples": [
+        {
+          "sourceRow": 16,
+          "original": {
+            "vehicle_id": "GT-1014",
+            "plate": "GR 5532-23",
+            "depot": "Spintex",
+            "depot_lat": "-0.1050",
+            "depot_lon": "5.6340"
+          },
+          "corrected": {
+            "vehicle_id": "GT-1014",
+            "plate": "GR 5532-23",
+            "depot": "Spintex",
+            "depot_lat": "5.634",
+            "depot_lon": "-0.105"
+          },
+          "reason": "Swapped coordinate axes because only the reversed pair falls within Ghana bounds.",
+          "details": []
+        }
+      ]
+    }
+  ],
+  "issue_records": 7850,
+  "issue_rows_by_dataset": {
+    "pings": 7538,
+    "vehicles": 3
+  }
+}

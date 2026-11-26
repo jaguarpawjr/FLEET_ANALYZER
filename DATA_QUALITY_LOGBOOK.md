@@ -352,9 +352,11 @@ A check listed here was executed and found no records requiring a separate issue
 | Missing accuracy measurements | No findings |
 | Invalid accuracy measurements | No findings |
 | Accuracy measurements over 100 m | 145 affected source rows (see issue register) |
+| Numeric-field surrounding whitespace | No findings |
 | Same-vehicle/same-instant conflicting measurements | No findings |
 | Missing vehicle register ID, plate, or depot | No findings |
 | Malformed vehicle register IDs | No findings |
+| Vehicle register surrounding whitespace | No findings |
 | Invalid or missing depot coordinates | No findings |
 
 ## GPS sequence observations
@@ -396,4 +398,4 @@ The pipeline retained 31076 pings with registered vehicle IDs, canonical UTC tim
 - Repeated nearby points may represent a legitimate stop. They are reported as telemetry context and are not removed.
 - Source row numbers include the header as row 1; the current source files contain one physical line per record.
 
-Input SHA-256: pings.csv `c8a00c4db6964cf01275d5f1079f8802afc00799ed8c389009f198a7c16a0dae`; vehicles.csv `a4f3452552653e02f206b77ddce86212c607549798002471a46bd29a17595140`.
+Input SHA-256: pings.csv `2991df8e2a253071a62ffbf80470584d55046855dd0c4769a53dfb0bfbbe08bd`; vehicles.csv `184a3cf4213ce6b48d999a28673038fc849a5cd0d391dd9c3b082b19a23c218d`.

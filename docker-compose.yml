@@ -12,7 +12,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - analytics-data:/app/data/processed
+      - analytics-data:/app/data/assessment-processed
   dashboard:
     build:
       context: .

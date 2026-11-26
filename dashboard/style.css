@@ -281,7 +281,7 @@ th:first-child { padding-left: 15px; }
 .action-drop { color: #a34a3d; background: #f8ebe7; }
 .action-flag { color: #986a27; background: #f8f0df; }
 .expand-button, .row-link { width: 25px; height: 24px; display: grid; place-items: center; border: 1px solid #e7e6df; color: #687a70; background: #fff; cursor: pointer; }
-.issue-data-row { cursor: pointer; }
+.issue-data-row { cursor: auto; }
 .issue-data-row:hover { background: #faf9f4; }
 .issue-data-row[aria-expanded=true] .expand-button svg { transform: rotate(180deg); }
 .expand-button svg { transition: transform .16s ease; }
@@ -449,6 +449,11 @@ th:first-child { padding-left: 15px; }
   .assessment-stamp b { font-size: 9px; }
   .review-summary { min-width: 92px; padding: 7px; }
   .review-summary b { font-size: 15px; }
+  .trip-surface > .surface-header { align-items: flex-start; flex-wrap: wrap; }
+  .trip-controls { width: 100%; min-width: 0; flex-wrap: wrap; gap: 8px; }
+  .trip-date-filter { min-width: 0; flex: 1 1 120px; }
+  .trip-date-filter select { min-width: 0; max-width: 100%; }
+  .trip-search { min-width: 0; flex: 1 1 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }

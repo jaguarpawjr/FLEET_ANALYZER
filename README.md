@@ -60,6 +60,6 @@ See [DESIGN.md](DESIGN.md) for cleaning rationale, scale architecture and next s
 
 ## Dashboard preview
 
-![Fleetwatch fleet overview for 18 November 2026, populated from the cleaned assessment pings and vehicle register](docs/dashboard.png)
+![Fleetwatch operations dashboard](docs/dashboard.png)
 
-The preview shows the live dashboard against the root assessment dataset: 24 unique vehicle IDs from 25 register rows, with the conflicting ID disclosed for review. Fleet metrics and the preview can change when the source data is regenerated. Map tiles come from OpenStreetMap.
+The static preview image uses synthetic demo data; the running dashboard defaults to the root assessment inputs. Map tiles come from OpenStreetMap.

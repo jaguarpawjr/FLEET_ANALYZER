@@ -1,8 +1,8 @@
 import { runPipeline } from "../src/analytics.js";
 
 const input = process.argv[2];
-const output = process.argv[3] ?? "data/processed";
 const dataset = process.env.FLEET_DATASET ?? "assessment";
+const output = process.argv[3] ?? (input || dataset === "demo" ? "data/processed" : "data/assessment-processed");
 const pipeline = input
   ? runPipeline(input, output)
   : dataset === "demo"

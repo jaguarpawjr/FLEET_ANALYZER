@@ -115,6 +115,7 @@ export async function runPipeline(
   const processingDates = new Set<string>();
   const vehicles = new Map<string, Vehicle>();
   const registerRows = new Map<string, Vehicle[]>();
+  const registerConflicts = new Set<string>();
   for (const cells of vehicleRows) {
     const v = Object.fromEntries(vehicleHeaders.map((header, i) => [header, cells[i]?.trim() ?? ""])) as Record<string, string>;
     const vehicle: Vehicle = { vehicle_id: v.vehicle_id, plate: v.plate, depot: v.depot, depot_lat: Number(v.depot_lat), depot_lon: Number(v.depot_lon) };
@@ -125,6 +126,7 @@ export async function runPipeline(
   for (const [vehicleId, records] of registerRows) {
     const validRecords = records.filter((record) => inGhanaBounds(record.depot_lat, record.depot_lon));
     if (records.length > 1) {
+      registerConflicts.add(vehicleId);
       anomalies.push({
         type: "register_id_conflict", vehicle_id: vehicleId, timestamp: "",
         reason: "Multiple register rows share this ID; plate and depot attribution withheld",
@@ -143,6 +145,7 @@ export async function runPipeline(
   const seen = new Set<string>();
   const byVehicle = new Map<string, Ping[]>();
   const qualityCounts = new Map<string, number>();
+  for (const vehicleId of registerConflicts) qualityCounts.set(vehicleId, 1);
   for (const cells of pingRows) {
     const source = Object.fromEntries(pingHeaders.map((header, i) => [header, cells[i]?.trim() ?? ""])) as Record<string, string>;
     const vehicleId = source.vehicle_id;

@@ -8,7 +8,7 @@ const send = (res: any, status: number, value: unknown) => {
   res.end(JSON.stringify(value));
 };
 export function createApiServer(
-  outputDir = process.env.OUTPUT_DIR ?? "data/processed",
+  outputDir = process.env.OUTPUT_DIR ?? "data/assessment-processed",
   paths: { assessmentDir?: string; inputDir?: string; registerFile?: string } = {}
 ): Server {
   const json = async (name: string) => JSON.parse(await readFile(join(outputDir, name), "utf8"));
@@ -146,7 +146,7 @@ export function createApiServer(
     return summary ? send(res, 200, summary) : send(res, 404, { error: { code: "not_found", message: "Vehicle-day summary not found" } });
   } catch (error) {
     console.error(error);
-    return send(res, 500, { error: { code: "internal_error", message: "Analytics data is unavailable" } });
+    return send(res, 503, { error: { code: "assessment_unavailable", message: "Assessment analytics outputs are unavailable. Run the cleaning and analytics pipeline." } });
   }
   });
 }

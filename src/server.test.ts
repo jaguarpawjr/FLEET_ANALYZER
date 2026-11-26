@@ -1,6 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { mkdtemp, mkdir, rm, writeFile } from "node:fs/promises";
-import { tmpdir } from "node:os";
 import { join } from "node:path";
 import type { Server } from "node:http";
 import { createApiServer } from "./server.js";
@@ -11,7 +10,7 @@ describe("daily summary API", () => {
   let server: Server;
 
   beforeAll(async () => {
-    directory = await mkdtemp(join(tmpdir(), "fleet-api-"));
+    directory = await mkdtemp(join(process.cwd(), ".fleet-api-test-"));
     await mkdir(join(directory, "routes"));
     await mkdir(join(directory, "input"));
     await Promise.all([
@@ -21,7 +20,7 @@ describe("daily summary API", () => {
       writeFile(join(directory, "inefficient_trips.json"), "[]"),
       writeFile(join(directory, "zones.geojson"), '{"type":"FeatureCollection","features":[]}'),
       writeFile(join(directory, "routes", "V1_2025-01-15.geojson"), '{"type":"FeatureCollection","features":[]}'),
-      writeFile(join(directory, "input", "vehicles.csv"), "vehicle_id,plate,depot,depot_lat,depot_lon\nV1,AA-123,Depot A,5.5,-0.2\n"),
+      writeFile(join(directory, "input", "vehicles_clean.csv"), "_source_row,vehicle_id,plate,depot,depot_lat,depot_lon\n2,V1,AA-123,Depot A,5.5,-0.2\n3,V2,BB-234,Depot B,5.6,-0.3\n4,V2,CC-345,Depot C,5.7,-0.4\n"),
       writeFile(join(directory, "data_quality_summary.json"), JSON.stringify({
         final_clean_row_counts: { pings_clean: 100 },
         row_treatment_totals: { unique_records_affected_by_any_issue: 12, rows_fixed: 8, rows_rejected: 2, rows_flagged: 3 },
@@ -57,9 +56,16 @@ describe("daily summary API", () => {
 
   it("exposes available analytics dates and the aligned vehicle register", async () => {
     expect(await (await fetch(`${baseUrl}/dates`)).json()).toEqual(["2025-01-15"]);
-    expect(await (await fetch(`${baseUrl}/vehicles/register`)).json()).toEqual([
-      { vehicle_id: "V1", plate: "AA-123", depot: "Depot A", depot_lat: "5.5", depot_lon: "-0.2" }
-    ]);
+    const response = await (await fetch(`${baseUrl}/vehicles/register`)).json();
+    expect(response).toMatchObject({
+      registerRows: 3,
+      uniqueVehicleIds: 2,
+      conflicts: 1,
+      vehicles: [
+        { vehicle_id: "V1", plate: "AA-123", depot: "Depot A", ambiguous: false, source_rows: ["2"] },
+        { vehicle_id: "V2", plate: "", depot: "", ambiguous: true, source_rows: ["3", "4"], register_rows: [{ plate: "BB-234" }, { plate: "CC-345" }] }
+      ]
+    });
   });
 
   it("returns assessment totals separately from paginated filtered issue records", async () => {
@@ -68,6 +74,8 @@ describe("daily summary API", () => {
     expect(summary.issues).toHaveLength(1);
     const response = await fetch(`${baseUrl}/data-quality/issues?vehicle_id=V2&page=1&page_size=1`);
     expect(await response.json()).toMatchObject({ total: 1, items: [{ source_row: "8", action: "DROP" }] });
+    const boundedResponse = await fetch(`${baseUrl}/data-quality/issues?page=4&page_size=500`);
+    expect(await boundedResponse.json()).toMatchObject({ page: 4, pageSize: 100, items: [] });
   });
 
   it("reports unavailable assessment files explicitly", async () => {
@@ -81,6 +89,20 @@ describe("daily summary API", () => {
       expect(await response.json()).toMatchObject({ error: { code: "quality_unavailable" } });
     } finally {
       await new Promise<void>((resolve, reject) => incompleteServer.close((error) => error ? reject(error) : resolve()));
+    }
+  });
+
+  it("reports missing generated analytics rather than serving demo output", async () => {
+    const missingServer = createApiServer(join(directory, "not-generated"), { assessmentDir: directory, inputDir: join(directory, "input") });
+    await new Promise<void>((resolve) => missingServer.listen(0, "127.0.0.1", resolve));
+    const address = missingServer.address();
+    if (!address || typeof address === "string") throw new Error("No API test port");
+    try {
+      const response = await fetch(`http://127.0.0.1:${address.port}/dates`);
+      expect(response.status).toBe(503);
+      expect(await response.json()).toMatchObject({ error: { code: "assessment_unavailable" } });
+    } finally {
+      await new Promise<void>((resolve, reject) => missingServer.close((error) => error ? reject(error) : resolve()));
     }
   });
 });

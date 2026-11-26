@@ -16,7 +16,11 @@ import "./style.css";
 type Section = "overview" | "vehicle" | "quality" | "trips";
 type SortKey = "vehicle_id" | "plate" | "depot" | "distance_km" | "moving_minutes" | "stop_count" | "highest_believable_speed_kmh" | "data_quality_issues";
 
-const duration = (value?: number | null) => value == null ? "—" : `${Math.floor(value / 60)}h ${Math.round(value % 60)}m`;
+const duration = (value?: number | null) => {
+  if (value == null || !Number.isFinite(value)) return "—";
+  const totalMinutes = Math.round(value);
+  return `${Math.floor(totalMinutes / 60)}h ${totalMinutes % 60}m`;
+};
 const time = (value: string) => new Date(value).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
 const displayDate = (value: string) => new Date(`${value}T12:00:00`).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
 
@@ -35,6 +39,7 @@ function FitRoute({ points }: { points: [number, number][] }) {
 function parseRecord(value: string): Record<string, string> {
   try { return JSON.parse(value || "{}"); } catch { return {}; }
 }
+const stopZones = (stop: Stop) => Array.isArray(stop.zones) ? stop.zones.filter((zone): zone is string => typeof zone === "string") : [];
 
 function OperationsDashboard() {
   const [section, setSection] = useState<Section>("overview");
@@ -94,7 +99,7 @@ function OperationsDashboard() {
   useEffect(() => {
     if (!date) return;
     const controller = new AbortController();
-    setFleetLoading(true); setError("");
+    setFleetLoading(true); setError(""); setFleet([]);
     dashboardApi.fleet(date, controller.signal)
       .then((items) => {
         setFleet(items);
@@ -107,7 +112,7 @@ function OperationsDashboard() {
   useEffect(() => {
     if (!vehicleId || !date) { setRoute(null); setStops([]); return; }
     const controller = new AbortController();
-    setDetailLoading(true);
+    setDetailLoading(true); setRoute(null); setStops([]); setSelectedStop(null);
     Promise.all([
       dashboardApi.route(vehicleId, date, controller.signal),
       dashboardApi.stops(vehicleId, date, controller.signal)
@@ -174,15 +179,22 @@ function OperationsDashboard() {
   const pageSize = 8;
   const pageCount = Math.max(1, Math.ceil(visibleVehicles.length / pageSize));
   const pagedVehicles = visibleVehicles.slice((page - 1) * pageSize, page * pageSize);
+  useEffect(() => { if (page > pageCount) setPage(pageCount); }, [page, pageCount]);
   const activeVehicle = register.find((item) => item.vehicle_id === vehicleId);
   const activeSummary = fleet.find((item) => item.vehicle_id === vehicleId);
-  const routeFeature = route?.features.find((feature: any) => feature.properties?.kind === "route") as any;
+  const conflictCount = register.filter((vehicle) => vehicle.ambiguous).length;
+  const routeFeatures = Array.isArray(route?.features) ? route.features : [];
+  const routeFeature = routeFeatures.find((feature: any) => feature?.properties?.kind === "route") as any;
   const rawCoordinates = Array.isArray(routeFeature?.geometry?.coordinates) ? routeFeature.geometry.coordinates : [];
   const routeCoordinates = rawCoordinates.filter((point: unknown): point is [number, number] =>
     Array.isArray(point) && point.length >= 2 && Number.isFinite(point[0]) && Number.isFinite(point[1]) &&
     Math.abs(point[0]) <= 180 && Math.abs(point[1]) <= 90
   );
   const routeLatLngs = routeCoordinates.map(([lon, lat]: [number, number]) => [lat, lon] as [number, number]);
+  const usableStops = Array.isArray(stops) ? stops.filter((stop): stop is Stop =>
+    Boolean(stop && typeof stop.start_time === "string" && Number.isFinite(Date.parse(stop.start_time)) &&
+      typeof stop.end_time === "string" && Number.isFinite(Date.parse(stop.end_time)) && Number.isFinite(stop.duration_minutes))
+  ) : [];
   const restrictedMinutes = Object.values(activeSummary?.restricted_minutes ?? {}).reduce((sum, value) => sum + value, 0);
 
   const navigate = (next: Section) => { setSection(next); setMobileNav(false); };
@@ -211,8 +223,8 @@ function OperationsDashboard() {
       </a>
       <div className="rail-caption">WORKSPACE</div>
       <nav aria-label="Primary navigation">
-        {navItems.map((item) => <button key={item.key} className={`nav-item ${section === item.key ? "active" : ""}`} onClick={() => navigate(item.key)} aria-current={section === item.key ? "page" : undefined}>
-          {item.icon}<span>{item.label}</span>{item.key === "trips" && <span className="nav-count">{trips.length}</span>}
+        {navItems.map((item) => <button key={item.key} className={`nav-item ${section === item.key ? "active" : ""}`} onClick={() => navigate(item.key)} aria-current={section === item.key ? "page" : undefined} aria-label={item.key === "trips" ? `${item.label}, ${trips.length} candidates` : item.label}>
+          {item.icon}<span>{item.label}</span>{item.key === "trips" && <span className="nav-count" aria-hidden="true">{trips.length}</span>}
         </button>)}
       </nav>
       <div className="sidebar-bottom">
@@ -247,7 +259,7 @@ function OperationsDashboard() {
           <div className="overview-grid">
             <section className="surface fleet-surface">
               <div className="surface-header"><div><div className="eyebrow-line">REGISTERED FLEET</div><h2>Vehicle performance</h2></div><span className="subtle-count">{visibleVehicles.length} vehicles</span></div>
-              {registerRowCount !== register.length && <div className="register-note" role="note"><AlertTriangle size={15} /><span><b>{registerRowCount} source register rows</b> resolve to <b>{register.length} unique vehicle IDs</b>. {register.filter((vehicle) => vehicle.ambiguous).length} ID conflict is retained for review; conflicting plate and depot values are withheld.</span></div>}
+              {registerRowCount !== register.length && <div className="register-note" role="note"><AlertTriangle size={15} /><span><b>{registerRowCount} source register rows</b> resolve to <b>{register.length} unique vehicle IDs</b>. {conflictCount} conflicting ID{conflictCount === 1 ? "" : "s"} retained for review; conflicting plate and depot values are withheld.</span></div>}
               <div className="filters-toolbar">
                 <label className="search-field"><Search size={15} /><span className="sr-only">Search vehicles</span><input aria-label="Search vehicles" placeholder="Search ID, plate or depot" value={filter} onChange={(event) => { setFilter(event.target.value); setPage(1); }} /><kbd>⌘ K</kbd></label>
                 <label className="filter-field"><span className="sr-only">Filter by depot</span><Filter size={14} /><select aria-label="Filter by depot" value={depotFilter} onChange={(event) => { setDepotFilter(event.target.value); setPage(1); }}><option value="">All depots</option>{[...new Set(register.map((vehicle) => vehicle.depot).filter(Boolean))].sort().map((depot) => <option key={depot}>{depot}</option>)}</select></label>
@@ -257,7 +269,8 @@ function OperationsDashboard() {
               <div className="table-scroll"><table className="fleet-table"><thead><tr>
                 <th>{formatSort("vehicle_id", "VEHICLE")}</th><th>{formatSort("depot", "DEPOT")}</th><th>{formatSort("distance_km", "DISTANCE")}</th><th>{formatSort("moving_minutes", "MOVING / STOPPED")}</th><th>{formatSort("stop_count", "STOPS")}</th><th>{formatSort("highest_believable_speed_kmh", "TOP SPEED")}</th><th>QUALITY / TRIP</th>
               </tr></thead><tbody>
-                {pagedVehicles.map(({ vehicle, summary }) => {
+                {fleetLoading && <tr><td colSpan={7} className="table-message">Loading fleet metrics for {displayDate(date)}…</td></tr>}
+                {!fleetLoading && pagedVehicles.map(({ vehicle, summary }) => {
                   const hasTrip = tripsForDate.some((trip) => trip.vehicle_id === vehicle.vehicle_id);
                   return <tr key={vehicle.vehicle_id} className={vehicle.vehicle_id === vehicleId ? "selected-row" : ""} onClick={() => chooseVehicle(vehicle.vehicle_id)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); chooseVehicle(vehicle.vehicle_id); } }} tabIndex={0} aria-label={`View analytics for ${vehicle.vehicle_id}`}>
                     <td><span className="table-vehicle-icon"><Truck size={15} /></span><span className="vehicle-identity"><b>{vehicle.vehicle_id}</b><small>{vehicle.ambiguous ? `Register conflict · rows ${vehicle.source_rows.map((row) => `#${row}`).join(", ")}` : vehicle.plate || "No plate listed"}</small></span></td>
@@ -267,7 +280,7 @@ function OperationsDashboard() {
                     <td><div className="status-stack"><span className={`status-chip ${summary?.data_quality_issues ? "review" : summary ? "healthy" : "neutral"}`}>{summary ? summary.data_quality_issues ? `${summary.data_quality_issues} FLAGS` : "CLEAR" : "NO DAY DATA"}</span>{hasTrip && <span className="status-chip trip-chip">TRIP REVIEW</span>}</div></td>
                   </tr>;
                 })}
-                {!pagedVehicles.length && <tr><td colSpan={7} className="empty-row"><FileSearch size={22} /><b>No vehicles match these filters</b><span>Adjust your search or clear a filter to continue.</span></td></tr>}
+                {!fleetLoading && !pagedVehicles.length && <tr><td colSpan={7} className="empty-row"><FileSearch size={22} /><b>No vehicles match these filters</b><span>Adjust your search or clear a filter to continue.</span></td></tr>}
               </tbody></table></div>
               <div className="table-footer"><span>Showing {visibleVehicles.length ? (page - 1) * pageSize + 1 : 0}–{Math.min(page * pageSize, visibleVehicles.length)} of {visibleVehicles.length} registered vehicles</span><div className="pagination"><button aria-label="Previous page" disabled={page <= 1} onClick={() => setPage((value) => Math.max(1, value - 1))}><ChevronLeft size={15} /></button><span>Page {page} of {pageCount}</span><button aria-label="Next page" disabled={page >= pageCount} onClick={() => setPage((value) => Math.min(pageCount, value + 1))}><ChevronRight size={15} /></button></div></div>
             </section>
@@ -317,22 +330,23 @@ function OperationsDashboard() {
                     )
                   ).map((feature: any, index) => <GeoJSON key={`${feature.properties?.zone_id ?? "zone"}-${index}`} data={feature} style={{ color: feature.properties?.type === "restricted" ? "#a9473d" : "#43827a", fillColor: feature.properties?.type === "restricted" ? "#c76d5e" : "#5c9e8d", fillOpacity: 0.12, weight: 1.5 }} />)}
                   {routeLatLngs.length > 1 && <Polyline positions={routeLatLngs} pathOptions={{ color: "#177d75", weight: 4, opacity: .9 }} />}
-                  {stops.filter((stop) => Number.isFinite(stop.lat) && Number.isFinite(stop.lon)).map((stop, index) => <CircleMarker key={`${stop.start_time}-${index}`} center={[stop.lat, stop.lon]} radius={selectedStop === stop ? 8 : 6} pathOptions={{ color: stop.restricted ? "#a9473d" : "#fff", weight: 2, fillColor: stop.restricted ? "#c35f4f" : "#dfa947", fillOpacity: 1 }} eventHandlers={{ click: () => setSelectedStop(stop) }}><Popup><b>{time(stop.start_time)} – {time(stop.end_time)}</b><br />{stop.duration_minutes} min stop<br />{stop.in_own_depot_area ? "Own depot area" : stop.restricted ? "Restricted area" : stop.zones?.join(", ") || "Outside named zones"}</Popup></CircleMarker>)}
+                  {usableStops.filter((stop) => Number.isFinite(stop.lat) && Number.isFinite(stop.lon)).map((stop, index) => <CircleMarker key={`${stop.start_time}-${index}`} center={[stop.lat, stop.lon]} radius={selectedStop === stop ? 8 : 6} pathOptions={{ color: stop.restricted ? "#a9473d" : "#fff", weight: 2, fillColor: stop.restricted ? "#c35f4f" : "#dfa947", fillOpacity: 1 }} eventHandlers={{ click: () => setSelectedStop(stop) }}><Popup><b>{time(stop.start_time)} – {time(stop.end_time)}</b><br />{stop.duration_minutes} min stop<br />{stop.in_own_depot_area ? "Own depot area" : stop.restricted ? "Restricted area" : stopZones(stop).join(", ") || "Outside named zones"}</Popup></CircleMarker>)}
                 </MapContainer>
                 {detailLoading && <div className="map-loading"><span className="spinner" /> Loading route…</div>}
                 {!detailLoading && route && !routeLatLngs.length && <div className="map-empty"><MapPin size={20} /><b>No route geometry for this vehicle-day</b><span>The analytics source returned no usable route points.</span></div>}
               </div>
               <div className="map-caption"><span><i className="legend-teal" /> Vehicle route</span><span><i className="legend-amber" /> Stop location</span><span><i className="legend-red" /> Restricted stop</span><small>© OpenStreetMap contributors</small></div>
             </section>
-            <section className="surface stops-surface"><div className="surface-header"><div><div className="eyebrow-line">ACTIVITY LOG</div><h2>Recorded stops <span className="subtle-count">{stops.length}</span></h2></div><Clock3 size={18} className="muted-icon" /></div>
-              {stops.length ? <><div className="stop-timeline">{stops.map((stop, index) => <button key={`${stop.start_time}-${index}`} className={`stop-item ${selectedStop === stop ? "stop-active" : ""}`} onClick={() => setSelectedStop(stop)} aria-pressed={selectedStop === stop}>
-                <span className={`stop-dot ${stop.restricted ? "dot-red" : stop.in_own_depot_area ? "dot-teal" : ""}`} /><span className="stop-time">{time(stop.start_time)}<small>{time(stop.end_time)}</small></span>
-                <span className="stop-info"><b>{stop.in_own_depot_area ? "Own depot area" : stop.restricted ? "Restricted zone" : stop.zones?.length ? stop.zones.join(", ") : "Unclassified stop"}</b><small>{Number.isFinite(stop.lat) && Number.isFinite(stop.lon) ? `${stop.lat.toFixed(4)}, ${stop.lon.toFixed(4)}` : "Location unavailable"}</small></span><span className="stop-duration">{stop.duration_minutes}<small>MIN</small></span>
-              </button>)}</div>{selectedStop && <div className="stop-detail"><b>Selected stop</b><span>{selectedStop.in_own_depot_area ? "Within own depot service area" : selectedStop.restricted ? "Within restricted zone" : "No restricted classification"}</span><small>{selectedStop.zones?.length ? selectedStop.zones.join(" · ") : "No named zone reported"}</small></div>}</>
+            <section className="surface stops-surface"><div className="surface-header"><div><div className="eyebrow-line">ACTIVITY LOG</div><h2>Recorded stops <span className="subtle-count">{usableStops.length}</span></h2></div><Clock3 size={18} className="muted-icon" /></div>
+              {usableStops.length ? <><div className="stop-table-scroll"><table className="stop-table"><thead><tr><th>TIME</th><th>ZONE / STATUS</th><th>LOCATION</th><th>DURATION</th></tr></thead><tbody>{usableStops.map((stop, index) => <tr key={`${stop.start_time}-${index}`} className={selectedStop === stop ? "stop-table-selected" : ""}>
+                <td><button className="stop-time-button" onClick={() => setSelectedStop(stop)} aria-pressed={selectedStop === stop}>{time(stop.start_time)}<small>to {time(stop.end_time)}</small></button></td>
+                <td><button className="stop-area-button" onClick={() => setSelectedStop(stop)} aria-pressed={selectedStop === stop}><span className={`stop-dot ${stop.restricted ? "dot-red" : stop.in_own_depot_area ? "dot-teal" : ""}`} /><b>{stop.in_own_depot_area ? "Own depot area" : stop.restricted ? "Restricted zone" : stopZones(stop).length ? stopZones(stop).join(", ") : "Unclassified stop"}</b><small>{stop.restricted ? "Restricted" : stop.in_own_depot_area ? "Own depot" : stopZones(stop).length ? "Service zone" : "No named zone"}</small></button></td>
+                <td>{Number.isFinite(stop.lat) && Number.isFinite(stop.lon) ? `${stop.lat.toFixed(4)}, ${stop.lon.toFixed(4)}` : "Location unavailable"}</td><td className="stop-table-duration">{stop.duration_minutes}<small>MIN</small></td>
+              </tr>)}</tbody></table></div>{selectedStop && <div className="stop-detail"><b>Selected stop</b><span>{selectedStop.in_own_depot_area ? "Within own depot service area" : selectedStop.restricted ? "Within restricted zone" : "No restricted classification"}</span><small>{stopZones(selectedStop).length ? stopZones(selectedStop).join(" · ") : "No named zone reported"}</small></div>}</>
                 : <div className="panel-empty"><Clock3 size={20} /><b>No stops recorded</b><span>No qualifying stop events are available for this vehicle-day.</span></div>}
             </section>
           </div>
-          <section className="surface day-timeline-surface"><div className="surface-header"><div><div className="eyebrow-line">24-HOUR ACTIVITY</div><h2>Day timeline</h2></div><span className="subtle-count">{stops.length} stop events</span></div><div className="day-track-wrap"><div className="day-track">{stops.map((stop, index) => { const start = new Date(stop.start_time); const minute = start.getHours() * 60 + start.getMinutes(); return <button key={`${stop.start_time}-${index}`} className={`day-marker ${stop.restricted ? "marker-restricted" : ""}`} style={{ left: `${minute / 1440 * 100}%` }} title={`${time(stop.start_time)} · ${stop.duration_minutes} minutes`} aria-label={`Select stop at ${time(stop.start_time)}`} onClick={() => setSelectedStop(stop)} />; })}</div><div className="day-hours"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div></div></section>
+          <section className="surface day-timeline-surface"><div className="surface-header"><div><div className="eyebrow-line">24-HOUR ACTIVITY</div><h2>Day timeline</h2></div><span className="subtle-count">{usableStops.length} stop events</span></div><div className="day-track-wrap"><div className="day-track">{usableStops.map((stop, index) => { const start = new Date(stop.start_time); const minute = start.getHours() * 60 + start.getMinutes(); return <button key={`${stop.start_time}-${index}`} className={`day-marker ${stop.restricted ? "marker-restricted" : ""}`} style={{ left: `${minute / 1440 * 100}%` }} title={`${time(stop.start_time)} · ${stop.duration_minutes} minutes`} aria-label={`Select stop at ${time(stop.start_time)}`} onClick={() => setSelectedStop(stop)} />; })}</div><div className="day-hours"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div></div></section>
         </section>}
 
         {section === "quality" && <section>
@@ -402,5 +416,10 @@ function OperationsDashboard() {
   </div>;
 }
 
-createRoot(document.getElementById("root")!).render(<OperationsDashboard />);
+const rootElement = document.getElementById("root");
+const appGlobal = globalThis as typeof globalThis & { fleetwatchRoot?: ReturnType<typeof createRoot> };
+if (rootElement) {
+  appGlobal.fleetwatchRoot ??= createRoot(rootElement);
+  appGlobal.fleetwatchRoot.render(<OperationsDashboard />);
+}
 export { OperationsDashboard };
